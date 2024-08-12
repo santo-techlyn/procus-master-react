@@ -1,5 +1,5 @@
 (function ($) {
-    
+
     "use strict"
     $(document).ready(function () {
 
@@ -26,7 +26,7 @@
         $(".accordion-list > li:first-child").addClass("active").find(".answer").show();
         $('.accordion-list > li:not(:first-child) .answer').hide();
 
-        $('.accordion-list > li').click(function() {
+        $('.accordion-list > li').click(function () {
             if ($(this).hasClass("active")) {
                 $(this).removeClass("active").find(".answer").slideUp();
             } else {
@@ -63,7 +63,7 @@
             },
             ]
         });
-        
+
         // brand slider
         $('.brand-slider').slick({
             dots: false,
@@ -78,7 +78,7 @@
             centerMode: true,
             variableWidth: true,
         });
-        
+
         // testimonial slider
         $('.testimonial-slider').slick({
             dots: true,
@@ -139,19 +139,19 @@
         });
 
         // navbar home 02
-        $('.nav-bar').on('click', function(){
+        $('.nav-bar').on('click', function () {
             $('.main-menu').toggleClass('active');
         })
-        $('.nav-bar').on('click', function(){
+        $('.nav-bar').on('click', function () {
             $('.nav-bar').toggleClass('active');
         })
 
         // service item 02
-        $('.single-service-2').hover(function() {
-            $('.single-service-2').removeClass('active');  
-            $(this).addClass('active');  
+        $('.single-service-2').hover(function () {
+            $('.single-service-2').removeClass('active');
+            $(this).addClass('active');
         });
-        
+
         $('.single-service-2:nth-child(4)').addClass('active');
 
         // portfolio slider 02
@@ -200,7 +200,7 @@
         var $caseItems = $('.case-items .case-single');
         var $filterTabs = $('.case-filter-tab li');
 
-        $filterTabs.on('click', function() {
+        $filterTabs.on('click', function () {
             var $this = $(this); // Cache the current 'li' element
             var filter = $this.attr('data-filter');
 
@@ -209,7 +209,7 @@
             if (filter === 'all') {
                 $caseItems.removeClass('item-hidden');
             } else {
-                $caseItems.each(function() {
+                $caseItems.each(function () {
                     var $caseItem = $(this); // Cache the current case item
                     $caseItem.toggleClass('item-hidden', !$caseItem.hasClass(filter));
                 });
@@ -322,13 +322,13 @@
         });
 
         // service tab 03
-        $('.tab-menu-item').on('click', function() {
+        $('.tab-menu-item').on('click', function () {
             var tabId = $(this).data('tab');
-    
+
             // Remove active class from all tab-menu-item and tab-content-item
             $('.tab-menu-item').removeClass('active');
             $('.tab-content-item').removeClass('active');
-    
+
             // Add active class to the clicked tab-menu-item and corresponding tab-content-item
             $(this).addClass('active');
             $('#' + tabId).addClass('active');
@@ -366,7 +366,7 @@
             },
             ]
         });
-        
+
         $('.testimonial-slider-2-home-3').slick({
             dots: false,
             infinite: true,
@@ -403,10 +403,10 @@
         $('.monthly-plans').show();
         $('.yearly-plans').hide();
 
-        $('.pricing-toggle-btn').on('click', function() {
+        $('.pricing-toggle-btn').on('click', function () {
             $('.pricing-toggle-btn').removeClass('active');
             $(this).addClass('active');
-            
+
             var pricingType = $(this).data('pricing');
             if (pricingType === 'monthly') {
                 $('.monthly-plans').show();
@@ -419,13 +419,13 @@
 
         // mouseover   
         var singleChoose = $('.single-choose-item')
-        singleChoose.mouseover(function() {
+        singleChoose.mouseover(function () {
             singleChoose.removeClass('active');
             $(this).addClass('active');
         });
-        
+
         var singleInfo = $('.contact-info-area .single-info')
-        singleInfo.mouseover(function() {
+        singleInfo.mouseover(function () {
             singleInfo.removeClass('active');
             $(this).addClass('active');
         });
@@ -495,7 +495,7 @@
         });
 
         // Tab functionality
-        $('.tab-menu-item').on('click', function() {
+        $('.tab-menu-item').on('click', function () {
             var tabId = $(this).data('tab');
 
             // Remove active class from all tab-menu-item and tab-content-item
@@ -508,7 +508,7 @@
         });
 
         // Accordion functionality
-        $('.accordion-header').on('click', function() {
+        $('.accordion-header').on('click', function () {
             // Remove active class from all accordion-header and accordion-content
             $('.accordion-header').removeClass('active');
             $('.accordion-content').removeClass('active');

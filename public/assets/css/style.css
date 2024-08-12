@@ -970,6 +970,14 @@ nav .main-menu li a {
   display: none;
 }
 
+.show {
+  display: block;
+}
+
+.Unshow {
+  display: none;
+}
+
 .faq-area .tab-content .tab-content-item.active {
   display: block;
 }
@@ -5123,7 +5131,8 @@ span.big-title {
     margin: 0 5px;
   }
 }
-.blog-single-slide-2{
+
+.blog-single-slide-2 {
   margin: 0 15px;
 }
 
@@ -5666,6 +5675,7 @@ span.big-title {
   padding: 40px 60px;
   background-color: #141414;
   border-radius: 20px;
+  margin: 0 10px;
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -7727,7 +7737,7 @@ body.light-theme .theme-color-switch .checkbox-label .ball {
 }
 
 .maequee-wraper .brand-single {
-  margin: 0 15px;
+  margin: 0 40px;
 }
 
 .swiper-pagination-bullet {

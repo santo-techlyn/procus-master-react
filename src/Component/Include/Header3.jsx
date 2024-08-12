@@ -1,9 +1,6 @@
-import ThemColorChange from "../Preloader/ThemColorChange";
-
-export default function Header() {
+export default function Header3() {
     return (
         <>
-            <ThemColorChange></ThemColorChange>
             {/* header area starts */}
             <header className="header-area">
                 {/* menu area  */}
@@ -71,6 +68,5 @@ export default function Header() {
                 </div>
             </header>
         </>
-
     )
 }

@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Isotope from '../Component/Common/Isotope';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import ThemColorChange from '../Component/Preloader/ThemColorChange';
+import Header from '../Component/Include/Header';
 
 const services = [
     { title: "BRANDING", image: "assets/images/service-image-home-2.png" },
@@ -29,7 +31,9 @@ export default function Home_2() {
 
     return (
         <>
-            <Header2></Header2>
+            <ThemColorChange></ThemColorChange>
+            {/* <Header2></Header2> */}
+            <Header></Header>
 
             {/* hero area starts  */}
             <section className="hero-area hero-home-2">
