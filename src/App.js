@@ -7,6 +7,8 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Home_2 from "./Pages/Home_2";
 import Home_3 from "./Pages/Home_3";
+import Services from "./Pages/Services";
+import Services_Single from "./Pages/Services_Single";
 
 export const router = createBrowserRouter([
   {
@@ -18,8 +20,13 @@ export const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: '/about',
-        element: <About></About>
+        path: '/services',
+        element: <Services></Services>
+      },
+      ,
+      {
+        path: '/service-single',
+        element: <Services_Single></Services_Single>
       },
     ]
   },
