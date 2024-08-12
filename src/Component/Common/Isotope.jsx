@@ -1,0 +1,91 @@
+
+import { useState } from 'react';
+
+const cases = [
+    {
+        id: 1,
+        image: 'assets/images/portfolio-01.png',
+        name: 'Web Design',
+        category: 'web',
+        description: 'Cyber Security Landing Page'
+    },
+    {
+        id: 2,
+        image: 'assets/images/portfolio-02.png',
+        name: 'Marketing Agency Website Design',
+        category: 'graphic',
+        description: 'Shopify Responsive Website Design'
+    },
+    {
+        id: 3,
+        image: 'assets/images/portfolio-02.png',
+        name: 'App Design & Development',
+        category: 'app',
+        description: 'E-Commerce App Development'
+    },
+    {
+        id: 4,
+        image: 'assets/images/portfolio-02.png',
+        name: 'Shopify',
+        category: 'app',
+        description: 'Shopify Responsive Website Design'
+    },
+]
+
+export default function Isotope() {
+    const [items, setitems] = useState(cases);
+
+    const filterItems = (cateItem) => {
+        const updatedItem = cases.filter((curElement) => {
+            return curElement.category == cateItem;
+        });
+        setitems(updatedItem);
+    }
+    return (
+        < section className = "case-study-home-2 pt-90 pb-120" >
+           <span className="big-title">casestudy</span>
+           <div className="container">
+               <div className="row align-items-center">
+                   <div className="col-lg-6">
+                       <div className="section-top-2 wow fadeInLeft" data-wow-delay=".2s">
+                           <span className="title-tag">case study</span>
+                           <h2>Explore Our Creative <span>case study</span> Showcase</h2>
+                       </div>
+                   </div>
+                   <div className="col-xl-4 offset-xl-2 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                       <div className="case-filter-tab">
+                           <ul>
+                               <li onClick={() => setitems(cases)} className="secondary-btn active" data-filter="all">All project</li>
+                               <li onClick={() => filterItems('web')} className="secondary-btn" data-filter="web">Web Design</li>
+                               <li onClick={() => filterItems('graphic')} className="secondary-btn" data-filter="graphic">Graphic Design</li>
+                               <li onClick={() => filterItems('app')} className="secondary-btn" data-filter="app">App Development</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+               <div className="row mt-60 case-items">
+                   {
+                       items.map((item) => (
+                           <div className="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
+                               <div className="case-single web">
+                                   <div className="case-image">
+                                       <a href="case-single.html"><img src={item.image} alt="case-image" /></a>
+                                   </div>
+                                   <h3><a href="case-single.html">{item.description}</a></h3>
+                                   <a href="case-single.html" className="case-category">{item.name}</a>
+                               </div>
+                           </div>
+                       ))
+                   }
+               </div>
+               <div className="row">
+                   <div className="col-12 wow fadeInUp" data-wow-delay=".2s">
+                       <div className="case-button text-center mt-20">
+                           <a href="case.html" className="primary-btn">see more <span><i className="fas fa-arrow-right"></i></span></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </section >
+    )
+}
