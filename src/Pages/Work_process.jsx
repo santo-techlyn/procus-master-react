@@ -1,0 +1,324 @@
+import CommonHero from "../Component/Common/CommonHero";
+import GetInTuch from "../Component/Common/GetInTuch";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+export default function Work_process() {
+    return (
+        <>
+            <CommonHero title={'work process'} link1={'Home'} link2={'work process'}></CommonHero>
+
+            {/* working process area starts  */}
+            {/* <section className="working-process-services">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                            <div className="working-process-left pt-110 pb-120">
+                                <div className="section-top">
+                                    <h2>Our <span>Process</span></h2>
+                                    <p className="mt-20">Explore the intricate gears of Procus Agency's workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
+                                </div>
+                                <div className="working-process-image mt-60">
+                                    <img src="assets/images/working-process-image.png" alt="working-process-image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-5 offset-lg-3">
+                            <Swiper
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                slidesPerView={3}
+                                modules={[Pagination]}
+                                className="working-process-slider"
+                            >
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>1. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>1. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>2. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>3. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>4. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
+            </section> */}
+
+            {/* team area starts  */}
+            <section className="team-area pt-110 pb-90">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-xl-5 col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
+                            <div className="section-top">
+                                <h2>Meet Our <span>Team</span></h2>
+                                <p className="mt-20">Get to know the talented individuals who make our company thrive. Our diverse team brings together a wealth of expertise.</p>
+                            </div>
+                        </div>
+                        <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                            <div className="section-top-btn">
+                                <a href="team.html" className="secondary-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-60">
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
+                            <div className="team-member">
+                                <div className="team-image">
+                                    <a href="team-single.html"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <div className="hover-state">
+                                        <div className="team-content">
+                                            <div className="team-bio">
+                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <span>founder & CEO</span>
+                                            </div>
+                                        </div>
+                                        <ul className="team-social">
+                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* portfolio area starts  */}
+            <section className="portfolio-area pt-110">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-xl-5 col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
+                            <div className="section-top">
+                                <h2>Let’s Dive into Our <span>Creative</span> Showcase</h2>
+                                <p className="mt-20">A showcase of our most inspiring projects. Each one is a journey of innovation, passion, and bold creativity.</p>
+                            </div>
+                        </div>
+                        <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                            <div className="section-top-btn">
+                                <a href="case.html" className="secondary-btn">See More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="container-fluid">
+                    <div className="row mt-60">
+                        <div className="col-lg-10 offset-lg-2 p-0">
+                            <Swiper
+                                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                                spaceBetween={50}
+                                slidesPerView={2}
+                                navigation
+                                autoplay={{ delay: 2000 }}
+                                scrollbar={{ draggable: true }}
+                            >
+                                <SwiperSlide>
+                                    <div className="portfolio-single">
+                                        <div className="portfolio-image">
+                                            <a href="case.html"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
+                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
+                                        <div className="portfolio-content mt-20">
+                                            <h3><a href="case.html">Shopify Responsive Website Design</a></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="portfolio-single">
+                                        <div className="portfolio-image">
+                                            <a href="case.html"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
+                                        <div className="portfolio-content mt-20">
+                                            <h3><a href="case.html">Digital Agency Website Design</a></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="portfolio-single">
+                                        <div className="portfolio-image">
+                                            <a href="case.html"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
+                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
+                                        <div className="portfolio-content mt-20">
+                                            <h3><a href="case.html">web design for your business</a></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="portfolio-single">
+                                        <div className="portfolio-image">
+                                            <a href="case.html"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
+                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
+                                        <div className="portfolio-content mt-20">
+                                            <h3><a href="case.html">build your product with laravel</a></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="portfolio-single">
+                                        <div className="portfolio-image">
+                                            <a href="case.html"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
+                                        <div className="portfolio-content mt-20">
+                                            <h3><a href="case.html">Shopify Responsive Website Design</a></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <GetInTuch></GetInTuch>
+        </>
+    )
+}

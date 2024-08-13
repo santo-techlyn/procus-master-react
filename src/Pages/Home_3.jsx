@@ -596,6 +596,7 @@ export default function Home_3() {
                     </div>
 
                     {/* monthly pricing plans  */}
+                    
                     <div className={toggle == 1 ? "row mt-60 pricing-plans monthly-plans active" : "row mt-60 pricing-plans monthly-plans Unshow"}>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="pricing-box">

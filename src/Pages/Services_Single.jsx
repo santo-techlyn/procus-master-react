@@ -1,6 +1,6 @@
 import CommonHero from "../Component/Common/CommonHero";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction, EffectCoverflow, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
 
@@ -69,7 +69,6 @@ export default function Services_Single() {
                 </div>
             </section>
 
-
             {/* TTTTTOOOO DDDOOO */}
             {/* process slider area starts  */}
             <section className="process-slider-area">
@@ -90,11 +89,22 @@ export default function Services_Single() {
 
                         <Swiper
                             className="process-slider-2"
-                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow, Pagination]}
                             spaceBetween={50}
-                            slidesPerView={4}
+                            slidesPerView={3}
                             navigation
                             autoplay={{ delay: 2000 }}
+                            effect={'coverflow'}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            coverflowEffect={{
+                                rotate: 50,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true,
+                            }}
+                            // pagination={true}
                         >
                             <SwiperSlide>
                                 <div className="single-slide active">

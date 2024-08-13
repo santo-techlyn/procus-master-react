@@ -9,7 +9,7 @@ export default function CommonHero(props) {
                             <h1>{props.title}</h1>
                             <ul className="breadcrumb-meta">
                                 <li><a href="/">{props.link1}</a></li>
-                                <li><span><i className="fa-solid fa-angle-right"></i></span></li>
+                                <li><span style={{color: "white"}}><i className="fa-solid fa-angle-right"></i></span></li>
                                 <li className="active">{props.link2}</li>
                             </ul>
                         </div>

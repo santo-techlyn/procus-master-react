@@ -5,6 +5,7 @@ import CommonHero from "../Component/Common/CommonHero";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
 
 import 'swiper/css';
+import GetInTuch from '../Component/Common/GetInTuch';
 
 export default function Services() {
     return (
@@ -252,16 +253,7 @@ export default function Services() {
                 </div>
             </div>
 
-            {/* get in touch area starts  */}
-            <div className="get-in-touch-area">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 wow fadeIn" data-wow-delay=".2s">
-                            <a href="contact.html" className="big-title">Get in touch <span><i className="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <GetInTuch></GetInTuch>
         </>
     )
 }

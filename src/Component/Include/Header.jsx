@@ -35,22 +35,22 @@ export default function Header() {
                                         <li className="has-submenu"><a href="#">case</a>
                                             <ul className="submenu">
                                                 <li><a href="/case">case</a></li>
-                                                <li><a href="/case-single">case details</a></li>
+                                                <li><a href="/case_single">case details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">blog</a>
                                             <ul className="submenu">
                                                 <li><a href="/blog">blog 2 column</a></li>
-                                                <li><a href="/blog-2">blog 3 column</a></li>
-                                                <li><a href="/blog-single">blog details</a></li>
+                                                <li><a href="/blog_2">blog 3 column</a></li>
+                                                <li><a href="/blog_single">blog details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">pages</a>
                                             <ul className="submenu">
                                                 <li><a href="/about">about</a></li>
-                                                <li><a href="/work-process">work process</a></li>
+                                                <li><a href="/work_process">work process</a></li>
                                                 <li><a href="/team">team</a></li>
-                                                <li><a href="/team-single">team details</a></li>
+                                                <li><a href="/team_single">team details</a></li>
                                                 <li><a href="/faq">FAQ</a></li>
                                                 <li><a href="/error">404</a></li>
                                             </ul>

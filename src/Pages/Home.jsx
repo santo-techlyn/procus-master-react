@@ -2,12 +2,16 @@ import CountUp from 'react-countup';
 import Accordion from '../Component/Common/Accordion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
-import Marquee from "react-fast-marquee";
+// import Marquee from "react-fast-marquee";
 
 // import 'swiper/swiper-bundle.min.css';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
+import GetInTuch from '../Component/Common/GetInTuch';
+import BrandSection from '../Component/Common/BrandSection';
+import FidbackSection from '../Component/Common/FidbackSection';
+import Counter from '../Component/Common/Counter';
 
 
 export default function Home() {
@@ -72,79 +76,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            {/* counter area starts  */}
-            <section className="counter-area pt-110 pb-90" id="counter-area">
-                <img src="assets/images/counter-3d.png" alt="counter-3d" className="counter-3d" />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div className="section-top text-center">
-                                <h2>Experiences Fueled by <span>Passion</span> and <span>Expertise</span></h2>
-                                <p className="mt-20">At our core, we're more than just a creative agency – we're a dynamic team of storytellers, strategists, and tech enthusiasts.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-60">
-                        <div className="col-lg-3 col-6">
-                            <div className="counter-single">
-                                <div className="counter-number">
-                                    <CountUp start={0} end={25} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter">100</span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
-                                </div>
-                                <h6 className="counter-text">Years of Experience</h6>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-6">
-                            <div className="counter-single">
-                                <div className="counter-number">
-                                    <CountUp start={0} end={250} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter">100</span><span className="plus-sign">+</span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
 
-                                </div>
-                                <h6 className="counter-text">project complete</h6>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-6">
-                            <div className="counter-single">
-                                <div className="counter-number">
-                                    <CountUp start={0} end={100} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter"></span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
-                                </div>
-                                <h6 className="counter-text">happy client</h6>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-6">
-                            <div className="counter-single">
-                                <div className="counter-number">
-                                    <CountUp start={0} end={35} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter"></span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
-                                </div>
-                                <h6 className="counter-text">Wining Awards</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Counter></Counter>
 
             {/* service area starts  */}
             <section className="service-area pt-110 pb-90">
@@ -260,200 +193,9 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* brand area starts  */}
-            <section className="brand-area pt-110 pb-120">
-                <img src="assets/images/brand-3d.png" alt="brand-3d" className="brand-3d" />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div className="section-top text-center">
-                                <h2><span>Collaborations</span> with Leading Brands</h2>
-                                <p className="mt-20">Get to know the talented individuals who make our company thrive. Our diverse team brings together a wealth of expertise.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="container-fluid">
-                    <div className="row mt-60">
-                        <div className="col-lg-12">
-                            <div className="brand-slider">
-                                <Marquee
-                                    className='maequee-wraper'
-                                    speed={100}
-                                >
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/slack-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/tinder-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
+            <BrandSection></BrandSection>
 
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/zoom-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/zoom-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/spotify-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/spotify-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/square-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/square-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/upwork-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/upwork-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/loom-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/loom-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/trello-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/tinder-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/docusign-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/zoom-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-
-                                    <div className="brand-single">
-                                        <div className="brand-logo">
-                                            <img className="dark-version" src="assets/images/stripe-logo.png" alt="brand-logo" />
-                                            <img className="light-version" src="assets/images/loom-dark.png" alt="brand-logo" />
-                                        </div>
-                                    </div>
-                                </Marquee>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* testimonial area starts  */}
-            <section className="testimonial-area pt-110 pb-120">
-                <img src="assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div className="section-top text-center">
-                                <h2>What <span>client say</span> about us</h2>
-                                <p className="mt-20">Get to know the talented individuals who make our company thrive. Our diverse team brings together a wealth of expertise.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="testimonial-slider">
-                                <Swiper
-                                    className='fidback-swiper'
-                                    navigation={true}
-                                    pagination={{ clickable: true }}
-                                    mousewheel={true}
-                                    keyboard={true}
-                                    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                                >
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Efficient and professional. I will definitely use their services again. The professionalism of this team made the entire process effortless and stress-free.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Courtney Henry</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Teriso Station</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, explicabo velit quod reprehenderit tempore quibusdam inventore quo excepturi.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-02.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>Web developer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>customer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Explicabo hic quibusdam expedita eaque tempore laboriosam. Animi aliquam dolore laborum numquam earum minima eius ducimus.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-03.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FidbackSection></FidbackSection>
 
             {/* team area starts  */}
             <section className="team-area pt-110 pb-90">
@@ -798,17 +540,7 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* get in touch area starts  */}
-            <div className="get-in-touch-area">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 wow fadeIn" data-wow-delay=".2s">
-                            <a href="contact.html" className="big-title">Get in touch <span><i className="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <GetInTuch></GetInTuch>
         </>
     )
 }
