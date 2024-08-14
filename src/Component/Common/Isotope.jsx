@@ -69,10 +69,10 @@ export default function Isotope() {
                            <div className="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
                                <div className="case-single web">
                                    <div className="case-image">
-                                       <a href="case-single.html"><img src={item.image} alt="case-image" /></a>
+                                       <a href="/case_single"><img src={item.image} alt="case-image" /></a>
                                    </div>
-                                   <h3><a href="case-single.html">{item.description}</a></h3>
-                                   <a href="case-single.html" className="case-category">{item.name}</a>
+                                   <h3><a href="/case_single">{item.description}</a></h3>
+                                   <a href="/case_single" className="case-category">{item.name}</a>
                                </div>
                            </div>
                        ))
@@ -81,7 +81,7 @@ export default function Isotope() {
                <div className="row">
                    <div className="col-12 wow fadeInUp" data-wow-delay=".2s">
                        <div className="case-button text-center mt-20">
-                           <a href="case.html" className="primary-btn">see more <span><i className="fas fa-arrow-right"></i></span></a>
+                           <a href="/case" className="primary-btn">see more <span><i className="fas fa-arrow-right"></i></span></a>
                        </div>
                    </div>
                </div>

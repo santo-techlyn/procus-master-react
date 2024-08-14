@@ -20,6 +20,8 @@ import Team_single from "./Pages/Team_single";
 import Faq from "./Pages/Faq";
 import Error from "./Pages/Error";
 import Contact from "./Pages/Contact";
+import Privacy from "./Pages/Privacy";
+import Terms from "./Pages/Terms";
 
 export const router = createBrowserRouter([
   {
@@ -85,6 +87,14 @@ export const router = createBrowserRouter([
       {
         path: '/blog_single',
         element: <Blog_single></Blog_single>
+      },
+      {
+        path: '/privacy',
+        element: <Privacy></Privacy>
+      },
+      {
+        path: '/terms',
+        element: <Terms></Terms>
       },
     ]
   },

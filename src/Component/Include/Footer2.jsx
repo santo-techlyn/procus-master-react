@@ -52,9 +52,9 @@ export default function Footer2() {
                                 </div>
                                 <div className="col-lg-6 align-self-center">
                                     <ul className="footer-menu">
-                                        <li><a href="terms.html">Terms Of Services</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Support</a></li>
+                                        <li><a href="/terms">Terms Of Services</a></li>
+                                        <li><a href="/privacy">Privacy Policy</a></li>
+                                        <li><a href="/contact">Support</a></li>
                                     </ul>
                                 </div>
                             </div>

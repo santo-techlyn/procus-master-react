@@ -15,20 +15,20 @@ export default function Blog_single() {
                                 <div className="procus-widget mb-40">
                                     <h3 className="widget-title">Blog Categories</h3>
                                     <ul className="blog-categories">
-                                        <li><a href="blog-single.html">design <span>(4)</span></a></li>
-                                        <li><a href="blog-single.html">product <span>(7)</span></a></li>
-                                        <li><a href="blog-single.html">Software Engineering <span>(4)</span></a></li>
-                                        <li><a href="blog-single.html">marketing <span>(9)</span></a></li>
-                                        <li><a href="blog-single.html">Artificial Intelligence <span>(10)</span></a></li>
+                                        <li><a href="/blog_single">design <span>(4)</span></a></li>
+                                        <li><a href="/blog_single">product <span>(7)</span></a></li>
+                                        <li><a href="/blog_single">Software Engineering <span>(4)</span></a></li>
+                                        <li><a href="/blog_single">marketing <span>(9)</span></a></li>
+                                        <li><a href="/blog_single">Artificial Intelligence <span>(10)</span></a></li>
                                     </ul>
                                 </div>
                                 <div className="procus-widget mb-40">
                                     <h3 className="widget-title">Table of Content</h3>
                                     <ul className="blog-categories content-table">
-                                        <li><a href="blog-single.html"><span><i className="fa-solid fa-play"></i></span> Introduction</a></li>
-                                        <li><a href="blog-single.html"><span><i className="fa-solid fa-play"></i></span> The rise of intelligent solution</a></li>
-                                        <li><a href="blog-single.html"><span><i className="fa-solid fa-play"></i></span> Enhancing user experience</a></li>
-                                        <li><a href="blog-single.html"><span><i className="fa-solid fa-play"></i></span> Empowering Decision Making</a></li>
+                                        <li><a href="/blog_single"><span><i className="fa-solid fa-play"></i></span> Introduction</a></li>
+                                        <li><a href="/blog_single"><span><i className="fa-solid fa-play"></i></span> The rise of intelligent solution</a></li>
+                                        <li><a href="/blog_single"><span><i className="fa-solid fa-play"></i></span> Enhancing user experience</a></li>
+                                        <li><a href="/blog_single"><span><i className="fa-solid fa-play"></i></span> Empowering Decision Making</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,9 +50,9 @@ export default function Blog_single() {
                                             <li><i className="fa-solid fa-book-open"></i> 4 min read</li>
                                         </ul>
                                         <ul className="blog-tags">
-                                            <li><a href="blog-single.html">Artificial Intelligence</a></li>
-                                            <li><a href="blog-single.html">Machine Learning</a></li>
-                                            <li><a href="blog-single.html">Deep Learning</a></li>
+                                            <li><a href="/blog_single">Artificial Intelligence</a></li>
+                                            <li><a href="/blog_single">Machine Learning</a></li>
+                                            <li><a href="/blog_single">Deep Learning</a></li>
                                         </ul>
                                     </div>
                                     <p className="mt-20">We delve into the profound impact that Artificial Intelligence (AI) is having on digital solutions across various industries. From enhancing user experiences to optimizing. In the realm of technology, the pace of innovation seems to quicken with every passing moment. One of the most revolutionary advancements of our time is undoubtedly Artificial Intelligence (AI). From streamlining operations to enhancing user experiences, AI has woven its way into the very fabric of our digital landscape, transforming the way we interact with technology. Today, we delve into the profound impact AI is having on digital solutions and how it's reshaping the future of industries across the board.</p>

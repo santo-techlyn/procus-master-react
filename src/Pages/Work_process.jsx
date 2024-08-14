@@ -82,7 +82,7 @@ export default function Work_process() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="team.html" className="secondary-btn">See More</a>
+                                <a href="/team" className="secondary-btn">See More</a>
                             </div>
                         </div>
                     </div>
@@ -90,11 +90,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -112,11 +112,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -134,11 +134,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -156,11 +156,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -178,11 +178,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -200,11 +200,11 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -235,7 +235,7 @@ export default function Work_process() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="case.html" className="secondary-btn">See More</a>
+                                <a href="/case" className="secondary-btn">See More</a>
                             </div>
                         </div>
                     </div>
@@ -254,11 +254,11 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="case.html"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
+                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="case.html">Shopify Responsive Website Design</a></h3>
+                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
                                             <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                         </div>
                                     </div>
@@ -266,11 +266,11 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="case.html"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="case.html">Digital Agency Website Design</a></h3>
+                                            <h3><a href="/case">Digital Agency Website Design</a></h3>
                                             <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                         </div>
                                     </div>
@@ -278,11 +278,11 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="case.html"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
+                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="case.html">web design for your business</a></h3>
+                                            <h3><a href="/case">web design for your business</a></h3>
                                             <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                         </div>
                                     </div>
@@ -290,11 +290,11 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="case.html"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
+                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="case.html">build your product with laravel</a></h3>
+                                            <h3><a href="/case">build your product with laravel</a></h3>
                                             <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                         </div>
                                     </div>
@@ -302,11 +302,11 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="case.html"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="case-single.html" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="case.html">Shopify Responsive Website Design</a></h3>
+                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
                                             <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                         </div>
                                     </div>
@@ -316,7 +316,6 @@ export default function Work_process() {
                     </div>
                 </div>
             </section>
-
 
             <GetInTuch></GetInTuch>
         </>

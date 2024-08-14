@@ -23,10 +23,10 @@ export default function Footer3() {
                                 <div className="footer-widget-box list">
                                     <h4 className="footer-widget-title">Quick Links</h4>
                                     <ul className="footer-list">
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="team.html">meet our team</a></li>
-                                        <li><a href="case.html">case studies</a></li>
-                                        <li><a href="blog.html">latest blog</a></li>
+                                        <li><a href="/about">About us</a></li>
+                                        <li><a href="/team">meet our team</a></li>
+                                        <li><a href="/case">case studies</a></li>
+                                        <li><a href="/blog">latest blog</a></li>
                                         <li><a href="#">careers</a></li>
                                     </ul>
                                 </div>
@@ -92,9 +92,9 @@ export default function Footer3() {
                                 </div>
                                 <div className="col-lg-6 align-self-center">
                                     <ul className="footer-menu">
-                                        <li><a href="terms.html">Terms Of Services</a></li>
-                                        <li><a href="privacy.html">Privacy Policy</a></li>
-                                        <li><a href="contact.html">Support</a></li>
+                                        <li><a href="/terms">Terms Of Services</a></li>
+                                        <li><a href="/privacy">Privacy Policy</a></li>
+                                        <li><a href="/contact">Support</a></li>
                                     </ul>
                                 </div>
                             </div>

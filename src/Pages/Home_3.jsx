@@ -34,7 +34,7 @@ export default function Home_3() {
                                 <h1><span>Digital Products</span> for your Business</h1>
                                 <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 <div className="button-group">
-                                    <a href="about.html" className="secondary-btn mt-20">learn more</a>
+                                    <a href="/about" className="secondary-btn mt-20">learn more</a>
                                     <img src="assets/images/hero-vector-4-home-3.png" alt="vector-image" className="vector-4 dark-version" />
                                     <img src="assets/images/hero-light-vector-4-home-3.png" alt="vector-image" className="vector-4 light-version" />
                                 </div>
@@ -263,7 +263,7 @@ export default function Home_3() {
                             </div>
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="service-button text-center mt-60">
-                                    <a href="contact.html" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -288,15 +288,15 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-lg-6 wow fadeIn" data-wow-delay=".3s">
                                 <div className="single-portfolio-3">
-                                    <a href="case-single.html"><img src="assets/images/portfolio-1-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="case-single.html">Social Media Marketing</a></h3>
+                                    <a href="/case_single"><img src="assets/images/portfolio-1-home-3.png" alt="portfolio-image" /></a>
+                                    <h3 className="mt-30"><a href="/case_single">Social Media Marketing</a></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 </div>
                             </div>
                             <div className="col-lg-5 offset-lg-1 align-self-end wow fadeIn" data-wow-delay=".4s">
                                 <div className="single-portfolio-3">
-                                    <a href="case-single.html"><img src="assets/images/portfolio-2-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="case-single.html">Creative Banner Design</a></h3>
+                                    <a href="/case_single"><img src="assets/images/portfolio-2-home-3.png" alt="portfolio-image" /></a>
+                                    <h3 className="mt-30"><a href="/case_single">Creative Banner Design</a></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated.</p>
                                 </div>
                             </div>
@@ -304,15 +304,15 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-lg-5 align-self-end wow fadeIn" data-wow-delay=".5s">
                                 <div className="single-portfolio-3">
-                                    <a href="case-single.html"><img src="assets/images/portfolio-3-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="case-single.html">Creative Banner Design</a></h3>
+                                    <a href="/case_single"><img src="assets/images/portfolio-3-home-3.png" alt="portfolio-image" /></a>
+                                    <h3 className="mt-30"><a href="/case_single">Creative Banner Design</a></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 offset-lg-1 wow fadeIn" data-wow-delay=".6s">
                                 <div className="single-portfolio-3">
-                                    <a href="case-single.html"><img src="assets/images/portfolio-4-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="case-single.html">Social Media Marketing</a></h3>
+                                    <a href="/case_single"><img src="assets/images/portfolio-4-home-3.png" alt="portfolio-image" /></a>
+                                    <h3 className="mt-30"><a href="/case_single">Social Media Marketing</a></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 </div>
                             </div>
@@ -320,7 +320,7 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="portfolio-button text-center">
-                                    <a href="case.html" className="primary-btn">See all work <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case" className="primary-btn">See all work <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -511,7 +511,7 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-1-home-3.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-1-home-3.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <ul className="team-social">
                                             <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
@@ -523,7 +523,7 @@ export default function Home_3() {
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="team-single.html">Bessie Cooper</a></h4>
+                                    <h4><a href="/team_single">Bessie Cooper</a></h4>
                                     <span>web developer</span>
                                 </div>
                             </div>
@@ -531,7 +531,7 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-2-home-3.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-2-home-3.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <ul className="team-social">
                                             <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
@@ -543,7 +543,7 @@ export default function Home_3() {
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="team-single.html">Floyd Miles</a></h4>
+                                    <h4><a href="/team_single">Floyd Miles</a></h4>
                                     <span>Marketing Coordinator</span>
                                 </div>
                             </div>
@@ -551,7 +551,7 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-3-home-3.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-3-home-3.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <ul className="team-social">
                                             <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
@@ -563,7 +563,7 @@ export default function Home_3() {
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="team-single.html">Floyd Miles</a></h4>
+                                    <h4><a href="/team_single">Floyd Miles</a></h4>
                                     <span>web designer</span>
                                 </div>
                             </div>
@@ -572,7 +572,7 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-button text-center mt-30">
-                                <a href="team.html" className="primary-btn">view more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/team" className="primary-btn">view more <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -613,7 +613,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
@@ -631,7 +631,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
@@ -649,7 +649,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -671,7 +671,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -689,7 +689,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -707,7 +707,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="contact.html" className="secondary-btn">Get Started</a>
+                                <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
                     </div>
@@ -730,10 +730,10 @@ export default function Home_3() {
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-1-home-3.png" alt="blog-thumb" /></a>
+                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-1-home-3.png" alt="blog-thumb" /></a>
                                 </div>
                                 <h4>
-                                    <a href="blog-single.html">A Blueprint for Innovation in Product Development</a>
+                                    <a href="/blog_single">A Blueprint for Innovation in Product Development</a>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
@@ -742,10 +742,10 @@ export default function Home_3() {
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-2-home-3.png" alt="blog-thumb" /></a>
+                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-3.png" alt="blog-thumb" /></a>
                                 </div>
                                 <h4>
-                                    <a href="blog-single.html">Software Engineering Best Practices that you should know</a>
+                                    <a href="/blog_single">Software Engineering Best Practices that you should know</a>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
@@ -754,10 +754,10 @@ export default function Home_3() {
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-3-home-3.png" alt="blog-thumb" /></a>
+                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-3-home-3.png" alt="blog-thumb" /></a>
                                 </div>
                                 <h4>
-                                    <a href="blog-single.html">Product Management in the Digital Age: Complexity and Uncertainty</a>
+                                    <a href="/blog_single">Product Management in the Digital Age: Complexity and Uncertainty</a>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
                                 <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
@@ -767,7 +767,7 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="blog-button text-center mt-30">
-                                <a href="blog.html" className="primary-btn">See all Blog <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/blog" className="primary-btn">See all Blog <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>

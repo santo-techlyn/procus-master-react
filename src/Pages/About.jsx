@@ -222,7 +222,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="team.html" className="secondary-btn">See More</a>
+                                <a href="/team" className="secondary-btn">See More</a>
                             </div>
                         </div>
                     </div>
@@ -230,11 +230,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -252,11 +252,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -274,11 +274,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -296,11 +296,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -318,11 +318,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
@@ -340,11 +340,11 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>

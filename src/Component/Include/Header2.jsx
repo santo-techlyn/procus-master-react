@@ -24,34 +24,34 @@ export default function Header2() {
                                         </li>
                                         <li className="has-submenu"><a href="#">services</a>
                                             <ul className="submenu">
-                                                <li><a href="services.html">services</a></li>
+                                                <li><a href="/services">services</a></li>
                                                 <li><a href="service-single.html">service details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">case</a>
                                             <ul className="submenu">
-                                                <li><a href="case.html">case</a></li>
-                                                <li><a href="case-single.html">case details</a></li>
+                                                <li><a href="/case">case</a></li>
+                                                <li><a href="/case_single">case details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">blog</a>
                                             <ul className="submenu">
-                                                <li><a href="blog.html">blog 2 column</a></li>
+                                                <li><a href="/blog">blog 2 column</a></li>
                                                 <li><a href="blog-2.html">blog 3 column</a></li>
-                                                <li><a href="blog-single.html">blog details</a></li>
+                                                <li><a href="/blog_single">blog details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">pages</a>
                                             <ul className="submenu">
-                                                <li><a href="about.html">about</a></li>
+                                                <li><a href="/about">about</a></li>
                                                 <li><a href="work-process.html">work process</a></li>
-                                                <li><a href="team.html">team</a></li>
-                                                <li><a href="team-single.html">team details</a></li>
+                                                <li><a href="/team">team</a></li>
+                                                <li><a href="/team_single">team details</a></li>
                                                 <li><a href="faq.html">FAQ</a></li>
                                                 <li><a href="error.html">404</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="/contact">contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

@@ -32,7 +32,6 @@ export default function Home_2() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
-            {/* <Header2></Header2> */}
             <Header></Header>
 
             {/* hero area starts  */}
@@ -48,7 +47,7 @@ export default function Home_2() {
                                 <h1 className="wow fadeInDown" data-wow-delay=".2s">We are Shaping Concepts into <span>Digital</span> Innovations</h1>
                                 <p className=" wow fadeInUp" data-wow-delay=".2s">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable brand experiences.</p>
                                 <div className="hero-btn-group-2 wow fadeInUp" data-wow-delay=".2s">
-                                    <a href="about.html" className="secondary-btn">learn more</a>
+                                    <a href="/about" className="secondary-btn">learn more</a>
                                     <div className="hero-video-wrapper">
                                         <a className="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span> play video</a>
                                     </div>
@@ -104,7 +103,7 @@ export default function Home_2() {
                                     <li>Crafting your brand's digital story.</li>
                                     <li>Innovation meets creativity.</li>
                                 </ul>
-                                <a href="about.html" className="primary-btn mt-40">Read more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/about" className="primary-btn mt-40">Read more <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -192,7 +191,7 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="services.html" className="primary-btn">View all <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/services" className="primary-btn">View all <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -212,7 +211,7 @@ export default function Home_2() {
                                     <div className="row align-items-center">
                                         <div className="col-lg-4">
                                             <div className="service-title">
-                                                <h2><a href="services.html">{service.title}</a></h2>
+                                                <h2><a href="/services">{service.title}</a></h2>
                                             </div>
                                         </div>
                                         <div className="col-lg-4">
@@ -251,7 +250,7 @@ export default function Home_2() {
                                     <li>Crafting your brand's digital story.</li>
                                     <li>Innovation meets creativity.</li>
                                 </ul>
-                                <a href="about.html" className="primary-btn mt-40">see more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/about" className="primary-btn mt-40">see more <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -342,7 +341,7 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-8 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="team.html" className="primary-btn">see all <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/team" className="primary-btn">see all <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -351,11 +350,11 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-1-home-2.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-1-home-2.png" alt="team-member" /></a>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="team-single.html">Kathryn Murphy</a></h4>
+                                        <h4><a href="/team_single">Kathryn Murphy</a></h4>
                                         <span>founder & CEO</span>
                                     </div>
                                     <ul className="team-social">
@@ -371,11 +370,11 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-2-home-2.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-2-home-2.png" alt="team-member" /></a>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="team-single.html">Savannah Nguyen</a></h4>
+                                        <h4><a href="/team_single">Savannah Nguyen</a></h4>
                                         <span>UI UX Designer</span>
                                     </div>
                                     <ul className="team-social">
@@ -391,11 +390,11 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="team-single.html"><img src="assets/images/team-3-home-2.png" alt="team-member" /></a>
+                                    <a href="/team_single"><img src="assets/images/team-3-home-2.png" alt="team-member" /></a>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="team-single.html">Devon Lane</a></h4>
+                                        <h4><a href="/team_single">Devon Lane</a></h4>
                                         <span>Web Developer</span>
                                     </div>
                                     <ul className="team-social">
@@ -527,7 +526,7 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-8 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="blog.html" className="primary-btn">see all <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/blog" className="primary-btn">see all <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -546,49 +545,49 @@ export default function Home_2() {
                             <SwiperSlide>
                                 <div className="blog-single-slide-2">
                                     <div className="blog-image">
-                                        <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-1-home-2.png" alt="blog-thumb" /></a>
+                                        <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-1-home-2.png" alt="blog-thumb" /></a>
                                     </div>
                                     <h4>
-                                        <a href="blog-single.html">Marketing Agency Website Design</a>
+                                        <a href="/blog_single">Marketing Agency Website Design</a>
                                     </h4>
                                     <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                    <a className="blog-btn mt-20" href="blog-single.html">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a className="blog-btn mt-20" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-single-slide-2">
                                     <div className="blog-image">
-                                        <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-2-home-2.png" alt="blog-thumb" /></a>
+                                        <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-2.png" alt="blog-thumb" /></a>
                                     </div>
                                     <h4>
-                                        <a href="blog-single.html">Marketing Agency Website Design</a>
+                                        <a href="/blog_single">Marketing Agency Website Design</a>
                                     </h4>
                                     <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                    <a className="blog-btn mt-20" href="blog-single.html">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a className="blog-btn mt-20" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-single-slide-2">
                                     <div className="blog-image">
-                                        <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-3-home-2.png" alt="blog-thumb" /></a>
+                                        <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-3-home-2.png" alt="blog-thumb" /></a>
                                     </div>
                                     <h4>
-                                        <a href="blog-single.html">Marketing Agency Website Design</a>
+                                        <a href="/blog_single">Marketing Agency Website Design</a>
                                     </h4>
                                     <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                    <a className="blog-btn mt-20" href="blog-single.html">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a className="blog-btn mt-20" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="blog-single-slide-2">
                                     <div className="blog-image">
-                                        <a href="blog-single.html" className="blog-thumb"><img src="assets/images/blog-2-home-2.png" alt="blog-thumb" /></a>
+                                        <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-2.png" alt="blog-thumb" /></a>
                                     </div>
                                     <h4>
-                                        <a href="blog-single.html">Marketing Agency Website Design</a>
+                                        <a href="/blog_single">Marketing Agency Website Design</a>
                                     </h4>
                                     <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                    <a className="blog-btn mt-20" href="blog-single.html">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a className="blog-btn mt-20" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
                                 </div>
                             </SwiperSlide>
                         </Swiper>

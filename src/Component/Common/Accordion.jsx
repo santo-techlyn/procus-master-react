@@ -48,7 +48,7 @@ export default function Accordion() {
                         <div className="row align-items-center">
                             <div className="col-lg-6">
                                 <p>{item.content}</p>
-                                <a href="service-single.html" className="primary-btn mt-20">Learn More <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/service-single" className="primary-btn mt-20">Learn More <span><i className="fas fa-arrow-right"></i></span></a>
                             </div>
                             <div className="col-lg-6">
                                 <img src="assets/images/service-image.png" alt="service-image" className="service-image" />

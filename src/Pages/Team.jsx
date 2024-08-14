@@ -102,11 +102,11 @@ export default function Team() {
                                 <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                                     <div className="team-member">
                                         <div className="team-image">
-                                            <a href="team-single.html"><img src={member.image} alt="team-member" /></a>
+                                            <a href="/team_single"><img src={member.image} alt="team-member" /></a>
                                             <div className="hover-state">
                                                 <div className="team-content">
                                                     <div className="team-bio">
-                                                        <h4><a href="team-single.html">{member.name}</a></h4>
+                                                        <h4><a href="/team_single">{member.name}</a></h4>
                                                         <span>{member.designation}</span>
                                                     </div>
                                                 </div>

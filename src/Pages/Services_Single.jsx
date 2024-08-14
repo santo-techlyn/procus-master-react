@@ -60,7 +60,7 @@ export default function Services_Single() {
                                 <div className="procus-widget text-center">
                                     <h3 className="widget-title">Book a Free Consultation</h3>
                                     <div className="widget-btn">
-                                        <a href="contact.html" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                        <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,6 @@ export default function Services_Single() {
                 </div>
             </section>
 
-            {/* TTTTTOOOO DDDOOO */}
             {/* process slider area starts  */}
             <section className="process-slider-area">
                 <div className="process-title-top pt-110 pb-60">
@@ -104,7 +103,7 @@ export default function Services_Single() {
                                 modifier: 1,
                                 slideShadows: true,
                             }}
-                            // pagination={true}
+                        // pagination={true}
                         >
                             <SwiperSlide>
                                 <div className="single-slide active">
@@ -294,7 +293,7 @@ export default function Services_Single() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 wow fadeIn" data-wow-delay=".2s">
-                            <a href="contact.html" className="big-title">Get in touch <span><i className="fas fa-arrow-right"></i></span></a>
+                            <a href="/contact" className="big-title">Get in touch <span><i className="fas fa-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>

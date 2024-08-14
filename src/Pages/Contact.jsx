@@ -138,7 +138,7 @@ export default function Contact() {
                                     </div>
                                     <div className="form-group">
                                         <input type="checkbox" id="privacy-policy" name="privacy-policy" required />
-                                        <label className="privacy-policy" for="privacy-policy">I agree with the <a href="privacy.html">privacy policy</a></label>
+                                        <label className="privacy-policy" for="privacy-policy">I agree with the <a href="/privacy">privacy policy</a></label>
                                     </div>
                                     <div className="form-group">
                                         <input type="file" id="attachment" name="attachment" style={{ display: "none" }} />
