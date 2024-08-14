@@ -18,13 +18,7 @@ export default function Counter() {
                         <div className="col-lg-3 col-6">
                             <div className="counter-single">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={25} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter">100</span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h4><span className="counter"><CountUp start={0} end={25} delay={.9} duration={5} /></span></h4>
                                 </div>
                                 <h6 className="counter-text">Years of Experience</h6>
                             </div>
@@ -32,14 +26,7 @@ export default function Counter() {
                         <div className="col-lg-3 col-6">
                             <div className="counter-single">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={250} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter">100</span><span className="plus-sign">+</span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
-
+                                    <h4><span className="counter"><CountUp start={0} end={250} delay={.9} duration={5} /></span><span className="plus-sign">+</span></h4>
                                 </div>
                                 <h6 className="counter-text">project complete</h6>
                             </div>
@@ -47,13 +34,7 @@ export default function Counter() {
                         <div className="col-lg-3 col-6">
                             <div className="counter-single">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={100} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter"></span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h4><span className="counter"><CountUp start={0} end={100} delay={.9} duration={5} /></span></h4>
                                 </div>
                                 <h6 className="counter-text">happy client</h6>
                             </div>
@@ -61,13 +42,7 @@ export default function Counter() {
                         <div className="col-lg-3 col-6">
                             <div className="counter-single">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={35} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h4><span ref={countUpRef} className="counter"></span></h4>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h4><span className="counter"><CountUp start={0} end={35} delay={.9} duration={5} /></span></h4>
                                 </div>
                                 <h6 className="counter-text">Wining Awards</h6>
                             </div>

@@ -32,6 +32,7 @@ export default function Home_2() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
+
             <Header></Header>
 
             {/* hero area starts  */}
@@ -119,7 +120,7 @@ export default function Home_2() {
                                 <div className="col-lg-3 col-6">
                                     <div className="counter-single-2">
                                         <div className="counter-number">
-                                            <CountUp start={0} end={25} delay={1}>
+                                            <CountUp start={0} end={25} delay={1} duration={5}>
                                                 {({ countUpRef }) => (
                                                     <div>
                                                         <h4><span ref={countUpRef} className="counter">25</span></h4>
@@ -133,7 +134,7 @@ export default function Home_2() {
                                 <div className="col-lg-3 col-6">
                                     <div className="counter-single-2">
                                         <div className="counter-number">
-                                            <CountUp start={0} end={250} delay={1}>
+                                            <CountUp start={0} end={250} delay={1} duration={5}>
                                                 {({ countUpRef }) => (
                                                     <div>
                                                         <h4><span ref={countUpRef} className="counter">250</span><span className="plus-sign">+</span></h4>
@@ -147,7 +148,7 @@ export default function Home_2() {
                                 <div className="col-lg-3 col-6">
                                     <div className="counter-single-2">
                                         <div className="counter-number">
-                                            <CountUp start={0} end={100} delay={1}>
+                                            <CountUp start={0} end={100} delay={1} duration={5}>
                                                 {({ countUpRef }) => (
                                                     <div>
                                                         <h4><span ref={countUpRef} className="counter">100</span></h4>
@@ -161,7 +162,7 @@ export default function Home_2() {
                                 <div className="col-lg-3 col-6">
                                     <div className="counter-single-2">
                                         <div className="counter-number">
-                                            <CountUp start={0} end={35} delay={1}>
+                                            <CountUp start={0} end={35} delay={1} duration={5}>
                                                 {({ countUpRef }) => (
                                                     <div>
                                                         <h4><span ref={countUpRef} className="counter">35</span></h4>

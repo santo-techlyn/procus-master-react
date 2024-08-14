@@ -133,7 +133,9 @@ export default function Faq() {
     };
 
     const [acordion, setAcordion] = useState(0);
+
     function togglerAcordion(index) {
+
         if (index === acordion) {
             setAcordion(-1);
             return;
@@ -171,7 +173,7 @@ export default function Faq() {
                                     <div className={toggle == 1 ? "tab-content-item active" : "tab-content-item"} id="general">
                                         <div className="accordion">
                                             {
-                                                faqDatas1.map((faqData, index) => (
+                                                faqDatas1.map((faqData, index) => (   
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
                                                         <div className="accordion-header">{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>

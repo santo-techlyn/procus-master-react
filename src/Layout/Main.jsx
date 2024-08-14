@@ -8,7 +8,6 @@ export default function Main() {
             <Header></Header>
             <Outlet></Outlet>
             <Footer></Footer>
-            
         </>
     )
 }

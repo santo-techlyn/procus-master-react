@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
 // import Marquee from "react-fast-marquee";
 
-// import 'swiper/swiper-bundle.min.css';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
@@ -45,7 +44,7 @@ export default function Home() {
                         </div>
                         <ul className="hero-social wow fadeIn" data-wow-delay=".9s">
                             <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-                            
+
                             <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
                             <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
                             <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
