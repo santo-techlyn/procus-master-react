@@ -1,8 +1,10 @@
 import ThemColorChange from "../Preloader/ThemColorChange";
+import Preloader from "../Preloader/Preloader";
 
 export default function Header() {
     return (
         <>
+            <Preloader></Preloader>
             <ThemColorChange></ThemColorChange>
             {/* header area starts */}
             <header className="header-area">

@@ -1,6 +1,9 @@
+import Preloader from "../Preloader/Preloader";
+
 export default function Header3() {
     return (
         <>
+            <Preloader></Preloader>
             {/* header area starts */}
             <header className="header-area">
                 {/* menu area  */}
