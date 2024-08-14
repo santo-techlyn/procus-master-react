@@ -19,7 +19,6 @@ const items = [
         content: "Our expert team combines cutting-edge technology with intuitive design to create websites that not only look stunning but also drive results. Whether you need a simple landing page or a complex e-commerce platform, we've got you.",
         img: 'assets/images/service-image.png'
     },
-    ,
     {
         header_number: '03',
         header_content: 'SASS Development',
@@ -57,7 +56,6 @@ export default function Accordion() {
                     </div>
                 </li>
             )}
-
         </ul>
 
     )
