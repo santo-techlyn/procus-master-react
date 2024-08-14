@@ -131,13 +131,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={25} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h2 ref={countUpRef} className="counter">25</h2>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h2 className="counter"><CountUp className="counter22" start={0} end={25} delay={.9} duration={5} /></h2>
                                 </div>
                                 <h6 className="counter-text">Years of Experience</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -146,13 +140,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={250} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h2 ref={countUpRef} className="counter">250</h2>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h2 className="counter"><CountUp className="counter22" start={0} end={250} delay={.9} duration={5} /></h2>
                                     <h2 className="plus-sign">+</h2>
                                 </div>
                                 <h6 className="counter-text">project complete</h6>
@@ -162,13 +150,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={100} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h2 ref={countUpRef} className="counter">100</h2>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h2 className="counter"><CountUp className="counter22" start={0} end={100} delay={.9} duration={5} /></h2>
                                 </div>
                                 <h6 className="counter-text">happy client</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -177,13 +159,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <CountUp start={0} end={35} delay={1}>
-                                        {({ countUpRef }) => (
-                                            <div>
-                                                <h2 ref={countUpRef} className="counter">35</h2>
-                                            </div>
-                                        )}
-                                    </CountUp>
+                                    <h2 className="counter"><CountUp className="counter22" start={0} end={35} delay={.9} duration={5} /></h2>
                                 </div>
                                 <h6 className="counter-text">Wining Awards</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -596,7 +572,7 @@ export default function Home_3() {
                     </div>
 
                     {/* monthly pricing plans  */}
-                    
+
                     <div className={toggle == 1 ? "row mt-60 pricing-plans monthly-plans active" : "row mt-60 pricing-plans monthly-plans Unshow"}>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="pricing-box">

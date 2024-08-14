@@ -3141,7 +3141,9 @@ nav .main-menu li a {
     display: none;
   }
 }
-
+.counter22{
+  color: white;
+}
 .working-process-single-slide h3 {
   transition: all 0.2s ease-in;
 }
