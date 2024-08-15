@@ -3141,9 +3141,11 @@ nav .main-menu li a {
     display: none;
   }
 }
-.counter22{
+
+.counter22 {
   color: white;
 }
+
 .working-process-single-slide h3 {
   transition: all 0.2s ease-in;
 }
@@ -7754,4 +7756,37 @@ body.light-theme .theme-color-switch .checkbox-label .ball {
   width: 10px;
   background-color: #ffff00;
   margin-right: 10px;
+}
+
+.woork-process-vertical .swiper {
+  height: 900px;
+}
+
+
+.woork-process-vertical .working-process-single-slide {
+  border: 1px solid #4F4F4F;
+  padding: 40px 30px;
+  border-radius: 20px;
+  margin: 15px 0;
+}
+
+@media (max-width: 575.98px) {
+  .woork-process-vertical .working-process-single-slide {
+    border: 1px solid #4F4F4F;
+    padding: 20px 30px;
+    border-radius: 20px;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .woork-process-vertical .working-process-single-slide {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .woork-process-vertical .working-process-single-slide {
+    padding: 0px 20px;
+  }
 }

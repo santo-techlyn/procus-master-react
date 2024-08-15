@@ -20,6 +20,15 @@ export default function FidbackSection() {
                         <div className="col-lg-10 offset-lg-1">
                             <div className="testimonial-slider">
                                 <Swiper
+                                    direction='vertical'
+                                    style={{ height: '600px' }}
+                                    breakpoints={{
+                                        768: {
+                                            style: { height: '500px' },
+                                            slidesPerView: 1,
+                                            spaceBetween: 20,
+                                        },
+                                    }}
                                     className='fidback-swiper'
                                     navigation={true}
                                     pagination={{ clickable: true }}

@@ -2,10 +2,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordion from "../Component/Common/Accordion";
 import CommonHero from "../Component/Common/CommonHero";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
 
 import 'swiper/css';
 import GetInTuch from '../Component/Common/GetInTuch';
+import FidbackSection from '../Component/Common/FidbackSection';
 
 export default function Services() {
     return (
@@ -31,6 +32,65 @@ export default function Services() {
                     </div>
                 </div>
             </section >
+
+            {/* working process area starts  */}
+            <section className="working-process-services">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
+                            <div className="working-process-left pt-110 pb-120">
+                                <div className="section-top">
+                                    <h2>Our <span>Process</span></h2>
+                                    <p className="mt-20">Explore the intricate gears of Procus Agency's workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
+                                </div>
+                                <div className="working-process-image mt-60">
+                                    <img src="assets/images/working-process-image.png" alt="working-process-image" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-5 offset-lg-3 woork-process-vertical">
+                            <Swiper
+                                direction={'vertical'}
+                                slidesPerView={3}
+                                grabCursor={true}
+                                modules={[Navigation, Pagination, Scrollbar, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
+                                className="working-process-slider mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>1. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>1. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>2. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>3. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="working-process-single-slide">
+                                        <h3>4. Research and Analysis</h3>
+                                        <p className="mt-20">Once the client brief is received, the creative team conducts thorough research and analysis. This includes market research, competitor analysis, and audience demographics. The goal is to gather insights that will inform the creative direction and strategy.</p>
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* portfolio area starts  */}
             <section className="portfolio-area pt-110">
@@ -148,6 +208,8 @@ export default function Services() {
                         <div className="col-lg-10 offset-lg-1">
                             <div className="testimonial-slider">
                                 <Swiper
+                                    direction='vertical'
+                                    style={{ height: '600px' }}
                                     className='fidback-swiper'
                                     navigation={true}
                                     pagination={{ clickable: true }}
@@ -236,6 +298,8 @@ export default function Services() {
                     </div>
                 </div>
             </section>
+
+            {/* <FidbackSection className="pt-0"></FidbackSection> */}
 
             {/* marquee area starts  */}
             <div className="custom-marquee">

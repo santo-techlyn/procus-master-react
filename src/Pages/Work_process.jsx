@@ -1,7 +1,7 @@
 import CommonHero from "../Component/Common/CommonHero";
 import GetInTuch from "../Component/Common/GetInTuch";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -11,7 +11,7 @@ export default function Work_process() {
             <CommonHero title={'work process'} link1={'Home'} link2={'work process'}></CommonHero>
 
             {/* working process area starts  */}
-            {/* <section className="working-process-services">
+            <section className="working-process-services">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
@@ -25,14 +25,14 @@ export default function Work_process() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 offset-lg-3">
+                        <div className="col-lg-5 offset-lg-3 woork-process-vertical">
                             <Swiper
-                                pagination={{
-                                    clickable: true,
-                                }}
+                                direction={'vertical'}
+                                // mousewheel={true}
                                 slidesPerView={3}
-                                modules={[Pagination]}
-                                className="working-process-slider"
+                                grabCursor={true}
+                                modules={[Navigation, Pagination, Scrollbar, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
+                                className="working-process-slider mySwiper"
                             >
                                 <SwiperSlide>
                                     <div className="working-process-single-slide">
@@ -68,7 +68,7 @@ export default function Work_process() {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* team area starts  */}
             <section className="team-area pt-110 pb-90">

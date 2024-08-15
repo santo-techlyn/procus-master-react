@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction, EffectCoverflow, Pagination } from 'swiper/modules';
 
 import 'swiper/css';
+import FidbackSection from "../Component/Common/FidbackSection";
 
 export default function Services_Single() {
     return (
@@ -189,7 +190,7 @@ export default function Services_Single() {
             </section>
 
             {/* testimonial area starts  */}
-            <section className="testimonial-area pt-120 pb-120">
+            {/* <section className="testimonial-area pt-120 pb-120">
                 <img src="assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
                 <div className="container">
                     <div className="row">
@@ -291,7 +292,9 @@ export default function Services_Single() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
+
+            <FidbackSection></FidbackSection>
 
             {/* get in touch area starts  */}
             <div className="get-in-touch-area">

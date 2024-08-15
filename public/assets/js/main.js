@@ -563,7 +563,11 @@
 
     });
 
+
+ 
 })(jQuery);
+
+
 
 
 // const swiper = new Swiper('.swiper', {

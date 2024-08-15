@@ -4,7 +4,7 @@ import Header2 from "../Component/Include/Header2";
 import { useState } from 'react';
 import Isotope from '../Component/Common/Isotope';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Pagination, EffectCoverflow, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
 import ThemColorChange from '../Component/Preloader/ThemColorChange';
 import Header from '../Component/Include/Header';
 
@@ -517,13 +517,24 @@ export default function Home_2() {
                     <div className="row mt-60">
 
                         <Swiper
+                            effect={'coverflow'}
+                            grabCursor={true}
                             className='blog-slider-2'
                             navigation={true}
                             mousewheel={true}
-                            slidesPerView={1}
+                            slidesPerView={3}
                             keyboard={true}
                             loop={true}
-                            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                            modules={[Navigation, EffectCoverflow, Pagination, Mousewheel, Keyboard]}
+                            coverflowEffect={{
+                                rotate: 50,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true,
+                            }}
+                            centeredSlides={true}
+
                             breakpoints={{
                                 769: {
                                     slidesPerView: 3,

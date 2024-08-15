@@ -81,7 +81,7 @@ export default function Home() {
 
             {/* service area starts  */}
             <section className="service-area pt-110 pb-90">
-                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d" />
+                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d item-rotate" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
