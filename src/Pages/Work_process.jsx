@@ -246,10 +246,16 @@ export default function Work_process() {
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                                 spaceBetween={50}
-                                slidesPerView={2}
+                                slidesPerView={1}
                                 navigation
                                 autoplay={{ delay: 2000 }}
                                 scrollbar={{ draggable: true }}
+                                breakpoints={{
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+                                }}
                             >
                                 <SwiperSlide>
                                     <div className="portfolio-single">

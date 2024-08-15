@@ -406,10 +406,16 @@ export default function Home_2() {
                             className='testimonial-slider-2'
                             navigation={true}
                             mousewheel={true}
-                            slidesPerView={2}
+                            slidesPerView={1}
                             keyboard={true}
                             loop={true}
                             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                            breakpoints={{
+                                769: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                            }}
                         >
                             <SwiperSlide>
                                 <div className="testimonial-slide-2">
@@ -514,10 +520,20 @@ export default function Home_2() {
                             className='blog-slider-2'
                             navigation={true}
                             mousewheel={true}
-                            slidesPerView={3}
+                            slidesPerView={1}
                             keyboard={true}
                             loop={true}
                             modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                            breakpoints={{
+                                769: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                },
+                                576: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                            }}
                         >
                             <SwiperSlide>
                                 <div className="blog-single-slide-2">

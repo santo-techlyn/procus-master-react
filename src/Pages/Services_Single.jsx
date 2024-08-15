@@ -90,7 +90,7 @@ export default function Services_Single() {
                             className="process-slider-2"
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow, Pagination]}
                             spaceBetween={50}
-                            slidesPerView={3}
+                            slidesPerView={2}
                             navigation
                             autoplay={{ delay: 2000 }}
                             effect={'coverflow'}
@@ -103,7 +103,12 @@ export default function Services_Single() {
                                 modifier: 1,
                                 slideShadows: true,
                             }}
-                        // pagination={true}
+                            breakpoints={{
+                                576: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 20,
+                                },
+                            }}
                         >
                             <SwiperSlide>
                                 <div className="single-slide active">
