@@ -28,6 +28,8 @@ export default function Work_process() {
                         <div className="col-lg-5 offset-lg-3 woork-process-vertical">
                             <Swiper
                                 direction={'vertical'}
+                                // pagination={true}
+                                // scrollbar={{ draggable: true }}
                                 // mousewheel={true}
                                 slidesPerView={3}
                                 grabCursor={true}
