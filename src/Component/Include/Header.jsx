@@ -8,7 +8,6 @@ export default function Header() {
             <ThemColorChange></ThemColorChange>
             {/* header area starts */}
             {/* <header className="header-area">
-                
                 <div className="menu-area">
                     <div className="container">
                         <div className="row align-items-center">
@@ -77,15 +76,18 @@ export default function Header() {
                     <div className="container">
                         <nav className="navbar navbar-expand-lg bg-body-tertiary">
                             <div className="container-fluid">
-                                <div className="logo-area navbar-brand">
-                                    <a className="dark-version" href="/"> <img src="assets/images/logo.png" alt="logo" /></a>
-                                    <a className="light-version" href="/"> <img src="assets/images/logo-black.png" alt="logo" /></a>
+                                <div className="col-lg-2">
+                                    <div className="logo-area navbar-brand">
+                                        <a className="dark-version" href="/"> <img src="assets/images/logo.png" alt="logo" /></a>
+                                        <a className="light-version" href="/"> <img src="assets/images/logo-black.png" alt="logo" /></a>
+                                    </div>
                                 </div>
+
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                                 </button>
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <div className="col-lg-8 offset-lg-2">
+                                    <div className="col-lg-10 offset-xl-1 col-xl-9">
                                         <ul className="main-menu navbar-nav me-auto mb-2 mb-lg-0">
 
                                             <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/">home</a>
@@ -132,8 +134,10 @@ export default function Header() {
                                             <li className=" nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" href="/contact">contact</a></li>
                                         </ul>
                                     </div>
-                                    <div className="nav-right-content">
-                                        <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <div className="col-lg-2">
+                                        <div className="nav-right-content">
+                                            <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
