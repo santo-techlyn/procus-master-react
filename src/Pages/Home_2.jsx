@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
 import ThemColorChange from '../Component/Preloader/ThemColorChange';
 import Header from '../Component/Include/Header';
+import Header3 from '../Component/Include/Header3';
 
 const services = [
     { title: "BRANDING", image: "assets/images/service-image-home-2.png" },
@@ -32,7 +33,6 @@ export default function Home_2() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
-
             <Header></Header>
 
             {/* hero area starts  */}
@@ -522,7 +522,7 @@ export default function Home_2() {
                             className='blog-slider-2'
                             navigation={true}
                             mousewheel={true}
-                            slidesPerView={3}
+                            slidesPerView={1}
                             keyboard={true}
                             loop={true}
                             modules={[Navigation, EffectCoverflow, Pagination, Mousewheel, Keyboard]}
@@ -541,7 +541,7 @@ export default function Home_2() {
                                     spaceBetween: 20,
                                 },
                                 576: {
-                                    slidesPerView: 2,
+                                    slidesPerView: 1,
                                     spaceBetween: 20,
                                 },
                             }}

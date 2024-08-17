@@ -4,6 +4,7 @@ import Header3 from "../Component/Include/Header3";
 import ThemColorChange from "../Component/Preloader/ThemColorChange";
 import CountUp from 'react-countup';
 import { useState } from "react";
+import Header from "../Component/Include/Header";
 
 
 export default function Home_3() {
@@ -17,7 +18,8 @@ export default function Home_3() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
-            <Header3></Header3>
+            {/* <Header3></Header3> */}
+            <Header></Header>
 
             {/* hero area starts  */}
             <section className="hero-home-3">

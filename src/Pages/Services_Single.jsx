@@ -91,7 +91,7 @@ export default function Services_Single() {
                             className="process-slider-2"
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow, Pagination]}
                             spaceBetween={50}
-                            slidesPerView={2}
+                            slidesPerView={1}
                             navigation
                             autoplay={{ delay: 2000 }}
                             effect={'coverflow'}

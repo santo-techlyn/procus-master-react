@@ -7790,3 +7790,39 @@ body.light-theme .theme-color-switch .checkbox-label .ball {
     padding: 0px 20px;
   }
 }
+
+/* navbar */
+
+.dropdown-item:hover {
+  /* color: #1e2125; */
+  background-color: #141414;
+}
+
+.nav-link:hover {
+  color: #ffff00;
+}
+
+.navbar-nav .dropdown-menu {
+  position: static;
+  background-color: #141414;
+}
+
+.dropdown-item {
+  margin-right: 30px;
+}
+
+.dropdown-item:hover {
+  background-color: #141414;
+  color: #ffff00;
+}
+
+@media (min-width: 991.98px) {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+.navbar-toggler-icon svg {
+  color: #e7e7e7;
+  font-size: 30px;
+}
