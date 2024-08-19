@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordion from "../Component/Common/Accordion";
 import CommonHero from "../Component/Common/CommonHero";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel,FreeMode, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
 
 import 'swiper/css';
 import GetInTuch from '../Component/Common/GetInTuch';
@@ -48,13 +48,15 @@ export default function Services() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 offset-lg-3 woork-process-vertical">
+                        <div className="col-lg-7 offset-lg-1 col-xl-6 offset-xl-2 col-12">
                             <Swiper
                                 direction={'vertical'}
+                                freeMode={true}
+                                pagination={true}
                                 slidesPerView={3}
                                 grabCursor={true}
-                                modules={[Navigation, Pagination, Scrollbar, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
-                                className="working-process-slider mySwiper"
+                                modules={[Navigation, Pagination, Scrollbar, FreeMode, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
+                                className="working-process-slider"
                             >
                                 <SwiperSlide>
                                     <div className="working-process-single-slide">

@@ -1,7 +1,7 @@
 import CommonHero from "../Component/Common/CommonHero";
 import GetInTuch from "../Component/Common/GetInTuch";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, FreeMode, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -25,16 +25,15 @@ export default function Work_process() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 offset-lg-3 woork-process-vertical">
+                        <div className="col-lg-7 offset-lg-1 col-xl-6 offset-xl-2 col-12">
                             <Swiper
                                 direction={'vertical'}
-                                // pagination={true}
-                                // scrollbar={{ draggable: true }}
-                                // mousewheel={true}
+                                freeMode={true}
+                                pagination={true}   
                                 slidesPerView={3}
                                 grabCursor={true}
-                                modules={[Navigation, Pagination, Scrollbar, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
-                                className="working-process-slider mySwiper"
+                                modules={[Navigation, Pagination, Scrollbar, FreeMode, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
+                                className="working-process-slider"
                             >
                                 <SwiperSlide>
                                     <div className="working-process-single-slide">

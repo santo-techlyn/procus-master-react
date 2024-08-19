@@ -9235,16 +9235,98 @@ body.light-theme .procus-cursor2 {
   display: flex;
 }
 
-.woork-process-vertical .swiper {
+.working-process-services .swiper {
   height: 900px;
 }
 
-.woork-process-vertical .working-process-single-slide {
+.working-process-services .working-process-single-slide {
   border: 1px solid #4F4F4F;
   padding: 40px 30px;
   border-radius: 20px;
   margin: 15px 0;
 }
-.pt{
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .working-process-services .working-process-single-slide {
+    padding: 0px 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .working-process-services .working-process-single-slide {
+    padding: 10px 30px
+  }
+}
+@media (min-width: 220px) and (max-width: 576px) {
+  .working-process-services .working-process-single-slide {
+    padding: 20px 20px
+  }
+}
+
+.pt {
   padding-top: 0;
+}
+
+.working-process-services .working-process-single-slide {
+  width: 530px;
+  margin-left: 100px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .working-process-services .working-process-single-slide {
+    width: 450px;
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .working-process-services .working-process-single-slide {
+    width: 440px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 220px) and (max-width: 991.98px) {
+  .working-process-services .working-process-single-slide {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 360px) and (max-width:576px) {
+  .working-process-services .swiper-wrapper {
+    gap: -5px;
+  }
+}
+@media (min-width: 220px) and (max-width:359.98px) {
+  .working-process-services .swiper-wrapper {
+    gap: 100px;
+  }
+}
+
+.working-process-services .swiper .swiper-pagination {
+  height: 300px;
+  width: 20px;
+  border: 1px solid #4f4f4f;
+  border-radius: 20px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+@media (max-width: 991.98px) {
+  .working-process-services .swiper .swiper-pagination {
+    display: none;
+  }
+}
+
+.working-process-services .swiper-pagination-bullet-active {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: #ffff00;
 }
