@@ -4,6 +4,7 @@ import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction,
 
 import 'swiper/css';
 import FidbackSection from "../Component/Common/FidbackSection";
+import GetInTuch from "../Component/Common/GetInTuch";
 
 export default function Services_Single() {
     return (
@@ -27,24 +28,66 @@ export default function Services_Single() {
                                 <h3 className="mt-50">What We Offer in UI/UX Design</h3>
                                 <p className="mt-20">We believe that effective UI/UX design is a combination of art and science. Our approach is centered around understanding your users, your business goals, and your brand identity to create designs that resonate with your target audience and achieve your objectives.</p>
                                 <ul className="service-tags">
-                                    <li><a href="#">UI Design</a></li>
-                                    <li><a href="#">UX Design</a></li>
-                                    <li><a href="#">Interaction Design</a></li>
-                                    <li><a href="#">User Research</a></li>
+                                    <li className="tab-link active" data-tab="tab-1"><a href="#">UI Design</a></li>
+                                    <li className="tab-link" data-tab="tab-2"><a href="#">UX Design</a></li>
+                                    <li className="tab-link" data-tab="tab-3"><a href="#">Interaction Design</a></li>
+                                    <li className="tab-link" data-tab="tab-4"><a href="#">User Research</a></li>
                                 </ul>
                             </div>
-                            <div className="row mt-60 wow fadeInUp" data-wow-delay=".2s">
-                                <div className="col-lg-6">
-                                    <div className="service-details-image-2">
-                                        <img src="assets/images/service-dtails-2.png" alt="service-details" />
+                            <div id="tab-1" className="tab-content active">
+                                <div className="row mt-60">
+                                    <div className="col-lg-6">
+                                        <div className="service-details-image-2">
+                                            <img src="assets/images/service-tab-1.png" alt="service-details" />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <p>Our UI design services focus on creating visually stunning interfaces that captivate users and enhance their interaction with your digital products.</p>
+                                        <p className="mt-20">From color schemes to typography, we meticulously craft every detail to reflect your brand's identity and engage your audience.</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
-                                    <p>User experience is at the core of everything we do. Our UX design services aim to create seamless and intuitive interactions that guide users through your digital products effortlessly.</p>
-                                    <p className="mt-20">We conduct thorough user research, wireframing, and prototyping to optimize usability and enhance user satisfaction.</p>
+                            </div>
+                            <div id="tab-2" className="tab-content">
+                                <div className="row mt-60">
+                                    <div className="col-lg-6">
+                                        <div className="service-details-image-2">
+                                            <img src="assets/images/service-tab-2.png" alt="service-details" />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <p>User experience is at the core of everything we do. Our UX design services aim to create seamless and intuitive interactions that guide users through your digital products effortlessly.</p>
+                                        <p className="mt-20">We conduct thorough user research, wireframing, and prototyping to optimize usability and enhance user satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" className="tab-content">
+                                <div className="row mt-60">
+                                    <div className="col-lg-6">
+                                        <div className="service-details-image-2">
+                                            <img src="assets/images/service-tab-3.png" alt="service-details" />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <p>Our interaction design services focus on designing engaging and responsive interactions that delight users and enhance their overall experience. We create dynamic and intuitive interfaces.</p>
+                                        <p className="mt-20">From animations to transitions, we ensure every interaction is meaningful and enhances user engagement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-4" className="tab-content">
+                                <div className="row mt-60">
+                                    <div className="col-lg-6">
+                                        <div className="service-details-image-2">
+                                            <img src="assets/images/service-tab-4.png" alt="service-details" />
+                                        </div>
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus reprehenderit beatae, itaque error quasi adipisci maiores ut at recusandae nulla.</p>
+                                        <p className="mt-20">From animations to transitions, we ensure every interaction is meaningful and enhances user engagement.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <div className="col-xl-3 offset-xl-1 col-lg-4 wow fadeInUp" data-wow-delay=".2s">
                             <div className="service-sidebar">
                                 <div className="procus-widget mb-40">
@@ -61,7 +104,7 @@ export default function Services_Single() {
                                 <div className="procus-widget text-center">
                                     <h3 className="widget-title">Book a Free Consultation</h3>
                                     <div className="widget-btn">
-                                        <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                        <a href="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></a>
                                     </div>
                                 </div>
                             </div>
@@ -85,8 +128,6 @@ export default function Services_Single() {
 
                 <div className="process-slider-part pb-120">
                     <div className="container">
-
-
                         <Swiper
                             className="process-slider-2"
                             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow, Pagination]}
@@ -186,126 +227,14 @@ export default function Services_Single() {
                         </Swiper>
                     </div>
                 </div>
-
             </section>
 
             {/* testimonial area starts  */}
-            {/* <section className="testimonial-area pt-120 pb-120">
-                <img src="assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div className="section-top text-center">
-                                <h2>What <span>client say</span> about us</h2>
-                                <p className="mt-20">Get to know the talented individuals who make our company thrive. Our diverse team brings together a wealth of expertise.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="testimonial-slider">
-                                <Swiper
-                                    className='fidback-swiper'
-                                    navigation={true}
-                                    pagination={{ clickable: true }}
-                                    mousewheel={true}
-                                    keyboard={true}
-                                    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                                >
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Efficient and professional. I will definitely use their services again. The professionalism of this team made the entire process effortless and stress-free.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Courtney Henry</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Teriso Station</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, explicabo velit quod reprehenderit tempore quibusdam inventore quo excepturi.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-02.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>Web developer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>customer</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Explicabo hic quibusdam expedita eaque tempore laboriosam. Animi aliquam dolore laborum numquam earum minima eius ducimus.</span>
-                                            </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-03.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
             <FidbackSection></FidbackSection>
 
-            {/* get in touch area starts  */}
-            <div className="get-in-touch-area">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12 wow fadeIn" data-wow-delay=".2s">
-                            <a href="/contact" className="big-title">Get in touch <span><i className="fas fa-arrow-right"></i></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <GetInTuch></GetInTuch>
+
+
         </>
     )
 }

@@ -25,7 +25,7 @@ export default function Header2() {
                                         <li className="has-submenu"><a href="#">services</a>
                                             <ul className="submenu">
                                                 <li><a href="/services">services</a></li>
-                                                <li><a href="service-single.html">service details</a></li>
+                                                <li><a href="/service-single">service details</a></li>
                                             </ul>
                                         </li>
                                         <li className="has-submenu"><a href="#">case</a>

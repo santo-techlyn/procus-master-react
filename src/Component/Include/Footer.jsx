@@ -34,7 +34,7 @@ export default function Footer() {
                                         <li><a href="/team">meet our team</a></li>
                                         <li><a href="/case">case studies</a></li>
                                         <li><a href="/blog">latest blog</a></li>
-                                        <li><a href="#">careers</a></li>
+                                        <li><a href="#">contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -42,11 +42,11 @@ export default function Footer() {
                                 <div className="footer-widget-box list">
                                     <h4 className="footer-widget-title">our services</h4>
                                     <ul className="footer-list">
-                                        <li><a href="service-single.html">branding</a></li>
-                                        <li><a href="service-single.html">web design</a></li>
-                                        <li><a href="service-single.html">app design</a></li>
-                                        <li><a href="service-single.html">saas development</a></li>
-                                        <li><a href="service-single.html">digital marketing</a></li>
+                                        <li><a href="/service-single">branding</a></li>
+                                        <li><a href="/service-single">web design</a></li>
+                                        <li><a href="/service-single">app design</a></li>
+                                        <li><a href="/service-single">saas development</a></li>
+                                        <li><a href="/service-single">digital marketing</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -92,8 +92,5 @@ export default function Footer() {
                 <span><i className="fa fa-angle-up"></i></span>
             </div>
         </>
-
-
-
     )
 }

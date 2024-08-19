@@ -173,9 +173,9 @@ export default function Faq() {
                                     <div className={toggle == 1 ? "tab-content-item active" : "tab-content-item"} id="general">
                                         <div className="accordion">
                                             {
-                                                faqDatas1.map((faqData, index) => (   
+                                                faqDatas1.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))
@@ -187,7 +187,7 @@ export default function Faq() {
                                             {
                                                 faqDatas2.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))
@@ -199,7 +199,7 @@ export default function Faq() {
                                             {
                                                 faqDatas3.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))
@@ -211,7 +211,7 @@ export default function Faq() {
                                             {
                                                 faqDatas4.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))
@@ -223,7 +223,7 @@ export default function Faq() {
                                             {
                                                 faqDatas5.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))
@@ -235,7 +235,7 @@ export default function Faq() {
                                             {
                                                 faqDatas6.map((faqData, index) => (
                                                     <div key={index} className={` accordion-item ${acordion === index ? "active" : ""}`} onClick={() => togglerAcordion(index)}>
-                                                        <div className="accordion-header">{faqData.header}</div>
+                                                        <div className={` accordion-header ${acordion === index ? "active" : ""}`}>{faqData.header}</div>
                                                         <div className={`accordion-content ${acordion === index ? "active" : "inactive"}`}>{faqData.content}</div>
                                                     </div>
                                                 ))

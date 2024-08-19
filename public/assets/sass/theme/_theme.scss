@@ -42,13 +42,6 @@
                 display: none;
             }
         }
-        h1 {
-            span.gradient-bg {
-                background-image: linear-gradient(to right, #353501 15%, $secondary-color 50%);
-                padding: 0 10px;
-                border-radius: 50px;
-            }
-        }
     }
     .hero-bottom-content {
         img.vector-shape {
@@ -267,25 +260,20 @@
     background-position: center;
     background-size: cover;
     background-color: $secondary-color;
-    padding-bottom: 200px;
     overflow: hidden;
     .portfolio-slider {
-        @include all-desktop {
-            left: -15px;
+        @include screen-1920-plus {
+            width: 120%;
         }
     }
     .slick-slide {
         margin: 0 50px 0 0;
-    }
-    @include tablet {
-        margin: 0; 
-        padding-left: 30px;
-        padding-bottom: 200px;
-    }
-    @include all-phone {
-        margin: 0; 
-        padding-left: 20px;
-        padding-bottom: 80px;
+        @include all-phone {
+            margin: 0 20px 0 0;
+        }
+        @include tablet {
+            margin: 0 20px 0 0;
+        }
     }
 
     .slick-dots {
@@ -340,8 +328,8 @@
         }
         .portfolio-btn {
             position: absolute;
-            bottom: 50px;
-            right: -50px;
+            top: 50%;
+            left: 50%;
             display: block;
             color: $white-color;
             font-size: 20px;
@@ -356,14 +344,24 @@
             background: linear-gradient(180deg, rgba(255, 255, 0, 0.06) 0%, rgba(153, 153, 153, 0.08) 100%);
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             backdrop-filter: blur(10px);
-            transform: rotate(-45deg);
+            transform: translate(-50%, -50%) rotate(-45deg);
             opacity: 0;
             visibility: hidden;
+            @include all-phone {
+                width: 120px;
+                height: 120px;
+                line-height: 120px;
+                font-size: 16px;
+            }
             span {
                 position: absolute;
                 top: 35px;
                 right: 80px;
                 transform: rotate(90deg);
+                @include all-phone {
+                    top: 25px;
+                    right: 55px;
+                }
             }
         }
     }
@@ -470,25 +468,45 @@
     .slick-dots {
         position: absolute;
         top: 50%;
-        right: -70px;
+        right: -68px;
         transform: translateY(-50%);
     }
     .slick-dots li {
-        margin: 10px 0;
+        margin: 3px 0;
     }
     .slick-dots button {
         color: transparent;
         background-color: $border-color;
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         cursor: pointer;
         line-height: 24px;
         border: none;
         transform: scale(.5);
+        transition: $transition;
     }
     .slick-dots .slick-active button {
         background-color: $primary-color;
+    }
+
+    .slick-arrow {
+        position: absolute;
+        color: $border-color;
+        font-size: 30px;
+        cursor: pointer;
+        transition: $transition;
+        &:hover {
+            color: $primary-color;
+        }
+    }
+    .arrow-up {
+        top: 41%;
+        right: -72px;
+    }
+    .arrow-down {
+        bottom: 41%;
+        right: -72px;
     }
 }
 
@@ -658,16 +676,21 @@
 .blog-area {
     background-color: $black-color;
     .blog-slider {
-        @include all-desktop {
-            left: -50px;
+        @include screen-1920-plus {
+            width: 120%;
         }
     }
     .slick-slide {
-        margin: 0 40px;
+        margin: 0 50px 0 0;
         @include portrait-phone {
-            margin: 0 15px;
+            margin: 0 15px 0 0;
         }
-        
+        @include landscape-phone {
+            margin: 0 20px 0 0;
+        }
+        @include tablet {
+            margin: 0 20px 0 0;
+        }
     }
 }
 
@@ -778,41 +801,79 @@
         background-size: cover;
     }
     a.big-title {
-        color: $white-color;
         font-size: 100px;
-        line-height: 1em;
-        border-bottom: 5px solid $white-color;
+        line-height: 1.2em;
         position: relative;
-        padding-right: 90px;
-        transition: $transition;
-        &:hover {
-            color: $primary-color;
-        }
+        background: linear-gradient(90deg, $primary-color 50%, $white-color 50%);
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        display: inline-block;
+        transition: $transition-long;
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: 100%;   
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: fit-content;
+        margin: auto;
         span {
-            display: inline-block;
-            margin-left: 10px;
-            font-size: 80px;
-            position: absolute;
-            top: 20px;
-            transform: rotate(-45deg)
+            display: block;
+            &.icon {
+                font-size: 110px;
+                margin-top: 10px;
+            }
         }
+       
         @include tablet {
             font-size: 48px;
-            padding-right: 45px;
             span {
-                font-size: 42px;
-                top: 8px;
+                &.icon {
+                    font-size: 55px;
+                    margin-top: 5px;
+                }
             }
         }
         @include all-phone {
-            font-size: 48px;
-            padding-right: 45px;
+            font-size: 40px;
             span {
-                font-size: 42px;
-                top: 8px;
+                &.icon {
+                    font-size: 45px;
+                    margin-top: 4px;
+                }
             }
+        } 
+        
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 100%;
+            width: 0;
+            height: 4px;
+            background: $primary-color;
+            transition: $transition-long;
         }
-    }
+       
+        &:hover {
+            background-position: 0;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; 
+            background-clip: text;
+            
+            &:after {
+                right: 0;
+                width: 98%;
+            }
+
+            span {
+                color: $primary-color;
+            }
+            
+        }       
+    }     
 }
 
 .welcome-section-about {
@@ -829,7 +890,7 @@
             width: 120px;
             position: absolute;
             top: -65px;
-            left: 50%;
+            left: 40%;
             transform: translateX(-50%);
         }
         img.welcome-image {
@@ -920,8 +981,8 @@
     .slick-dots button {
         color: transparent;
         background-color: $primary-color;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%;
         cursor: pointer;
         line-height: 0;
@@ -945,7 +1006,7 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 30%;
+        height: 20%;
         background-image: linear-gradient($secondary-color, transparent);
         z-index: 2;
         @include all-phone {
@@ -958,7 +1019,7 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 30%;
+        height: 20%;
         background-image: linear-gradient( to top, $secondary-color, transparent);
         @include all-phone {
             display: none;
@@ -967,6 +1028,7 @@
 }
 
 .working-process-single-slide {
+    cursor: grab;
     h3 {
         transition: $transition;
     }
@@ -1001,6 +1063,12 @@
                 margin-top: 7px;
                 margin-bottom: 7px;
             }
+            @include tablet {
+                margin-left: 0!important;
+                margin-right: 10px;
+                margin-top: 7px;
+                margin-bottom: 7px;
+            }
             +li {
                 margin-left: 10px;
             }
@@ -1013,7 +1081,9 @@
                 padding: 5px 10px;
                 border: 1px solid $border-color;
                 border-radius: 5px;
-                &:hover {
+            }
+            &.tab-link.active {
+                a {
                     color: $secondary-color;
                     background-color: $primary-color;
                     border: 1px solid transparent;
@@ -1041,6 +1111,14 @@
         @include all-phone {
             margin-top: 40px;
         }
+    }
+    
+    .tab-content {
+        display: none;
+    }
+    
+    .tab-content.active {
+        display: block;
     }
 }
 
@@ -1102,6 +1180,12 @@
     border-top: 1px solid $border-color;
     position: relative;
     z-index: 1;
+    &:hover {
+        .slick-arrow {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
     .slick-slider {
         margin: 0 -15px;
     }
@@ -1114,6 +1198,39 @@
         img.shape-image {
             opacity: 1!important;
             visibility: visible!important;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        color: $black-color;
+        background-color: $primary-color;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 41px;
+        text-align: center;
+        font-size: 24px;
+        top: 55%;
+        z-index: 99;
+        cursor: pointer;
+        transition: $transition;
+        opacity: 0;
+        visibility: hidden;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .arrow-left {
+        left: -50px;
+        @include screen-1400 {
+            left: -30px;
+        }
+    }
+    .arrow-right {
+        right: -50px;
+        @include screen-1400 {
+            right: -30px;
         }
     }
 
@@ -1549,6 +1666,10 @@
             border: 1px solid $primary-color;
             padding: 5px 10px;
             border-radius: 30px;
+            text-transform: capitalize;
+        }
+        option {
+            color: $border-color;
         }
     }
 }
@@ -1718,8 +1839,17 @@
     }
 }
 
+.sticky-sidebar {
+    position: relative;
+}
+
 .blog-sidebar {
     max-width: 90%;
+    overflow: auto;
+    height: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
     @include desktop {
         max-width: 100%;
     }
@@ -1864,5 +1994,63 @@
         @include portrait-phone {
             width: 100%;
         }
+    }
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+    @include all-phone {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+}
+
+.procus-cursor {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid $primary-color;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 9998;
+    @include tablet {
+        display: none;
+    }
+    @include all-phone {
+        display: none;
+    }
+}
+
+.procus-cursor2 {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $primary-color;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 9998;
+    @include tablet {
+        display: none;
+    }
+    @include all-phone {
+        display: none;
     }
 }

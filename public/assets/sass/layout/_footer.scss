@@ -256,15 +256,25 @@
         img {
             width: auto;
         }
-        span {
+        a.phone-number,
+        a.email-address,
+        a.location {
+            color: $white-color;
             display: inline-block;
             font-size: 24px;
             font-weight: 500;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+            @include desktop {
+                margin-top: 20px;
+            }
             @include tablet {
-                margin-top: 30px;
+                margin-top: 20px;
             }
             @include all-phone {
-                margin-top: 30px;
+                margin-top: 20px;
             }
         }
     }

@@ -24,13 +24,13 @@ export default function Home() {
                             <div className="col-lg-7 offset-lg-1 wow fadeInDown" data-wow-delay=".2s">
                                 <h1 className="mb-20">Crafting <span className="gradient-bg">Creativity</span></h1>
                             </div>
-                            <div className="col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                                <img src="assets/images/hero-3d-02.png" className="vector-shape vector-anim-1 item-bounce" alt="3d-image" />
+                            <div className="col-lg-4">
+                                <img src="assets/images/hero-3d-02.png" className="vector-shape vector-anim-1 item-moveOne" alt="3d-image" />
                             </div>
                         </div>
                         <div className="row hero-bottom-content">
-                            <div className="col-lg-5 wow fadeIn" data-wow-delay=".8s">
-                                <img src="assets/images/hero-3d-01.png" className="vector-shape vector-anim-2 item-bounce" alt="3d-image" />
+                            <div className="col-lg-5">
+                                <img src="assets/images/hero-3d-01.png" className="vector-shape vector-anim-2 item-moveTwo" alt="3d-image" />
                             </div>
                             <div className="col-lg-7 wow fadeInUp" data-wow-delay=".2s">
                                 <h1>Amplifying Impact!</h1>
@@ -44,13 +44,12 @@ export default function Home() {
                         </div>
                         <ul className="hero-social wow fadeIn" data-wow-delay=".9s">
                             <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-
                             <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
                             <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
                             <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
                             <li><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
                         </ul>
-                        <a href="#counter-area"><img src="assets/images/vector-scroll-down.png" alt="vector-scroll-down" className="vector-scroll-down scroll-down item-bounce" /></a>
+                        <a href="#counter-area"><img src="assets/images/vector-scroll-down.png" alt="vector-scroll-down" className="vector-scroll-down scroll-down" /></a>
                     </div>
                 </div>
             </section>
@@ -81,7 +80,7 @@ export default function Home() {
 
             {/* service area starts  */}
             <section className="service-area pt-110 pb-90">
-                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d item-rotate" />
+                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
@@ -97,10 +96,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* portfolio area starts  */}
-            <section className="portfolio-area pt-110">
+            <section className="portfolio-area py-110">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
@@ -116,84 +115,86 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-2 p-0">
-                            <Swiper
-                                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                navigation
-                                autoplay={{ delay: 2000 }}
-                                scrollbar={{ draggable: true }}
-                                breakpoints={{
-                                    769: {
-                                        slidesPerView: 2,
-                                        spaceBetween: 20,
-                                    },
-                                }}
-                            >
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                        <div className="col-12">
+                            <div className="portfolio-slider">
+                                <Swiper
+                                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                                    spaceBetween={50}
+                                    slidesPerView={1}
+                                    navigation
+                                    autoplay={{ delay: 2000 }}
+                                    scrollbar={{ draggable: true }}
+                                    breakpoints={{
+                                        769: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 20,
+                                        },
+                                    }}
+                                >
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
                                         </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Digital Agency Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">web design for your business</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
                                         </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Digital Agency Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">build your product with laravel</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
                                         </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">web design for your business</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">build your product with laravel</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
+                                    </SwiperSlide>
+                                </Swiper>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -386,9 +387,9 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
+                <div className="container">
                     <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-2 p-0">
+                        <div className="col-12">
                             <div className="blog-slider">
                                 <Swiper
                                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -399,6 +400,10 @@ export default function Home() {
                                     breakpoints={{
                                         769: {
                                             slidesPerView: 2,
+                                            spaceBetween: 20,
+                                        },
+                                        1200: {
+                                            slidesPerView: 3,
                                             spaceBetween: 20,
                                         },
                                     }}
@@ -421,7 +426,7 @@ export default function Home() {
                                             <h4>
                                                 <a href="/blog_single">Transforming Digital Solutions with  Artificial Intelligence</a>
                                             </h4>
-                                            <p className="mt-20">We delve into the profound impact that Artificial Intelligence (AI) is having on digital solutions across various industries. From enhancing user experiences to optimizing.</p>
+                                            <p className="mt-20">We delve into the profound impact that Artificial Intelligence (AI) is having on digital solutions across various industries.</p>
                                             <div className="blog-tags">
                                                 <ul>
                                                     <li><a href="/blog_single">Artificial Intelligence</a></li>
@@ -450,7 +455,7 @@ export default function Home() {
                                             <h4>
                                                 <a href="/blog_single">The Art of Collaboration in Creative Agency Studio</a>
                                             </h4>
-                                            <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencies, examining how partnerships between designers, marketers, and content.</p>
+                                            <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencies.</p>
                                             <div className="blog-tags">
                                                 <ul>
                                                     <li><a href="/blog_single">creative agency</a></li>
@@ -479,7 +484,7 @@ export default function Home() {
                                             <h4>
                                                 <a href="/blog_single">Enhancing Creativity with Machine Learning</a>
                                             </h4>
-                                            <p className="mt-20">Explore how AI is revolutionizing the design process, from generating innovative concepts to automating repetitive tasks, and discover how designers can leverage these.</p>
+                                            <p className="mt-20">Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.</p>
                                             <div className="blog-tags">
                                                 <ul>
                                                     <li><a href="/blog_single">Artificial Intelligence </a></li>
@@ -508,7 +513,7 @@ export default function Home() {
                                             <h4>
                                                 <a href="/blog_single">The Art of Collaboration in Creative Agency Studio</a>
                                             </h4>
-                                            <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencies, examining how partnerships between designers, marketers, and content.</p>
+                                            <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencie.</p>
                                             <div className="blog-tags">
                                                 <ul>
                                                     <li><a href="/blog_single">creative agency</a></li>
@@ -520,10 +525,6 @@ export default function Home() {
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>
-
-
-
-
                             </div>
                         </div>
                     </div>

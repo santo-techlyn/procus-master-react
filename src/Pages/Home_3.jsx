@@ -18,17 +18,16 @@ export default function Home_3() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
-            {/* <Header3></Header3> */}
             <Header></Header>
 
             {/* hero area starts  */}
             <section className="hero-home-3">
-                <img src="assets/images/hero-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 dark-version" />
-                <img src="assets/images/hero-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 dark-version" />
-                <img src="assets/images/hero-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 dark-version" />
-                <img src="assets/images/hero-light-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 light-version" />
-                <img src="assets/images/hero-light-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 light-version" />
-                <img src="assets/images/hero-light-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 light-version" />
+                <img src="assets/images/hero-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 dark-version item-zooming" />
+                <img src="assets/images/hero-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 dark-version item-rotate" />
+                <img src="assets/images/hero-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 dark-version item-upDown" />
+                <img src="assets/images/hero-light-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 light-version item-zooming" />
+                <img src="assets/images/hero-light-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 light-version item-rotate" />
+                <img src="assets/images/hero-light-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 light-version item-upDown" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 wow fadeInLeft" data-wow-delay=".2s">
@@ -43,9 +42,19 @@ export default function Home_3() {
                                 <img src="assets/images/hero-image-1-home-3.png" alt="hero-image" className="hero-image-left mt-40" />
                             </div>
                         </div>
-                        <div className="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">
-                            <img src="assets/images/hero-image-2-home-3.png" alt="hero-image" className="hero-image-right dark-version" />
-                            <img src="assets/images/hero-light-image-2-home-3.png" alt="hero-image" className="hero-image-right light-version" />
+                        <div className="col-xl-6 offset-xl-1 col-lg-7 wow fadeInRight" data-wow-delay=".2s">
+                            <div className="hero-button-box">
+                                <div className="text-item secondary-btn item1">Strategy</div>
+                                <div className="text-item secondary-btn white-btn item2">Digital Solution</div>
+                                <div className="text-item secondary-btn item3">Creative</div>
+                                <div className="text-item secondary-btn gray-btn item4">Campaign</div>
+                                <div className="text-item secondary-btn gray-btn item5">Engagement</div>
+                                <div className="text-item secondary-btn gray-btn item6">Collaboration</div>
+                                <div className="text-item secondary-btn item7">Excellence</div>
+                                <div className="text-item secondary-btn gray-btn item8">Social Media</div>
+                                <div className="text-item secondary-btn white-btn item9">Advertising</div>
+                                <div className="text-item circled item10"><span><i className="fas fa-arrow-right"></i></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -58,61 +67,87 @@ export default function Home_3() {
                         <div className="col-lg-12">
                             <div className="brand-slider-3">
                                 <Marquee
-                                    className='maequee-wraper'
                                     speed={100}
                                 >
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/zoom-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/zoom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/square-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/square-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/upwork-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/upwork-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/loom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/slack-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/tinder-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
-                                        <div className="brand-logo">
+                                        <div className="brand-logo dark-version">
+                                            <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                        </div>
+                                        <div className="brand-logo light-version">
                                             <img src="assets/images/loom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                 </Marquee>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             {/* counter area starts  */}
             <section className="counter-home-3 pt-120 pb-90">
@@ -133,7 +168,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <h2 className="counter"><CountUp className="counter22" start={0} end={25} delay={.9} duration={5} /></h2>
+                                    <h2 className="counter"><CountUp start={0} end={25} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">Years of Experience</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -142,7 +177,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <h2 className="counter"><CountUp className="counter22" start={0} end={250} delay={.9} duration={5} /></h2>
+                                    <h2 className="counter"><CountUp start={0} end={250} delay={.9} duration={5}></CountUp></h2>
                                     <h2 className="plus-sign">+</h2>
                                 </div>
                                 <h6 className="counter-text">project complete</h6>
@@ -152,7 +187,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <h2 className="counter"><CountUp className="counter22" start={0} end={100} delay={.9} duration={5} /></h2>
+                                    <h2 className="counter"><CountUp start={0} end={100} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">happy client</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -161,7 +196,7 @@ export default function Home_3() {
                         <div className="col-lg-3 col-md-6">
                             <div className="counter-single-3">
                                 <div className="counter-number">
-                                    <h2 className="counter"><CountUp className="counter22" start={0} end={35} delay={.9} duration={5} /></h2>
+                                    <h2 className="counter"><CountUp start={0} end={35} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">Wining Awards</h6>
                                 <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
@@ -241,7 +276,7 @@ export default function Home_3() {
                             </div>
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="service-button text-center mt-60">
-                                    <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -298,7 +333,7 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="portfolio-button text-center">
-                                    <a href="/case" className="primary-btn">See all work <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -332,7 +367,7 @@ export default function Home_3() {
                                 <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-3.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Courtney Henry</h4>
@@ -342,58 +377,60 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded"</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
                                         <img src="assets/images/testimonial-01.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Sarah Williams</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision."</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-4.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Emily Rogersy</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their expertise in digital marketing helped us reach new heights. We saw growth in few days”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-5.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Michael Thompson</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!"</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-2.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>John Davis</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
                             </div>
                         </Marquee>
                     </div>
+
+
 
                     <div className="testimonial-slider-2-home-3 mt-30">
                         <Marquee
@@ -402,13 +439,26 @@ export default function Home_3() {
                         >
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded"</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
                                         <img src="assets/images/testimonial-01.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Sarah Williams</h4>
+                                        <p>digital marketer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="testimonial-slide-home-3">
+                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
+                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!"</span>
+                                <div className="testimonial-content">
+                                    <div className="author-img">
+                                        <img src="assets/images/testimonial-2.png" alt="author-image" />
+                                    </div>
+                                    <div className="author-text">
+                                        <h4>John Davis</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
@@ -418,7 +468,7 @@ export default function Home_3() {
                                 <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-3.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Courtney Henry</h4>
@@ -428,39 +478,26 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision."</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-4.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Emily Rogersy</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“Their expertise in digital marketing helped us reach new heights. We saw growth in few days”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="assets/images/testimonial-5.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
-                                        <h4>Courtney Henry</h4>
-                                        <p>digital marketer</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="testimonial-slide-home-3">
-                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
-                                <div className="testimonial-content">
-                                    <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
-                                    </div>
-                                    <div className="author-text">
-                                        <h4>Courtney Henry</h4>
+                                        <h4>Michael Thompson</h4>
                                         <p>digital marketer</p>
                                     </div>
                                 </div>
@@ -550,7 +587,7 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-button text-center mt-30">
-                                <a href="/team" className="primary-btn">view more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/team" className="primary-btn">view more <span><i className="ri-arrow-right-up-line"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -565,7 +602,7 @@ export default function Home_3() {
                             <div className="section-top-3 text-center">
                                 <h2>Choose Our <span>Best Package</span></h2>
                                 <p className="mt-20">Step into Our World of Creativity and Innovation: Unveiling Our Portfolio, a Tapestry of Past Projects Reflecting Our Commitment to Excellence and Client Success</p>
-                                <div className="pricing-toggle mt-50">
+                                <div className="col-lg-4 offset-lg-4 pricing-toggle mt-50">
                                     <button onClick={() => updateToggleId(1)} className={toggle == 1 ? "pricing-toggle-btn active" : "pricing-toggle-btn"} data-pricing="monthly">Monthly</button>
                                     <button onClick={() => updateToggleId(2)} className={toggle == 2 ? "pricing-toggle-btn active" : "pricing-toggle-btn"} data-pricing="yearly">Yearly</button>
                                 </div>
@@ -574,8 +611,7 @@ export default function Home_3() {
                     </div>
 
                     {/* monthly pricing plans  */}
-
-                    <div className={toggle == 1 ? "row mt-60 pricing-plans monthly-plans active" : "row mt-60 pricing-plans monthly-plans Unshow"}>
+                    <div className={"row mt-60 pricing-plans monthly-plans inactive"} style={toggle == 1 ? { display: '' } : { display: 'none' }}>
                         <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                             <div className="pricing-box">
                                 <h3>Kickstart Pack</h3>
@@ -633,7 +669,7 @@ export default function Home_3() {
                     </div>
 
                     {/* yearly pricing plans  */}
-                    <div className={toggle == 2 ? "row mt-60 pricing-plans yearly-plans active" : "row mt-60 pricing-plans yearly-plans Unshow"}>
+                    <div className={"row mt-60 pricing-plans yearly-plans inactive"} style={toggle == 2 ? { display: '' } : { display: 'none' }}>
                         <div className="col-lg-4 col-md-6">
                             <div className="pricing-box">
                                 <h3>Kickstart Pack</h3>
@@ -690,7 +726,7 @@ export default function Home_3() {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             {/* blog area starts  */}
             <section className="blog-home-3 pb-115">
@@ -745,7 +781,7 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="blog-button text-center mt-30">
-                                <a href="/blog" className="primary-btn">See all Blog <span><i className="fas fa-arrow-right"></i></span></a>
+                                <a href="/blog" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></a>
                             </div>
                         </div>
                     </div>
@@ -788,7 +824,7 @@ export default function Home_3() {
                                         <label for="project-details">I’d like to share more about my project details:</label>
                                         <textarea id="project-details" name="project-details" placeholder="Tell something about your project" rows="4" required></textarea>
                                     </div>
-                                    <button type="submit" className="primary-btn">Get Started  <span><i className="fas fa-arrow-right"></i></span></button>
+                                    <button type="submit" className="primary-btn">submit  <span><i className="ri-arrow-right-up-line"></i></span></button>
                                 </form>
                             </div>
                         </div>

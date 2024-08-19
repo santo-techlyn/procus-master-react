@@ -15,7 +15,8 @@ export default function Footer2() {
                                     <div className="subscribe-form">
                                         <form action="#">
                                             <input type="email" placeholder="Enter your email address" />
-                                            <button className="primary-btn" type="submit">Subscribe <span><i className="fas fa-arrow-right"></i></span></button>
+                                            <button className="primary-btn" type="submit">Subscribe <span><i
+                                                className="ri-arrow-right-up-line"></i></span></button>
                                         </form>
                                     </div>
                                     <ul className="hero-social-2">

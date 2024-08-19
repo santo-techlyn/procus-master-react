@@ -48,6 +48,15 @@
             .answer {
                 padding: 0 20px 30px 100px;
                 position: relative;
+                p:first-child {
+                    margin-top: 40px;
+                    @include tablet {
+                        margin-top: 0;
+                    }
+                    @include all-phone {
+                        margin-top: 0;
+                    }
+                }
                 @include tablet {
                     padding: 20px;
                 }
@@ -55,6 +64,7 @@
                     padding: 20px;
                 }
                 img.service-image {
+                    border-radius: 15px;
                     width: auto;
                     margin-left: auto;
                     transition: $transition;

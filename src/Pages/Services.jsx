@@ -93,7 +93,7 @@ export default function Services() {
             </section>
 
             {/* portfolio area starts  */}
-            <section className="portfolio-area pt-110">
+            <section className="portfolio-area py-110">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
@@ -109,186 +109,81 @@ export default function Services() {
                         </div>
                     </div>
                 </div>
-                <div className="container-fluid">
-                    <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-2 p-0">
-                            <Swiper
-                                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                                spaceBetween={50}
-                                slidesPerView={1}
-                                navigation
-                                autoplay={{ delay: 2000 }}
-                                scrollbar={{ draggable: true }}
-                                breakpoints={{
-                                    769: {
-                                        slidesPerView: 2,
-                                        spaceBetween: 20,
-                                    },
-                                }}
-                            >
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Digital Agency Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">web design for your business</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">build your product with laravel</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <div className="portfolio-single">
-                                        <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
-                                        </div>
-                                        <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            </Swiper>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* testimonial area starts  */}
-            <section className="testimonial-area pb-120">
-                <img src="assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
-                            <div className="section-top text-center">
-                                <h2>What <span>client say</span> about us</h2>
-                                <p className="mt-20">Get to know the talented individuals who make our company thrive. Our diverse team brings together a wealth of expertise.</p>
-                            </div>
-                        </div>
-                    </div>
                     <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-1">
-                            <div className="testimonial-slider">
+                        <div className="col-12">
+                            <div className="portfolio-slider">
                                 <Swiper
-                                    direction='vertical'
-                                    style={{ height: '600px' }}
-                                    className='fidback-swiper'
-                                    navigation={true}
-                                    pagination={{ clickable: true }}
-                                    mousewheel={true}
-                                    keyboard={true}
-                                    modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                                    spaceBetween={50}
+                                    slidesPerView={1}
+                                    navigation
+                                    autoplay={{ delay: 2000 }}
+                                    scrollbar={{ draggable: true }}
+                                    breakpoints={{
+                                        769: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 20,
+                                        },
+                                    }}
                                 >
                                     <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Efficient and professional. I will definitely use their services again. The professionalism of this team made the entire process effortless and stress-free.</span>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                             </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Courtney Henry</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Teriso Station</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, explicabo velit quod reprehenderit tempore quibusdam inventore quo excepturi.</span>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                             </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-02.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>Web developer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>customer</p>
-                                                    </div>
-                                                </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Digital Agency Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="testimonial-slide">
-                                            <div className="testimonial-quote text-center">
-                                                <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                                <span className="quote-text">Explicabo hic quibusdam expedita eaque tempore laboriosam. Animi aliquam dolore laborum numquam earum minima eius ducimus.</span>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
                                             </div>
-                                            <div className="testimonial-content">
-                                                <div className="content-left">
-                                                    <div className="author-img">
-                                                        <img src="assets/images/testimonial-03.jpg" alt="author-image" />
-                                                    </div>
-                                                    <div className="author-text">
-                                                        <h4>Reid E But</h4>
-                                                        <p>digital marketer</p>
-                                                    </div>
-                                                </div>
-                                                <div className="content-right">
-                                                    <div className="author-text">
-                                                        <h4>Sylvia H Green</h4>
-                                                        <p>creative agency</p>
-                                                    </div>
-                                                </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">web design for your business</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">build your product with laravel</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="portfolio-single">
+                                            <div className="portfolio-image">
+                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
+                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            </div>
+                                            <div className="portfolio-content mt-20">
+                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -299,7 +194,7 @@ export default function Services() {
                 </div>
             </section>
 
-            {/* <FidbackSection className="pt-0"></FidbackSection> */}
+            <FidbackSection></FidbackSection>
 
             {/* marquee area starts  */}
             <div className="custom-marquee">

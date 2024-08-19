@@ -47,6 +47,12 @@
     }
 }
 
+@mixin screen-1920-plus () {
+    @media (min-width: 1920px) {
+        @content;
+    }
+}
+
 @mixin all-desktop() {
     @media (min-width: 992px) {
         @content;

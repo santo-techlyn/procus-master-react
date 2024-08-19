@@ -10,7 +10,7 @@
             onePage: false
         });
 
-        // color switch
+        // // color switch
         // const checkbox = document.getElementById("checkbox")
         // checkbox.addEventListener("change", () => {
         //     document.body.classList.toggle("light-theme")
@@ -23,8 +23,8 @@
         });
 
         // accordion
-        $(".accordion-list > li:first-child").addClass("active").find(".answer").show();
-        $('.accordion-list > li:not(:first-child) .answer').hide();
+        $(".accordion-list > li:nth-child(2)").addClass("active").find(".answer").show();
+        $('.accordion-list > li:not(:nth-child(2)) .answer').hide();
 
         $('.accordion-list > li').click(function () {
             if ($(this).hasClass("active")) {
@@ -36,9 +36,22 @@
             }
         });
 
+        // service details tab
+        $('.tab-link').on('click', function (event) {
+            event.preventDefault(); // Prevent the default action of the <a> tag
+
+            var tab_id = $(this).attr('data-tab');
+
+            $('.tab-link').removeClass('active');
+            $('.tab-content').removeClass('active');
+
+            $(this).addClass('active');
+            $("#" + tab_id).addClass('active');
+        });
+
         // portfolio slider
         $('.portfolio-slider').slick({
-            dots: true,
+            dots: false,
             infinite: true,
             speed: 1000,
             autoplay: true,
@@ -81,15 +94,24 @@
 
         // testimonial slider
         $('.testimonial-slider').slick({
-            dots: true,
+            dots: false,
+            arrows: true,
+            prevArrow: '<span class="arrow-up"><i class="fa-solid fa-angle-up"></i></span>',
+            nextArrow: '<span class="arrow-down"><i class="fa-solid fa-angle-down"></i></span>',
             infinite: true,
-            fade: true,
             speed: 1000,
+            fade: true,
             autoplay: true,
             autoplaySpeed: 2000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            responsive: [{
+                breakpoint: 992,
+                settings: {
+                    dots: false,
+                    arrows: false,
+                }
+            }],
         });
 
         // blog slider
@@ -99,13 +121,21 @@
             speed: 1000,
             autoplay: true,
             autoplaySpeed: 2000,
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 1,
             arrows: false,
             responsive: [{
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    dots: false,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
@@ -115,7 +145,6 @@
                     dots: false,
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: false,
                 }
             },
             ]
@@ -207,11 +236,15 @@
             $this.addClass('active').siblings().removeClass('active');
 
             if (filter === 'all') {
-                $caseItems.removeClass('item-hidden');
+                $caseItems.fadeIn().removeClass('item-hidden');
             } else {
                 $caseItems.each(function () {
                     var $caseItem = $(this); // Cache the current case item
-                    $caseItem.toggleClass('item-hidden', !$caseItem.hasClass(filter));
+                    if ($caseItem.hasClass(filter)) {
+                        $caseItem.fadeIn().removeClass('item-hidden');
+                    } else {
+                        $caseItem.fadeOut().addClass('item-hidden');
+                    }
                 });
             }
         });
@@ -325,13 +358,22 @@
         $('.tab-menu-item').on('click', function () {
             var tabId = $(this).data('tab');
 
-            // Remove active class from all tab-menu-item and tab-content-item
+            // Remove active class from all tabs and content items
             $('.tab-menu-item').removeClass('active');
-            $('.tab-content-item').removeClass('active');
+            $('.tab-content-item').removeClass('active').hide(); // Hide all content items
 
-            // Add active class to the clicked tab-menu-item and corresponding tab-content-item
+            // Add active class to the clicked tab
             $(this).addClass('active');
-            $('#' + tabId).addClass('active');
+
+            // Animate the corresponding content item with fade-in-up effect
+            $('#' + tabId).addClass('active').css({
+                display: 'block',
+                opacity: 0,
+                top: '20px'
+            }).animate({
+                opacity: 1,
+                top: '0'
+            }, 1200); // 500ms for the effect duration
         });
 
         // testimonial slider 03
@@ -469,12 +511,15 @@
             autoplaySpeed: 2000,
             slidesToShow: 4,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
+            prevArrow: '<span class="arrow-left"><i class="fa-solid fa-angle-left"></i></span>',
+            nextArrow: '<span class="arrow-right"><i class="fa-solid fa-angle-right"></i></span>',
             responsive: [{
-                breakpoint: 1200,
+                breakpoint: 1400,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
+                    arrows: false
                 }
             },
             {
@@ -482,6 +527,7 @@
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    arrows: false
                 }
             },
             {
@@ -489,6 +535,7 @@
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    arrows: false
                 }
             },
             ]
@@ -535,7 +582,7 @@
             ScrollTop.fadeOut(1000);
         }
 
-        // navbar fix
+        // navbar fixed
         const headerHeight = $(".header-area").outerHeight();
         if ($(this).scrollTop() > headerHeight) {
             $('.menu-area').addClass("fixed-top");
@@ -563,31 +610,4 @@
 
     });
 
-
- 
 })(jQuery);
-
-
-
-
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'vertical',
-//     loop: true,
-
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });

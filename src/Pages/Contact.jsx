@@ -141,10 +141,10 @@ export default function Contact() {
                                         <label className="privacy-policy" for="privacy-policy">I agree with the <a href="/privacy">privacy policy</a></label>
                                     </div>
                                     <div className="form-group">
-                                        <input type="file" id="attachment" name="attachment" style={{ display: "none" }} />
+                                        <input type="file" id="attachment" name="attachment" style={{ display: 'none' }} />
                                         <label for="attachment" className="attachment-btn"><i className="fas fa-paperclip"></i> Add attachment</label>
                                     </div>
-                                    <button type="submit" className="primary-btn">get started <span><i className="fas fa-arrow-right"></i></span></button>
+                                    <button type="submit" className="primary-btn">get started <span><i className="ri-arrow-right-up-line"></i></span></button>
                                 </form>
                             </div>
                         </div>

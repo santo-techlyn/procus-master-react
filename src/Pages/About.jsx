@@ -70,7 +70,7 @@ export default function Home() {
                         </div>
                         <div className="col-lg-5 offset-lg-1 align-self-end wow fadeInRight" data-wow-delay=".2s">
                             <div className="welcome-images">
-                                <img src="assets/images/welcome-vector.png" className="welcome-vector" alt="welcome-vector" />
+                                <img src="assets/images/welcome-vector.png" className="welcome-vector item-rotate" alt="welcome-vector" />
                                 <img src="assets/images/welcome-image.png" className="welcome-image" alt="welcome-image" />
                             </div>
                         </div>
@@ -117,8 +117,8 @@ export default function Home() {
                                             className="col-lg-4 col-md-6 wow fadeIn"
                                             data-wow-delay=".3s"
                                             onMouseEnter={() => hendelhover(index)}
-                                            onMouseLeave={()=>hendelmove(index)}
-                                            
+                                            onMouseLeave={() => hendelmove(index)}
+
                                         >
                                             <div
                                                 className={onHover == index ? "single-choose-item active" : "single-choose-item"}
@@ -131,55 +131,6 @@ export default function Home() {
                                         </div>
                                     ))
                                 }
-
-                                {/* <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-1.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-1.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Innovative Solutions</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".4s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-2.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-2.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Data-Driven Strategies</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".5s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-3.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-3.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Proven Track Record</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".6s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-4.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-4.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Collaborative Partnership</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".7s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-5.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-5.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Exceptional Customer Service</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".8s">
-                                    <div className={onHover ? "single-choose-item active" : "single-choose-item"} onMouseOver={hendelhover} onMouseLeave={hendelmove}>
-                                        <img src="assets/images/choose-icon-6.png" alt="choose-icon" className="choose-icon dark-version" />
-                                        <img src="assets/images/choose-dark-icon-6.png" alt="choose-icon" className="choose-icon light-version" />
-                                        <h4>Forward-Thinking Approach</h4>
-                                        <p className="mt-10">Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.</p>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>

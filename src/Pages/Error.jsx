@@ -3,7 +3,6 @@ import CommonHero from "../Component/Common/CommonHero";
 export default function Error() {
     return (
         <>
-            <CommonHero title={'404'} link1={'Home'} link2={'404'}></CommonHero>
 
             {/* error content starts  */}
             <section className="error-content pt-90 pb-120">

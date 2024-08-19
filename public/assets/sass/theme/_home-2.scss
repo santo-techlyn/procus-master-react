@@ -79,29 +79,30 @@
     padding: 12px 24px;
     @include portrait-phone {
         padding: 12px;
+        margin-top: 40px;
     }
     li {
         display: inline;
-        margin: 0 10px;
+        margin: 0 20px;
         @include portrait-phone {
-            margin: 0 5px;
+            margin: 0 2px;
         }
         a {
             display: inline-block;
-            padding: 5px 10px;
+            padding: 5px 0;
             color: $white-color;
-            background-color: transparent;
             font-size: 18px;
             font-weight: 500;
+            border-bottom: 1px solid transparent;
             text-transform: capitalize;
             transition: $transition;
-            border-radius: 3px;
             @include portrait-phone {
                 padding: 5px;
+                font-size: 14px;
             }
             &:hover {
-                color: $secondary-color;
-                background-color: $primary-color;
+                color: $primary-color;
+                border-bottom: 1px solid $primary-color;
             }
         }
     }
@@ -233,6 +234,9 @@
         margin-bottom: 30px;
     }
     h2 {
+        @include all-desktop {
+            width: 90%;
+        }
         color: $home-2-text-color;
         span {
             color: $white-color;
@@ -323,6 +327,7 @@ span.big-title {
     @include all-phone {
         padding: 40px 6%;
     }
+
     h2 {
         a {
             color: $home-2-text-color;
@@ -420,8 +425,14 @@ span.big-title {
 }
 
 .brand-items {
+    .dark-version {
+        display: block;
+    }
+    .light-version {
+        display: none;
+    }
     .brand-single-2 {
-        margin: 0 14px 30px;
+        margin: 0 28px 30px 0;
         float: left;
         overflow: hidden;
         &:hover {
@@ -474,21 +485,17 @@ span.big-title {
     }
 
     li.secondary-btn {
-        color: $home-2-text-color;
-        border: 1px solid $home-2-text-color;
-        font-weight: 400;
-        padding: 10px 20px;
         width: 200px;
         margin: 0 5px 10px 0;
         transition: $transition;
-        background: transparent;
-        &.active {
-            color: $white-color;
-            border: 1px solid $white-color;
-        }
         cursor: pointer;
-        &:hover {
-            background: transparent;
+        @include portrait-phone {
+            width: auto;
+            padding: 8px 15px;
+        }
+        &.active {
+            background-position: left bottom;
+            color: $secondary-color;
         }
     }
     &.item-hidden {
@@ -523,7 +530,6 @@ span.big-title {
 }
 
 .team-member-2 {
-    width: 90%;
     margin: 0 auto 30px;
     &:hover {
         .team-image {
@@ -619,7 +625,7 @@ span.big-title {
     position: relative;
     z-index: 1;
     .slick-slide {
-        margin: 0 15px;
+        margin: 0 30px 0 0;
         @include all-phone {
             margin: 0 5px;
         }
@@ -722,7 +728,7 @@ span.big-title {
 .blog-home-2 {
     background-color: $black-color;
     .slick-slide {
-        margin: 0 15px;
+        margin: 0 30px 0 0;
         @include all-phone {
             margin: 0 5px;
         }

@@ -29,7 +29,7 @@ export default function Case() {
                                 <div className="case-content wow fadeInRight" data-wow-delay=".2s">
                                     <h3><a href="/case_single">Shopify Responsive Website Design</a></h3>
                                     <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ export default function Case() {
                                 <div className="case-content wow fadeInLeft" data-wow-delay=".2s">
                                     <h3><a href="/case_single">Digital Agency Website Design</a></h3>
                                     <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                                 <div className="case-image wow fadeInRight" data-wow-delay=".2s">
                                     <img src="assets/images/portfolio-02.png" alt="case" />
@@ -53,7 +53,7 @@ export default function Case() {
                                 <div className="case-content wow fadeInRight" data-wow-delay=".2s">
                                     <h3><a href="/case_single">Shopify Responsive Website Design</a></h3>
                                     <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ export default function Case() {
                                 <div className="case-content wow fadeInLeft" data-wow-delay=".2s">
                                     <h3><a href="/case_single">Digital Agency Website Design</a></h3>
                                     <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
                                 </div>
                                 <div className="case-image wow fadeInRight" data-wow-delay=".2s">
                                     <img src="assets/images/portfolio-04.png" alt="case" />

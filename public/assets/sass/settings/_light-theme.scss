@@ -1,4 +1,4 @@
-// light theme color
+/* light-version */
 $primary-color: #141414;
 $dark-primary-color: #ffff00;
 $secondary-color: #ffffff;
@@ -216,15 +216,20 @@ body.light-theme {
     .footer-info-area {
         .info-content {
             border: 1px solid $border-color;
+            a.phone-number,
+            a.email-address,
+            a.location {
+                color: $white-color;
+                &:hover {
+                    color: $border-color;
+                }
+            }
         }
         .dark-version {
             display: none;
         }
         .light-version {
             display: block;
-        }
-        span {
-            color: $heading-color;
         }
     }
 
@@ -556,13 +561,6 @@ body.light-theme {
             border-left: 1px solid $border-color;
             border-right: 1px solid $border-color;
         }
-        .hero-top-content {
-            h1 {
-                span.gradient-bg {
-                    background-image: linear-gradient(to right, #ffff00 15%, transparent 50%);
-                }
-            }
-        }
         .hero-social {
             li {
                 a {
@@ -835,9 +833,12 @@ body.light-theme {
                 a {
                     color: $home-2-text-color;
                     border: 1px solid $border-color;
-                    &:hover {
+                }
+                &.tab-link.active {
+                    a {
                         color: $secondary-color;
                         background-color: $primary-color;
+                        border: 1px solid transparent;
                     }
                 }
             }
@@ -1387,6 +1388,12 @@ body.light-theme {
 
     .brand-home-2 {
         background-color: $secondary-color;
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: block;
+        }
     }
 
     .brand-items {
@@ -1573,6 +1580,40 @@ body.light-theme {
         .vector-3 {
             opacity: 1;
         }
+        .text-item {
+            span {
+                color: $black-color;
+                border: 1px solid $white-color;
+                background-color: $white-color;
+                cursor: pointer;
+                &:hover {
+                    color: $white-color;
+                    border: 1px solid $white-color;
+                    background-color: transparent;
+                }
+            }
+        }
+        .hero-button-box {
+            border: 1px solid $primary-color;
+            background-color: $black-color;
+            .secondary-btn.white-btn {
+                color: $white-color;
+                border: 1px solid $white-color;
+                background: linear-gradient(to right, $white-color 50%, transparent 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all .3s ease-out;
+            }
+            
+            .secondary-btn.white-btn:hover {
+                border: 1px solid $white-color;
+                background-position: left bottom;
+                color: $black-color;
+            }
+            .secondary-btn.gray-btn:hover {
+                border: 1px solid $white-color;
+            }
+        }
     }
 
     .brand-home-3 {
@@ -1584,6 +1625,12 @@ body.light-theme {
         }
         &::after {
             background-image: linear-gradient(to left, $black-color, transparent);
+        }
+        .dark-version {
+            display: none;
+        }
+        .light-version {
+            display: block;
         }
     }
 
@@ -1822,6 +1869,14 @@ body.light-theme {
         .checkbox-label .ball {
             background-color: $dark-primary-color;
         } 
+    }
+
+    .procus-cursor {
+        border: 1px solid $white-color;
+    }
+    
+    .procus-cursor2 {
+        background-color: $white-color;
     }
 
 }

@@ -27,7 +27,7 @@ export default function Footer3() {
                                         <li><a href="/team">meet our team</a></li>
                                         <li><a href="/case">case studies</a></li>
                                         <li><a href="/blog">latest blog</a></li>
-                                        <li><a href="#">careers</a></li>
+                                        <li><a href="/contact">contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -35,11 +35,11 @@ export default function Footer3() {
                                 <div className="footer-widget-box list">
                                     <h4 className="footer-widget-title">our services</h4>
                                     <ul className="footer-list">
-                                        <li><a href="service-single.html">branding</a></li>
-                                        <li><a href="service-single.html">web design</a></li>
-                                        <li><a href="service-single.html">app design</a></li>
-                                        <li><a href="service-single.html">saas development</a></li>
-                                        <li><a href="service-single.html">digital marketing</a></li>
+                                        <li><a href="/service-single">branding</a></li>
+                                        <li><a href="/service-single">web design</a></li>
+                                        <li><a href="/service-single">app design</a></li>
+                                        <li><a href="/service-single">saas development</a></li>
+                                        <li><a href="/service-single">digital marketing</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -62,18 +62,18 @@ export default function Footer3() {
                     <div className="container">
                         <div className="info-content">
                             <div className="row align-items-center">
-                                <div className="col-lg-3">
+                                <div className="col-xl-3">
                                     <a className="dark-version" href="index.html"><img src="assets/images/logo.png" alt="footer-logo" /></a>
                                     <a className="light-version" href="index.html"><img src="assets/images/logo-black.png" alt="footer-logo" /></a>
                                 </div>
-                                <div className="col-lg-3">
-                                    <span className="phone-number">(123) 456789000</span>
+                                <div className="col-xl-3">
+                                    <a href="#" className="phone-number">(123) 456789000</a>
                                 </div>
-                                <div className="col-lg-3">
-                                    <span className="email-address">info@procus.com </span>
+                                <div className="col-xl-3">
+                                    <a href="#" className="email-address">info@procus.com </a>
                                 </div>
-                                <div className="col-lg-3">
-                                    <span className="location">1498w Fluton ste, STE 2D Chicgo, IL 63867.</span>
+                                <div className="col-xl-3">
+                                    <a href="#" className="location">1498w Fluton ste, STE 2D Chicgo, IL 63867.</a>
                                 </div>
                             </div>
                         </div>

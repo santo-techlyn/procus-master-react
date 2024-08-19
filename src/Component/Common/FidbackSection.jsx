@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import { useRef } from 'react';
 
 export default function FidbackSection() {
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
     return (
         <>
             {/* testimonial area starts  */}
@@ -22,16 +25,16 @@ export default function FidbackSection() {
                                 <Swiper
                                     direction='vertical'
                                     style={{ height: '600px' }}
-                                    breakpoints={{
-                                        768: {
-                                            style: { height: '500px' },
-                                            slidesPerView: 1,
-                                            spaceBetween: 20,
-                                        },
+                                    navigation={{
+                                        prevEl: prevRef.current,
+                                        nextEl: nextRef.current,
                                     }}
-                                    className='fidback-swiper'
-                                    navigation={true}
-                                    pagination={{ clickable: true }}
+                                    onBeforeInit={(swiper) => {
+                                        swiper.params.navigation.prevEl = prevRef.current;
+                                        swiper.params.navigation.nextEl = nextRef.current;
+                                    }}
+                                    className="mySwiper"
+                                    // pagination={{ clickable: true }}
                                     mousewheel={true}
                                     keyboard={true}
                                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
@@ -112,6 +115,14 @@ export default function FidbackSection() {
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>
+
+                                <div className="swiper-button-prev" ref={prevRef}>
+                                    <i className="fa-solid fa-angle-up"></i>
+                                </div>
+                                <div className="swiper-button-next" ref={nextRef}>
+                                <i className="fa-solid fa-angle-down"></i>
+                                </div>
+
                             </div>
                         </div>
                     </div>
