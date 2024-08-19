@@ -60,10 +60,14 @@ export default function Isotope() {
                         <div className="col-xl-4 offset-xl-2 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="case-filter-tab">
                                 <ul>
-                                    <li onClick={() => { setitems(cases); hendelistrue('all') }} className={istrue == 'all' ? "secondary-btn active" : "secondary-btn"} data-filter="all">All project</li>
-                                    <li onClick={() => { filterItems('web'); hendelistrue('web') }} className={istrue == 'web' ? "secondary-btn active" : "secondary-btn"} data-filter="web">Web Design</li>
-                                    <li onClick={() => { filterItems('graphic'); hendelistrue('graphic') }} className={istrue == 'graphic' ? "secondary-btn active" : "secondary-btn"} data-filter="graphic">Graphic Design</li>
-                                    <li onClick={() => { filterItems('app'); hendelistrue('app') }} className={istrue == 'app' ? "secondary-btn active" : "secondary-btn"} data-filter="app">App Development</li>
+                                    <div className='d-flex'>
+                                        <li onClick={() => { setitems(cases); hendelistrue('all') }} className={istrue == 'all' ? "secondary-btn active" : "secondary-btn"} data-filter="all">All project</li>
+                                        <li onClick={() => { filterItems('web'); hendelistrue('web') }} className={istrue == 'web' ? "secondary-btn active" : "secondary-btn"} data-filter="web">Web Design</li>
+                                    </div>
+                                    <div className="d-flex">
+                                        <li onClick={() => { filterItems('graphic'); hendelistrue('graphic') }} className={istrue == 'graphic' ? "secondary-btn active" : "secondary-btn"} data-filter="graphic">Graphic Design</li>
+                                        <li onClick={() => { filterItems('app'); hendelistrue('app') }} className={istrue == 'app' ? "secondary-btn active" : "secondary-btn"} data-filter="app">App Development</li>
+                                    </div>
                                 </ul>
                             </div>
                         </div>
