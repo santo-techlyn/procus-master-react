@@ -612,7 +612,7 @@ export default function Home_3() {
 
                     {/* monthly pricing plans  */}
                     <div className={"row mt-60 pricing-plans monthly-plans inactive"} style={toggle == 1 ? { display: '' } : { display: 'none' }}>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div className="col-lg-4 col-md-6">
                             <div className="pricing-box">
                                 <h3>Kickstart Pack</h3>
                                 <p>Jumpstart your social media presence with our beginner-friendly Kickstart Pack.</p>
@@ -630,7 +630,7 @@ export default function Home_3() {
                                 <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div className="col-lg-4 col-md-6">
                             <div className="pricing-box popular">
                                 <h3>Growth Pack</h3>
                                 <p>Jumpstart your social media presence with our beginner-friendly Kickstart Pack.</p>
@@ -648,7 +648,7 @@ export default function Home_3() {
                                 <a href="/contact" className="secondary-btn">Get Started</a>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div className="col-lg-4 col-md-6">
                             <div className="pricing-box">
                                 <h3>Elite Pack</h3>
                                 <p>Jumpstart your social media presence with our beginner-friendly Kickstart Pack.</p>
