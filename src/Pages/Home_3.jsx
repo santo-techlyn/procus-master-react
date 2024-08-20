@@ -238,11 +238,11 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-lg-5 wow fadeInLeft" data-wow-delay=".2s">
                                 <div className="tab-menu">
-                                    <div onClick={() => updateToggleId(1)} className="tab-menu-item active" data-tab="digital-marketing"><span>Digital Marketing</span></div>
-                                    <div onClick={() => updateToggleId(2)} className="tab-menu-item" data-tab="content-creation"><span>Content Creation</span></div>
-                                    <div onClick={() => updateToggleId(3)} className="tab-menu-item" data-tab="promotional-campaign"><span>Promotional Campaign</span></div>
-                                    <div onClick={() => updateToggleId(4)} className="tab-menu-item" data-tab="animated-reels-video"><span>Animated Reels Video</span></div>
-                                    <div onClick={() => updateToggleId(5)} className="tab-menu-item" data-tab="product-branding"><span>Product Branding</span></div>
+                                    <div onClick={() => updateToggleId(1)} className={toggle == 1 ? "tab-menu-item active" : "tab-menu-item"} data-tab="digital-marketing"><span>Digital Marketing</span></div>
+                                    <div onClick={() => updateToggleId(2)} className={toggle == 2 ? "tab-menu-item active" : "tab-menu-item"} data-tab="content-creation"><span>Content Creation</span></div>
+                                    <div onClick={() => updateToggleId(3)} className={toggle == 3 ? "tab-menu-item active" : "tab-menu-item"} data-tab="promotional-campaign"><span>Promotional Campaign</span></div>
+                                    <div onClick={() => updateToggleId(4)} className={toggle == 4 ? "tab-menu-item active" : "tab-menu-item"} data-tab="animated-reels-video"><span>Animated Reels Video</span></div>
+                                    <div onClick={() => updateToggleId(5)} className={toggle == 5 ? "tab-menu-item active" : "tab-menu-item"} data-tab="product-branding"><span>Product Branding</span></div>
                                 </div>
                             </div>
                             <div className="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">

@@ -5,8 +5,14 @@ import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction,
 import 'swiper/css';
 import FidbackSection from "../Component/Common/FidbackSection";
 import GetInTuch from "../Component/Common/GetInTuch";
+import { useState } from "react";
 
 export default function Services_Single() {
+    const [toggle, setToggle] = useState(1);
+
+    const updateToggleId = (id) => {
+        setToggle(id)
+    };
     return (
         <>
             <CommonHero title={'service details'} link1={'Home'} link2={'Services Details'}></CommonHero>
@@ -28,13 +34,13 @@ export default function Services_Single() {
                                 <h3 className="mt-50">What We Offer in UI/UX Design</h3>
                                 <p className="mt-20">We believe that effective UI/UX design is a combination of art and science. Our approach is centered around understanding your users, your business goals, and your brand identity to create designs that resonate with your target audience and achieve your objectives.</p>
                                 <ul className="service-tags">
-                                    <li className="tab-link active" data-tab="tab-1"><a href="#">UI Design</a></li>
-                                    <li className="tab-link" data-tab="tab-2"><a href="#">UX Design</a></li>
-                                    <li className="tab-link" data-tab="tab-3"><a href="#">Interaction Design</a></li>
-                                    <li className="tab-link" data-tab="tab-4"><a href="#">User Research</a></li>
+                                    <li onClick={() => updateToggleId(1)} className={toggle == 1 ? "tab-link active" : "tab-link"} data-tab="tab-1"><a>UI Design</a></li>
+                                    <li onClick={() => updateToggleId(2)} className={toggle == 2 ? "tab-link active" : "tab-link"} data-tab="tab-2"><a>UX Design</a></li>
+                                    <li onClick={() => updateToggleId(3)} className={toggle == 3 ? "tab-link active" : "tab-link"} data-tab="tab-3"><a>Interaction Design</a></li>
+                                    <li onClick={() => updateToggleId(4)} className={toggle == 4 ? "tab-link active" : "tab-link"} data-tab="tab-4"><a>User Research</a></li>
                                 </ul>
                             </div>
-                            <div id="tab-1" className="tab-content active">
+                            <div id="tab-1" className={toggle == 1 ? "tab-content active" : "tab-content"}>
                                 <div className="row mt-60">
                                     <div className="col-lg-6">
                                         <div className="service-details-image-2">
@@ -47,7 +53,7 @@ export default function Services_Single() {
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-2" className="tab-content">
+                            <div id="tab-2" className={toggle == 2 ? "tab-content active" : "tab-content"}>
                                 <div className="row mt-60">
                                     <div className="col-lg-6">
                                         <div className="service-details-image-2">
@@ -60,7 +66,7 @@ export default function Services_Single() {
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-3" className="tab-content">
+                            <div id="tab-3" className={toggle == 3 ? "tab-content active" : "tab-content"}>
                                 <div className="row mt-60">
                                     <div className="col-lg-6">
                                         <div className="service-details-image-2">
@@ -73,7 +79,7 @@ export default function Services_Single() {
                                     </div>
                                 </div>
                             </div>
-                            <div id="tab-4" className="tab-content">
+                            <div id="tab-4" className={toggle == 4 ? "tab-content active" : "tab-content"}>
                                 <div className="row mt-60">
                                     <div className="col-lg-6">
                                         <div className="service-details-image-2">
@@ -135,19 +141,19 @@ export default function Services_Single() {
                             slidesPerView={1}
                             navigation
                             autoplay={{ delay: 2000 }}
-                            effect={'coverflow'}
-                            grabCursor={true}
-                            centeredSlides={true}
-                            coverflowEffect={{
-                                rotate: 50,
-                                stretch: 0,
-                                depth: 100,
-                                modifier: 1,
-                                slideShadows: true,
-                            }}
+                            // effect={'coverflow'}
+                            // grabCursor={true}
+                            // centeredSlides={true}
+                            // coverflowEffect={{
+                            //     rotate: 50,
+                            //     stretch: 0,
+                            //     depth: 100,
+                            //     modifier: 1,
+                            //     slideShadows: true,
+                            // }}
                             breakpoints={{
                                 576: {
-                                    slidesPerView: 3,
+                                    slidesPerView: 4,
                                     spaceBetween: 20,
                                 },
                             }}
@@ -161,7 +167,7 @@ export default function Services_Single() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="single-slide">
+                                <div className="single-slide active">
                                     <img src="assets/images/process-slider-shape.png" className="shape-image" alt="shape-image" />
                                     <span className="slide-number">2</span>
                                     <h4>Wireframing</h4>
