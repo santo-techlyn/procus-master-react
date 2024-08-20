@@ -40,7 +40,7 @@ const items = [
 
 export default function Accordion() {
 
-    const [acordion, setAcordion] = useState(1);
+    const [acordion, setAcordion] = useState(0);
 
     function togglerAcordion(index) {
         if (index === acordion) {
