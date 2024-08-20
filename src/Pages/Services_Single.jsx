@@ -5,7 +5,7 @@ import { Navigation, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction,
 import 'swiper/css';
 import FidbackSection from "../Component/Common/FidbackSection";
 import GetInTuch from "../Component/Common/GetInTuch";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Services_Single() {
     const [toggle, setToggle] = useState(1);
@@ -13,6 +13,11 @@ export default function Services_Single() {
     const updateToggleId = (id) => {
         setToggle(id)
     };
+
+    //swiper
+
+
+
     return (
         <>
             <CommonHero title={'service details'} link1={'Home'} link2={'Services Details'}></CommonHero>
@@ -141,25 +146,25 @@ export default function Services_Single() {
                             slidesPerView={1}
                             navigation
                             autoplay={{ delay: 2000 }}
-                            // effect={'coverflow'}
-                            // grabCursor={true}
-                            // centeredSlides={true}
-                            // coverflowEffect={{
-                            //     rotate: 50,
-                            //     stretch: 0,
-                            //     depth: 100,
-                            //     modifier: 1,
-                            //     slideShadows: true,
-                            // }}
+                            effect={'coverflow'}
+                            grabCursor={true}
+                            centeredSlides={true}
+                            coverflowEffect={{
+                                rotate: 50,
+                                stretch: 0,
+                                depth: 100,
+                                modifier: 1,
+                                slideShadows: true,
+                            }}
                             breakpoints={{
                                 576: {
-                                    slidesPerView: 4,
+                                    slidesPerView: 3,
                                     spaceBetween: 20,
                                 },
                             }}
                         >
                             <SwiperSlide>
-                                <div className="single-slide active">
+                                <div className="single-slide">
                                     <img src="assets/images/process-slider-shape.png" className="shape-image" alt="shape-image" />
                                     <span className="slide-number">1</span>
                                     <h4>Research</h4>
@@ -167,7 +172,7 @@ export default function Services_Single() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="single-slide active">
+                                <div className="single-slide">
                                     <img src="assets/images/process-slider-shape.png" className="shape-image" alt="shape-image" />
                                     <span className="slide-number">2</span>
                                     <h4>Wireframing</h4>
@@ -175,7 +180,7 @@ export default function Services_Single() {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="single-slide active">
+                                <div className="single-slide ">
                                     <img src="assets/images/process-slider-shape.png" className="shape-image" alt="shape-image" />
                                     <span className="slide-number">3</span>
                                     <h4>scratch</h4>

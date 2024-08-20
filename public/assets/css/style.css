@@ -9257,6 +9257,7 @@ body.light-theme .procus-cursor2 {
     padding: 10px 30px
   }
 }
+
 @media (min-width: 220px) and (max-width: 576px) {
   .working-process-services .working-process-single-slide {
     padding: 20px 20px
@@ -9298,6 +9299,7 @@ body.light-theme .procus-cursor2 {
     gap: -5px;
   }
 }
+
 @media (min-width: 220px) and (max-width:359.98px) {
   .working-process-services .swiper-wrapper {
     gap: 100px;
@@ -9329,4 +9331,20 @@ body.light-theme .procus-cursor2 {
   width: 18px;
   border-radius: 50%;
   background-color: #ffff00;
+}
+
+
+
+.process-slider-part .swiper-slide-active .single-slide {
+  background-color: #ffff00 !important;
+  margin-top: 70px !important;
+}
+
+.process-slider-part .swiper-slide-active img.shape-image {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:focus{
+  color: #ffff00;
 }
