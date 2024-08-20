@@ -9279,7 +9279,8 @@ body.light-theme .procus-cursor2 {
   z-index: 1;
   top: 39%;
   font-size: 30px;
-  cursor: pointer
+  cursor: pointer;
+  color: rgb(79, 79, 79);
 }
 
 .testimonial-slider .swiper-button-next {
@@ -9289,6 +9290,14 @@ body.light-theme .procus-cursor2 {
   top: 48%;
   font-size: 30px;
   cursor: pointer;
+  color: rgb(79, 79, 79);
+}
+
+.testimonial-slider .swiper-button-prev:hover {
+  color: #fff;
+}
+.testimonial-slider .swiper-button-next:hover {
+  color: #fff;
 }
 
 @media (MAX-width: 991.98px) {
