@@ -24,19 +24,20 @@ export default function FidbackSection() {
                             <div className="testimonial-slider">
                                 <Swiper
                                     direction='vertical'
-                                    style={{ height: '600px' }}
+                                    // style={{ height: '600px' }}
                                     navigation={{
                                         prevEl: prevRef.current,
                                         nextEl: nextRef.current,
                                     }}
+                                    // navigation={true}
                                     onBeforeInit={(swiper) => {
                                         swiper.params.navigation.prevEl = prevRef.current;
                                         swiper.params.navigation.nextEl = nextRef.current;
                                     }}
                                     className="mySwiper"
                                     // pagination={{ clickable: true }}
-                                    mousewheel={true}
-                                    keyboard={true}
+                                    // mousewheel={true}
+                                    // keyboard={true}
                                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
                                 >
                                     <SwiperSlide>
@@ -114,14 +115,14 @@ export default function FidbackSection() {
                                             </div>
                                         </div>
                                     </SwiperSlide>
+                                    <div className="swiper-button-prev" ref={prevRef}>
+                                        <i className="fa-solid fa-angle-up"></i>
+                                    </div>
+                                    <div className="swiper-button-next" ref={nextRef}>
+                                        <i className="fa-solid fa-angle-down"></i>
+                                    </div>
                                 </Swiper>
 
-                                <div className="swiper-button-prev" ref={prevRef}>
-                                    <i className="fa-solid fa-angle-up"></i>
-                                </div>
-                                <div className="swiper-button-next" ref={nextRef}>
-                                    <i className="fa-solid fa-angle-down"></i>
-                                </div>
                             </div>
                         </div>
                     </div>
