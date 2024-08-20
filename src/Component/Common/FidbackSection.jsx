@@ -20,24 +20,19 @@ export default function FidbackSection() {
                         </div>
                     </div>
                     <div className="row mt-60">
-                        <div className="col-lg-10 offset-lg-1">
+                        <div className="col-lg-11 offset-lg-1">
                             <div className="testimonial-slider">
                                 <Swiper
                                     direction='vertical'
-                                    // style={{ height: '600px' }}
                                     navigation={{
                                         prevEl: prevRef.current,
                                         nextEl: nextRef.current,
                                     }}
-                                    // navigation={true}
                                     onBeforeInit={(swiper) => {
                                         swiper.params.navigation.prevEl = prevRef.current;
                                         swiper.params.navigation.nextEl = nextRef.current;
                                     }}
                                     className="mySwiper"
-                                    // pagination={{ clickable: true }}
-                                    // mousewheel={true}
-                                    // keyboard={true}
                                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
                                 >
                                     <SwiperSlide>
@@ -122,7 +117,6 @@ export default function FidbackSection() {
                                         <i className="fa-solid fa-angle-down"></i>
                                     </div>
                                 </Swiper>
-
                             </div>
                         </div>
                     </div>

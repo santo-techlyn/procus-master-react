@@ -29,7 +29,10 @@ export default function Work_process() {
                             <Swiper
                                 direction={'vertical'}
                                 freeMode={true}
-                                pagination={true}   
+                                // pagination={true} 
+                                pagination={{
+                                    clickable: true,
+                                  }}  
                                 slidesPerView={3}
                                 grabCursor={true}
                                 modules={[Navigation, Pagination, Scrollbar, FreeMode, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
