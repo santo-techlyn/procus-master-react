@@ -1,14 +1,12 @@
 import CountUp from 'react-countup';
 import Footer2 from "../Component/Include/Footer2";
-import Header2 from "../Component/Include/Header2";
 import { useState } from 'react';
 import Isotope from '../Component/Common/Isotope';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
 import ThemColorChange from '../Component/Preloader/ThemColorChange';
 import Header from '../Component/Include/Header';
-import Header3 from '../Component/Include/Header3';
-import Counter from '../Component/Common/Counter';
+import Header2 from '../Component/Include/Header2';
 
 const services = [
     { title: "BRANDING", image: "assets/images/service-image-home-2.png" },
@@ -34,7 +32,8 @@ export default function Home_2() {
     return (
         <>
             <ThemColorChange></ThemColorChange>
-            <Header></Header>
+            {/* <Header></Header> */}
+            <Header2></Header2>
 
             {/* hero area starts  */}
             <section className="hero-area hero-home-2">

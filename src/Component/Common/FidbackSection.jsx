@@ -1,10 +1,25 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function FidbackSection() {
+    // const prevRef = useRef(null);
+    // const nextRef = useRef(null);
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const swiperRef = useRef(null);
+
+    // useEffect(() => {
+    //     const swiperInstance = swiperRef.current.swiper;
+
+    //     // Ensure that the DOM elements are present before assigning them to Swiper
+    //     if (prevRef.current && nextRef.current) {
+    //         swiperInstance.params.navigation.prevEl = prevRef.current;
+    //         swiperInstance.params.navigation.nextEl = nextRef.current;
+    //         swiperInstance.navigation.init();
+    //         swiperInstance.navigation.update();
+    //     }
+    // }, []);
     return (
         <>
             {/* testimonial area starts  */}
@@ -23,6 +38,15 @@ export default function FidbackSection() {
                         <div className="col-lg-10 offset-lg-1">
                             <div className="testimonial-slider">
                                 <Swiper
+                                    onSwiper={(swiper) => {
+                                        // Wait for Swiper instance to be initialized
+                                        if (prevRef.current && nextRef.current) {
+                                            swiper.params.navigation.prevEl = prevRef.current;
+                                            swiper.params.navigation.nextEl = nextRef.current;
+                                            swiper.navigation.init();
+                                            swiper.navigation.update();
+                                        }
+                                    }}
                                     direction='vertical'
                                     style={{ height: '600px' }}
                                     navigation={{
@@ -120,9 +144,8 @@ export default function FidbackSection() {
                                     <i className="fa-solid fa-angle-up"></i>
                                 </div>
                                 <div className="swiper-button-next" ref={nextRef}>
-                                <i className="fa-solid fa-angle-down"></i>
+                                    <i className="fa-solid fa-angle-down"></i>
                                 </div>
-
                             </div>
                         </div>
                     </div>
