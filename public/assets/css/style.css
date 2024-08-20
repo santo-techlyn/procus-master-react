@@ -9279,6 +9279,7 @@ body.light-theme .procus-cursor2 {
   z-index: 1;
   top: 39%;
   font-size: 30px;
+  cursor: pointer
 }
 
 .testimonial-slider .swiper-button-next {
@@ -9287,6 +9288,7 @@ body.light-theme .procus-cursor2 {
   z-index: 1;
   top: 48%;
   font-size: 30px;
+  cursor: pointer;
 }
 
 @media (MAX-width: 991.98px) {
