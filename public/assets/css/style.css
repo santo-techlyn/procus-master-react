@@ -9296,6 +9296,7 @@ body.light-theme .procus-cursor2 {
 .testimonial-slider .swiper-button-prev:hover {
   color: #fff;
 }
+
 .testimonial-slider .swiper-button-next:hover {
   color: #fff;
 }
@@ -9329,4 +9330,12 @@ body.light-theme .procus-cursor2 {
 .working-process-services .swiper-pagination-bullet {
   height: 20px;
   width: 20px;
+}
+
+/* nav */
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  nav .main-menu li {
+    text-align: start;
+  }
 }
