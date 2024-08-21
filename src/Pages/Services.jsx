@@ -2,7 +2,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordion from "../Component/Common/Accordion";
 import CommonHero from "../Component/Common/CommonHero";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel,FreeMode, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, FreeMode, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
 
 import 'swiper/css';
 import GetInTuch from '../Component/Common/GetInTuch';
@@ -52,7 +52,9 @@ export default function Services() {
                             <Swiper
                                 direction={'vertical'}
                                 freeMode={true}
-                                pagination={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
                                 slidesPerView={3}
                                 grabCursor={true}
                                 modules={[Navigation, Pagination, Scrollbar, FreeMode, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
@@ -114,7 +116,7 @@ export default function Services() {
                 <div className="container">
                     <div className="row mt-60">
                         <div className="col-12">
-                            <div className="portfolio-slider">
+                            <div className="portfolio-slider portfolio-slider2">
                                 <Swiper
                                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                                     spaceBetween={50}

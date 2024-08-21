@@ -9339,3 +9339,21 @@ body.light-theme .procus-cursor2 {
     text-align: start;
   }
 }
+
+.portfolio-slider2 .swiper-scrollbar {
+  height: 22px;
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.portfolio-slider2 .swiper-scrollbar-drag {
+  height: 20px;
+  width: 20px !important;
+  border-radius: 20px;
+  background-color: #ffff00;
+  cursor: col-resize;
+}
