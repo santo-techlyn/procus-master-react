@@ -9355,5 +9355,5 @@ body.light-theme .procus-cursor2 {
   width: 20px !important;
   border-radius: 20px;
   background-color: #ffff00;
-  cursor: col-resize;
+  cursor: grabbing;
 }
