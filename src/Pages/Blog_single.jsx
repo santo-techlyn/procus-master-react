@@ -112,5 +112,5 @@ export default function Blog_single() {
 
             <GetInTuch></GetInTuch>
         </>
-    )
+    ) 
 }
