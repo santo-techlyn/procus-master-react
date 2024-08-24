@@ -1,20 +1,21 @@
 import CountUp from 'react-countup';
+import React from 'react';
 import Footer2 from "../Component/Include/Footer2";
 import { useState } from 'react';
 import Isotope from '../Component/Common/Isotope';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, EffectCoverflow, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import { Navigation, Pagination, EffectCoverflow, Mousewheel, Keyboard, } from 'swiper/modules';
 import ThemColorChange from '../Component/Preloader/ThemColorChange';
-import Header from '../Component/Include/Header';
 import Header2 from '../Component/Include/Header2';
+import { Link } from 'react-router-dom';
 
 const services = [
-    { title: "BRANDING", image: "assets/images/service-image-home-2.png" },
-    { title: "UI/UX DESIGN", image: "assets/images/service-image2-home-2.png" },
-    { title: "GRAPHIC DESIGN", image: "assets/images/service-image3-home-2.png" },
-    { title: "MARKETING", image: "assets/images/service-image4-home-2.png" },
-    { title: "DEVELOPMENT", image: "assets/images/service-image5-home-2.png" },
-    { title: "CONTENT", image: "assets/images/service-image6-home-2.png" },
+    { title: "BRANDING", image: "/assets/images/service-image-home-2.png" },
+    { title: "UI/UX DESIGN", image: "/assets/images/service-image2-home-2.png" },
+    { title: "GRAPHIC DESIGN", image: "/assets/images/service-image3-home-2.png" },
+    { title: "MARKETING", image: "/assets/images/service-image4-home-2.png" },
+    { title: "DEVELOPMENT", image: "/assets/images/service-image5-home-2.png" },
+    { title: "CONTENT", image: "/assets/images/service-image6-home-2.png" },
 ];
 
 export default function Home_2() {
@@ -37,7 +38,7 @@ export default function Home_2() {
 
             {/* hero area starts  */}
             <section className="hero-area hero-home-2">
-                <img src="assets/images/hero-3d-home-2.png" alt="hero-3d" className="hero-3d-home-2 item-moveOne" />
+                <img src="/assets/images/hero-3d-home-2.png" alt="hero-3d" className="hero-3d-home-2 item-moveOne" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-8 offset-lg-2">
@@ -48,17 +49,17 @@ export default function Home_2() {
                                 <h1 className="wow fadeInDown" data-wow-delay=".2s">We are Shaping Concepts into <span>Digital</span> Innovations</h1>
                                 <p className=" wow fadeInUp" data-wow-delay=".2s">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable brand experiences.</p>
                                 <div className="hero-btn-group-2 wow fadeInUp" data-wow-delay=".2s">
-                                    <a href="/about" className="secondary-btn">learn more</a>
+                                    <Link to="/about" className="secondary-btn">learn more</Link>
                                     <div className="hero-video-wrapper">
-                                        <a className="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span> play video</a>
+                                        <Link className="hero-play-btn popup-youtube" to="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span> play video</Link>
                                     </div>
                                 </div>
                                 <div className="wow fadeIn" data-wow-delay=".8s">
                                     <ul className="hero-social-2">
-                                        <li><a href="#">facebook</a></li>
-                                        <li><a href="#">twitter</a></li>
-                                        <li><a href="#">linkedin</a></li>
-                                        <li><a href="#">instagram</a></li>
+                                        <li><Link to="#">facebook</Link></li>
+                                        <li><Link to="#">twitter</Link></li>
+                                        <li><Link to="#">linkedin</Link></li>
+                                        <li><Link to="#">instagram</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,7 +91,7 @@ export default function Home_2() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 offset-lg-1 wow fadeInLeft" data-wow-delay=".2s">
-                            <img src="assets/images/about.png" alt="about-image" />
+                            <img src="/assets/images/about.png" alt="about-image" />
                         </div>
                         <div className="col-lg-5 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">
                             <div className="about-content">
@@ -101,10 +102,10 @@ export default function Home_2() {
                                 <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable brand experiences.</p>
                                 <ul className="about-list">
                                     <li>Unleashing digital creativity.</li>
-                                    <li>Crafting your brand's digital story.</li>
+                                    <li>Crafting your brands digital story.</li>
                                     <li>Innovation meets creativity.</li>
                                 </ul>
-                                <a href="/about" className="primary-btn mt-40">Read more <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/about" className="primary-btn mt-40">Read more <span><i className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -169,7 +170,7 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/services" className="primary-btn">View all <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/services" className="primary-btn">View all <span><i className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -189,7 +190,7 @@ export default function Home_2() {
                                     <div className="row align-items-center">
                                         <div className="col-lg-4">
                                             <div className="service-title">
-                                                <h2><a href="/services">{service.title}</a></h2>
+                                                <h2><Link to="/services">{service.title}</Link></h2>
                                             </div>
                                         </div>
                                         <div className="col-lg-4">
@@ -214,7 +215,7 @@ export default function Home_2() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 offset-lg-1 wow fadeInLeft" data-wow-delay=".2s">
-                            <img src="assets/images/choose.png" alt="choose-image" />
+                            <img src="/assets/images/choose.png" alt="choose-image" />
                         </div>
                         <div className="col-lg-5 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">
                             <div className="choose-content">
@@ -225,10 +226,10 @@ export default function Home_2() {
                                 <p className="mt-20">Discover why Procus is the right choice for your digital needs. From innovative solutions and collaborative partnerships to a proven track record and dedicated support.</p>
                                 <ul className="about-list">
                                     <li>Unleashing digital creativity.</li>
-                                    <li>Crafting your brand's digital story.</li>
+                                    <li>Crafting your brands digital story.</li>
                                     <li>Innovation meets creativity.</li>
                                 </ul>
-                                <a href="/about" className="primary-btn mt-40">see more <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/about" className="primary-btn mt-40">see more <span><i className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -251,82 +252,82 @@ export default function Home_2() {
                         <div className="brand-items">
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".2s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".3s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/zoom-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/zoom-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/zoom-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/zoom-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".4s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".5s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/square-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/square-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/square-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/square-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".6s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/upwork-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/upwork-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/upwork-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/upwork-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".7s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/loom-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/loom-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/loom-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".8s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/slack-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/slack-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/tinder-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/tinder-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay=".9s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay="1s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/loom-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/loom-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/loom-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                             <div className="brand-single-2 wow fadeIn" data-wow-delay="1.1s">
                                 <div className="brand-logo dark-version">
-                                    <img src="assets/images/zoom-logo.png" alt="brand-logo" />
+                                    <img src="/assets/images/zoom-logo.png" alt="brand-logo" />
                                 </div>
                                 <div className="brand-logo light-version">
-                                    <img src="assets/images/zoom-dark.png" alt="brand-logo" />
+                                    <img src="/assets/images/zoom-dark.png" alt="brand-logo" />
                                 </div>
                             </div>
                         </div>
@@ -349,8 +350,8 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-8 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/team" className="primary-btn">see all <span><i
-                                    className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/team" className="primary-btn">see all <span><i
+                                    className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -359,19 +360,19 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-1-home-2.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-1-home-2.png" alt="team-member" /></Link>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="/team_single">Kathryn Murphy</a></h4>
+                                        <h4><Link to="/team_single">Kathryn Murphy</Link></h4>
                                         <span>founder & CEO</span>
                                     </div>
                                     <ul className="team-social">
-                                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -379,19 +380,19 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-2-home-2.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-2-home-2.png" alt="team-member" /></Link>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                        <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                         <span>UI UX Designer</span>
                                     </div>
                                     <ul className="team-social">
-                                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -399,19 +400,19 @@ export default function Home_2() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member-2">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-3-home-2.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-3-home-2.png" alt="team-member" /></Link>
                                 </div>
                                 <div className="team-content">
                                     <div className="team-bio">
-                                        <h4><a href="/team_single">Devon Lane</a></h4>
+                                        <h4><Link to="/team_single">Devon Lane</Link></h4>
                                         <span>Web Developer</span>
                                     </div>
                                     <ul className="team-social">
-                                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                        <li><Link href="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                        <li><Link href="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                        <li><Link href="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                        <li><Link href="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                        <li><Link href="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -461,7 +462,7 @@ export default function Home_2() {
                                         <div className="testimonial-content">
                                             <div className="content-left">
                                                 <div className="author-img">
-                                                    <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                                    <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                                 </div>
                                                 <div className="author-text">
                                                     <h5>Courtney Henry</h5>
@@ -488,7 +489,7 @@ export default function Home_2() {
                                         <div className="testimonial-content">
                                             <div className="content-left">
                                                 <div className="author-img">
-                                                    <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                                    <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                                 </div>
                                                 <div className="author-text">
                                                     <h5>Courtney Henry</h5>
@@ -515,7 +516,7 @@ export default function Home_2() {
                                         <div className="testimonial-content">
                                             <div className="content-left">
                                                 <div className="author-img">
-                                                    <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                                    <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                                 </div>
                                                 <div className="author-text">
                                                     <h5>Courtney Henry</h5>
@@ -549,8 +550,8 @@ export default function Home_2() {
                         </div>
                         <div className="col-lg-7 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/blog" className="primary-btn">see all <span><i
-                                    className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/blog" className="primary-btn">see all <span><i
+                                    className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -567,14 +568,6 @@ export default function Home_2() {
                                 keyboard={true}
                                 loop={true}
                                 modules={[Navigation, EffectCoverflow, Pagination, Mousewheel, Keyboard]}
-                                // coverflowEffect={{
-                                //     rotate: 50,
-                                //     stretch: 0,
-                                //     depth: 100,
-                                //     modifier: 1,
-                                //     slideShadows: true,
-                                // }}
-                                // centeredSlides={true}
 
                                 breakpoints={{
                                     769: {
@@ -590,61 +583,61 @@ export default function Home_2() {
                                 <SwiperSlide>
                                     <div className="blog-single-slide-2">
                                         <div className="blog-image">
-                                            <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-1-home-2.png"
-                                                alt="blog-thumb" /></a>
+                                            <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-1-home-2.png"
+                                                alt="blog-thumb" /></Link>
                                         </div>
                                         <h4>
-                                            <a href="/blog_single">Marketing Agency Website Design</a>
+                                            <Link to="/blog_single">Marketing Agency Website Design</Link>
                                         </h4>
                                         <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore.</p>
-                                        <a className="blog-btn mt-20" href="/blog_single">Read More <span><i
-                                            className="fas fa-arrow-right"></i></span></a>
+                                        <Link className="blog-btn mt-20" to="/blog_single">Read More <span><i
+                                            className="fas fa-arrow-right"></i></span></Link>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="blog-single-slide-2">
                                         <div className="blog-image">
-                                            <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-2.png"
-                                                alt="blog-thumb" /></a>
+                                            <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-2-home-2.png"
+                                                alt="blog-thumb" /></Link>
                                         </div>
                                         <h4>
-                                            <a href="/blog_single">Marketing Agency Website Design</a>
+                                            <Link to="/blog_single">Marketing Agency Website Design</Link>
                                         </h4>
                                         <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore.</p>
-                                        <a className="blog-btn mt-20" href="/blog_single">Read More <span><i
-                                            className="fas fa-arrow-right"></i></span></a>
+                                        <Link className="blog-btn mt-20" to="/blog_single">Read More <span><i
+                                            className="fas fa-arrow-right"></i></span></Link>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="blog-single-slide-2">
                                         <div className="blog-image">
-                                            <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-3-home-2.png"
-                                                alt="blog-thumb" /></a>
+                                            <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-3-home-2.png"
+                                                alt="blog-thumb" /></Link>
                                         </div>
                                         <h4>
-                                            <a href="/blog_single">Marketing Agency Website Design</a>
+                                            <Link to="/blog_single">Marketing Agency Website Design</Link>
                                         </h4>
                                         <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore.</p>
-                                        <a className="blog-btn mt-20" href="/blog_single">Read More <span><i
-                                            className="fas fa-arrow-right"></i></span></a>
+                                        <Link className="blog-btn mt-20" to="/blog_single">Read More <span><i
+                                            className="fas fa-arrow-right"></i></span></Link>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="blog-single-slide-2">
                                         <div className="blog-image">
-                                            <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-2.png"
-                                                alt="blog-thumb" /></a>
+                                            <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-2-home-2.png"
+                                                alt="blog-thumb" /></Link>
                                         </div>
                                         <h4>
-                                            <a href="/blog_single">Marketing Agency Website Design</a>
+                                            <Link to="/blog_single">Marketing Agency Website Design</Link>
                                         </h4>
                                         <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                             incididunt ut labore.</p>
-                                        <a className="blog-btn mt-20" href="/blog_single">Read More <span><i
-                                            className="fas fa-arrow-right"></i></span></a>
+                                        <Link className="blog-btn mt-20" to="/blog_single">Read More <span><i
+                                            className="fas fa-arrow-right"></i></span></Link>
                                     </div>
                                 </SwiperSlide>
                             </Swiper>

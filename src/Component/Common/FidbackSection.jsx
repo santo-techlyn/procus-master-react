@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
+import React from 'react';
+import { Navigation, Pagination, Mousewheel, Keyboard, } from 'swiper/modules';
 import { useRef } from 'react';
 
 export default function FidbackSection() {
@@ -9,7 +10,7 @@ export default function FidbackSection() {
         <>
             {/* testimonial area starts  */}
             <section className="testimonial-area pt-110 pb-120">
-                <img src="assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
+                <img src="/assets/images/testimonial-3d.png" alt="testimonial-3d" className="testimonial-3d" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
@@ -44,7 +45,7 @@ export default function FidbackSection() {
                                             <div className="testimonial-content">
                                                 <div className="content-left">
                                                     <div className="author-img">
-                                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                                        <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                                     </div>
                                                     <div className="author-text">
                                                         <h4>Courtney Henry</h4>
@@ -69,7 +70,7 @@ export default function FidbackSection() {
                                             <div className="testimonial-content">
                                                 <div className="content-left">
                                                     <div className="author-img">
-                                                        <img src="assets/images/testimonial-02.jpg" alt="author-image" />
+                                                        <img src="/assets/images/testimonial-02.jpg" alt="author-image" />
                                                     </div>
                                                     <div className="author-text">
                                                         <h4>Sylvia H Green</h4>
@@ -94,7 +95,7 @@ export default function FidbackSection() {
                                             <div className="testimonial-content">
                                                 <div className="content-left">
                                                     <div className="author-img">
-                                                        <img src="assets/images/testimonial-03.jpg" alt="author-image" />
+                                                        <img src="/assets/images/testimonial-03.jpg" alt="author-image" />
                                                     </div>
                                                     <div className="author-text">
                                                         <h4>Reid E But</h4>

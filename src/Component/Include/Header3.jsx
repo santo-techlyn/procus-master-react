@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import Preloader from "../Preloader/Preloader";
-
+import React from 'react';
 export default function Header3() {
     return (
         <>
@@ -12,56 +13,56 @@ export default function Header3() {
                         <div className="row align-items-center">
                             <div className="col-lg-2">
                                 <div className="logo-area">
-                                    <a className="dark-version" href="/"> <img src="assets/images/logo.png" alt="logo" /></a>
-                                    <a className="light-version" href="/"> <img src="assets/images/logo-black.png" alt="logo" /></a>
+                                    <Link className="dark-version" to="/"> <img src="/assets/images/logo.png" alt="logo" /></Link>
+                                    <Link className="light-version" to="/"> <img src="/assets/images/logo-black.png" alt="logo" /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-8 d-none d-lg-block">
                                 <nav id="mobile-menu">
                                     <ul className="main-menu">
-                                        <li className="has-submenu"><a href="/">home</a>
+                                        <li className="has-submenu"><Link to="/">home</Link>
                                             <ul className="submenu">
-                                                <li><a href="/">home 01</a></li>
-                                                <li><a href='/home_2'>home 02</a></li>
-                                                <li><a href="/home_3">home 03</a></li>
+                                                <li><Link to="/">home 01</Link></li>
+                                                <li><Link to='/home_2'>home 02</Link></li>
+                                                <li><Link to="/home_3">home 03</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-submenu"><a href="#">services</a>
+                                        <li className="has-submenu"><Link to="#">services</Link>
                                             <ul className="submenu">
-                                                <li><a href="/services">services</a></li>
-                                                <li><a href="/service-single">service details</a></li>
+                                                <li><Link to="/services">services</Link></li>
+                                                <li><Link to="/service-single">service details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-submenu"><a href="#">case</a>
+                                        <li className="has-submenu"><Link to="#">case</Link>
                                             <ul className="submenu">
-                                                <li><a href="/case">case</a></li>
-                                                <li><a href="/case-single">case details</a></li>
+                                                <li><Link to="/case">case</Link></li>
+                                                <li><Link to="/case-single">case details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-submenu"><a href="#">blog</a>
+                                        <li className="has-submenu"><Link to="#">blog</Link>
                                             <ul className="submenu">
-                                                <li><a href="/blog">blog 2 column</a></li>
-                                                <li><a href="/blog-2">blog 3 column</a></li>
-                                                <li><a href="/blog-single">blog details</a></li>
+                                                <li><Link to="/blog">blog 2 column</Link></li>
+                                                <li><Link to="/blog-2">blog 3 column</Link></li>
+                                                <li><Link to="/blog-single">blog details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-submenu"><a href="#">pages</a>
+                                        <li className="has-submenu"><Link to="#">pages</Link>
                                             <ul className="submenu">
-                                                <li><a href="/about">about</a></li>
-                                                <li><a href="/work-process">work process</a></li>
-                                                <li><a href="/team">team</a></li>
-                                                <li><a href="/team-single">team details</a></li>
-                                                <li><a href="/faq">FAQ</a></li>
-                                                <li><a href="/error">404</a></li>
+                                                <li><Link to="/about">about</Link></li>
+                                                <li><Link to="/work-process">work process</Link></li>
+                                                <li><Link to="/team">team</Link></li>
+                                                <li><Link to="/team-single">team details</Link></li>
+                                                <li><Link to="/faq">FAQ</Link></li>
+                                                <li><Link to="/error">404</Link></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/contact">contact</a></li>
+                                        <li><Link to="/contact">contact</Link></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div className="col-lg-2">
                                 <div className="nav-right-content">
-                                    <a href="/contact" className="primary-btn">Let’s Talk <span><i className="fas fa-arrow-right"></i></span></a>
+                                    <Link to="/contact" className="primary-btn">Lets Talk <span><i className="fas fa-arrow-right"></i></span></Link>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import CommonHero from "../Component/Common/CommonHero";
 import GetInTuch from "../Component/Common/GetInTuch";
+import React from 'react';
 
 export default function Case_Single() {
     return (
@@ -11,7 +13,7 @@ export default function Case_Single() {
                 <div className="container">
                     <div className="row">
                         <div className="col-12 wow fadeInUp" data-wow-delay=".2s">
-                            <img src="assets/images/portfolio-04.png" alt="case-image" />
+                            <img src="/assets/images/portfolio-04.png" alt="case-image" />
                         </div>
                     </div>
                     <div className="case-info">
@@ -45,7 +47,7 @@ export default function Case_Single() {
                     <div className="wow fadeInUp" data-wow-delay=".2s">
                         <h2>Shopify Responsive Website Design</h2>
                         <h3>Project Overview:</h3>
-                        <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. From captivating design to strategic insights, we're here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. From captivating design to strategic insights, we're here to craft experiences that leave a lasting impact.</p>
+                        <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. From captivating design to strategic insights, we are here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. From captivating design to strategic insights, we are here to craft experiences that leave a lasting impact.</p>
                     </div>
                     <div className="row mt-50">
                         <div className="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
@@ -64,11 +66,11 @@ export default function Case_Single() {
                     <div className="case-images-gallery mt-20">
                         <div className="row">
                             <div className="col-lg-8 wow fadeIn" data-wow-delay=".2s">
-                                <img src="assets/images/case-gallery-1.png" alt="case-gallery" />
+                                <img src="/assets/images/case-gallery-1.png" alt="case-gallery" />
                             </div>
                             <div className="col-lg-4">
-                                <img className="wow fadeIn" data-wow-delay=".3s" src="assets/images/case-gallery-2.png" alt="case-gallery" />
-                                <img className="wow fadeIn" data-wow-delay=".4s" src="assets/images/case-gallery-3.png" alt="case-gallery" />
+                                <img className="wow fadeIn" data-wow-delay=".3s" src="/assets/images/case-gallery-2.png" alt="case-gallery" />
+                                <img className="wow fadeIn" data-wow-delay=".4s" src="/assets/images/case-gallery-3.png" alt="case-gallery" />
                             </div>
                         </div>
                     </div>
@@ -106,18 +108,18 @@ export default function Case_Single() {
                     <div className="row">
                         <div className="col-lg-6 wow fadeInLeft" data-wow-delay=".2s">
                             <h3>The Challenges:</h3>
-                            <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. From captivating design to strategic insights, we're here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. </p>
+                            <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. From captivating design to strategic insights, we are here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. </p>
                         </div>
                         <div className="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <h3>The Result:</h3>
-                            <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. From captivating design to strategic insights, we're here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence. </p>
+                            <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. From captivating design to strategic insights, we are here to craft experiences that leave a lasting impact. Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence. </p>
                         </div>
                     </div>
                     <ul className="preview-links wow fadeInUp" data-wow-delay=".2s">
                         <li>Live Preview:</li>
-                        <li><a href="#"><span><i className="fa-brands fa-github"></i></span> github <span><i className="fas fa-arrow-right"></i></span></a></li>
-                        <li><a href="#"><span><i className="fa-brands fa-square-behance"></i></span> behance <span><i className="fas fa-arrow-right"></i></span></a></li>
-                        <li><a href="#"><span><i className="fa-brands fa-square-dribbble"></i></span> dribbble <span><i className="fas fa-arrow-right"></i></span></a></li>
+                        <li><Link to="#"><span><i className="fa-brands fa-github"></i></span> github <span><i className="fas fa-arrow-right"></i></span></Link></li>
+                        <li><Link to="#"><span><i className="fa-brands fa-square-behance"></i></span> behance <span><i className="fas fa-arrow-right"></i></span></Link></li>
+                        <li><Link to="#"><span><i className="fa-brands fa-square-dribbble"></i></span> dribbble <span><i className="fas fa-arrow-right"></i></span></Link></li>
                     </ul>
                 </div>
             </section>

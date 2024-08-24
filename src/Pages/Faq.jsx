@@ -1,5 +1,6 @@
 import { useState } from "react";
 import CommonHero from "../Component/Common/CommonHero";
+import React from 'react';
 import GetInTuch from "../Component/Common/GetInTuch";
 
 const faqDatas1 = [

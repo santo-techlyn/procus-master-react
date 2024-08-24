@@ -2,42 +2,44 @@ import { useState } from "react";
 import BrandSection from "../Component/Common/BrandSection";
 import CommonHero from "../Component/Common/CommonHero";
 import Counter from "../Component/Common/Counter";
+import React from 'react';
 import GetInTuch from "../Component/Common/GetInTuch";
+import { Link } from "react-router-dom";
 
 const datas = [
     {
-        img1: 'assets/images/choose-icon-1.png',
-        img2: 'assets/images/choose-dark-icon-1.png',
+        img1: '/assets/images/choose-icon-1.png',
+        img2: '/assets/images/choose-dark-icon-1.png',
         title: 'Innovative Solutions',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
     {
-        img1: 'assets/images/choose-icon-2.png',
-        img2: 'assets/images/choose-dark-icon-2.png',
+        img1: '/assets/images/choose-icon-2.png',
+        img2: '/assets/images/choose-dark-icon-2.png',
         title: 'Data-Driven Strategies',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
     {
-        img1: 'assets/images/choose-icon-3.png',
-        img2: 'assets/images/choose-dark-icon-3.png',
+        img1: '/assets/images/choose-icon-3.png',
+        img2: '/assets/images/choose-dark-icon-3.png',
         title: 'Proven Track Record',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
     {
-        img1: 'assets/images/choose-icon-4.png',
-        img2: 'assets/images/choose-dark-icon-4.png',
+        img1: '/assets/images/choose-icon-4.png',
+        img2: '/assets/images/choose-dark-icon-4.png',
         title: 'Collaborative Partnership',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
     {
-        img1: 'assets/images/choose-icon-5.png',
-        img2: 'assets/images/choose-dark-icon-5.png',
+        img1: '/assets/images/choose-icon-5.png',
+        img2: '/assets/images/choose-dark-icon-5.png',
         title: 'Forward-Thinking Approach',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
     {
-        img1: 'assets/images/choose-icon-6.png',
-        img2: 'assets/images/choose-dark-icon-6.png',
+        img1: '/assets/images/choose-icon-6.png',
+        img2: '/assets/images/choose-dark-icon-6.png',
         title: 'Forward-Thinking Approach',
         description: "Creativity and innovation fuel our approach. We tailor unique strategies to your brand's needs, blending fresh ideas with strategic insights to craft campaigns that truly resonate.",
     },
@@ -70,8 +72,8 @@ export default function Home() {
                         </div>
                         <div className="col-lg-5 offset-lg-1 align-self-end wow fadeInRight" data-wow-delay=".2s">
                             <div className="welcome-images">
-                                <img src="assets/images/welcome-vector.png" className="welcome-vector item-rotate" alt="welcome-vector" />
-                                <img src="assets/images/welcome-image.png" className="welcome-image" alt="welcome-image" />
+                                <img src="/assets/images/welcome-vector.png" className="welcome-vector item-rotate" alt="welcome-vector" />
+                                <img src="/assets/images/welcome-image.png" className="welcome-image" alt="welcome-image" />
                             </div>
                         </div>
                     </div>
@@ -85,7 +87,7 @@ export default function Home() {
                         <div className="row">
                             <div className="col-12">
                                 <div className="video-wrapper">
-                                    <a className="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span></a>
+                                    <Link className="hero-play-btn popup-youtube" to="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span></Link>
                                 </div>
                             </div>
                         </div>
@@ -93,7 +95,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <Counter></Counter>
+            <Counter/>
 
             {/* choose area starts  */}
             <section className="choose-section-about pt-110 pb-90">
@@ -102,7 +104,7 @@ export default function Home() {
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
                             <div className="section-top text-center">
                                 <h2>Why our Agency is <span>Different</span></h2>
-                                <p className="mt-20">At our core, we're more than just a creative agency – we're a dynamic team of storytellers, strategists, and tech enthusiasts.</p>
+                                <p className="mt-20">At our core, we are more than just a creative agency – we are a dynamic team of storytellers, strategists, and tech enthusiasts.</p>
                             </div>
                         </div>
                     </div>
@@ -159,7 +161,9 @@ export default function Home() {
                 </div>
             </div>
 
-            <BrandSection></BrandSection>
+            <BrandSection>
+            
+            </BrandSection>
 
             {/* team area starts  */}
             <section className="team-area pb-90">
@@ -173,7 +177,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/team" className="secondary-btn">See More</a>
+                                <Link to="/team" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -181,20 +185,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-01.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -203,20 +207,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-02.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link href="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -225,20 +229,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-03.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -247,20 +251,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-04.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -269,20 +273,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-05.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -291,20 +295,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-06.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>

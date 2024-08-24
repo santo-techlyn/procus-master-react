@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
 import BrandSection from "../Component/Common/BrandSection";
 import CommonHero from "../Component/Common/CommonHero";
 import FidbackSection from "../Component/Common/FidbackSection";
 import GetInTuch from "../Component/Common/GetInTuch";
+import React from 'react';
 
 export default function Case() {
     return (
@@ -24,48 +26,48 @@ export default function Case() {
                         <div className="col-lg-12">
                             <div className="single-case-item">
                                 <div className="case-image wow fadeInLeft" data-wow-delay=".2s">
-                                    <img src="assets/images/portfolio-01.png" alt="case" />
+                                    <img src="/assets/images/portfolio-01.png" alt="case" />
                                 </div>
                                 <div className="case-content wow fadeInRight" data-wow-delay=".2s">
-                                    <h3><a href="/case_single">Shopify Responsive Website Design</a></h3>
-                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <h3><Link to="/case_single">Shopify Responsive Website Design</Link></h3>
+                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
+                                    <Link to="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="single-case-item item-reverse">
                                 <div className="case-content wow fadeInLeft" data-wow-delay=".2s">
-                                    <h3><a href="/case_single">Digital Agency Website Design</a></h3>
-                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <h3><Link to="/case_single">Digital Agency Website Design</Link></h3>
+                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
+                                    <Link to="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                                 <div className="case-image wow fadeInRight" data-wow-delay=".2s">
-                                    <img src="assets/images/portfolio-02.png" alt="case" />
+                                    <img src="/assets/images/portfolio-02.png" alt="case" />
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="single-case-item">
                                 <div className="case-image wow fadeInLeft" data-wow-delay=".2s">
-                                    <img src="assets/images/portfolio-03.png" alt="case" />
+                                    <img src="/assets/images/portfolio-03.png" alt="case" />
                                 </div>
                                 <div className="case-content wow fadeInRight" data-wow-delay=".2s">
-                                    <h3><a href="/case_single">Shopify Responsive Website Design</a></h3>
-                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <h3><Link to="/case_single">Shopify Responsive Website Design</Link></h3>
+                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
+                                    <Link to="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                             </div>
                         </div>
                         <div className="col-lg-12">
                             <div className="single-case-item item-reverse">
                                 <div className="case-content wow fadeInLeft" data-wow-delay=".2s">
-                                    <h3><a href="/case_single">Digital Agency Website Design</a></h3>
-                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
-                                    <a href="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <h3><Link to="/case_single">Digital Agency Website Design</Link></h3>
+                                    <p className="mt-20">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
+                                    <Link to="/case_single" className="primary-btn mt-20">details <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                                 <div className="case-image wow fadeInRight" data-wow-delay=".2s">
-                                    <img src="assets/images/portfolio-04.png" alt="case" />
+                                    <img src="/assets/images/portfolio-04.png" alt="case" />
                                 </div>
                             </div>
                         </div>

@@ -1,16 +1,17 @@
 import CountUp from 'react-countup';
+import React from 'react';
 export default function Counter() {
     return (
         <>
             {/* counter area starts  */}
             <section className="counter-area pt-110 pb-90" id="counter-area">
-                <img src="assets/images/counter-3d.png" alt="counter-3d" className="counter-3d" />
+                <img src="/assets/images/counter-3d.png" alt="counter-3d" className="counter-3d" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
                             <div className="section-top text-center">
                                 <h2>Experiences Fueled by <span>Passion</span> and <span>Expertise</span></h2>
-                                <p className="mt-20">At our core, we're more than just a creative agency – we're a dynamic team of storytellers, strategists, and tech enthusiasts.</p>
+                                <p className="mt-20">At our core, we are more than just a creative agency – we are a dynamic team of storytellers, strategists, and tech enthusiasts.</p>
                             </div>
                         </div>
                     </div>

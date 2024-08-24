@@ -1,9 +1,11 @@
 import CommonHero from "../Component/Common/CommonHero";
 import GetInTuch from "../Component/Common/GetInTuch";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, FreeMode, Autoplay, Mousewheel, EffectCoverflow, EffectCube, Keyboard } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, FreeMode, Autoplay, Mousewheel, EffectCoverflow, EffectCube } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import React from 'react';
+import { Link } from "react-router-dom";
 
 export default function Work_process() {
     return (
@@ -18,10 +20,10 @@ export default function Work_process() {
                             <div className="working-process-left pt-110 pb-120">
                                 <div className="section-top">
                                     <h2>Our <span>Process</span></h2>
-                                    <p className="mt-20">Explore the intricate gears of Procus Agency's workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
+                                    <p className="mt-20">Explore the intricate gears of Procus Agencys workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
                                 </div>
                                 <div className="working-process-image mt-60">
-                                    <img src="assets/images/working-process-image.png" alt="working-process-image" />
+                                    <img src="/assets/images/working-process-image.png" alt="working-process-image" />
                                 </div>
                             </div>
                         </div>
@@ -32,7 +34,7 @@ export default function Work_process() {
                                 // pagination={true} 
                                 pagination={{
                                     clickable: true,
-                                  }}  
+                                }}
                                 slidesPerView={3}
                                 grabCursor={true}
                                 modules={[Navigation, Pagination, Scrollbar, FreeMode, EffectCube, Mousewheel, EffectCoverflow, A11y, Autoplay]}
@@ -86,7 +88,7 @@ export default function Work_process() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/team" className="secondary-btn">See More</a>
+                                <Link to="/team" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -94,20 +96,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-01.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -116,20 +118,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-02.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -138,20 +140,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-03.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -160,20 +162,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-04.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -182,20 +184,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-05.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -204,20 +206,20 @@ export default function Work_process() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-06.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -239,7 +241,7 @@ export default function Work_process() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/case" className="secondary-btn">See More</a>
+                                <Link to="/case" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -264,60 +266,60 @@ export default function Work_process() {
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link to="/case"><img src="/assets/images/portfolio-01.png" alt="portfolio-image" /></Link>
+                                            <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                            <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Digital Agency Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            <h3><Link to="/case">Digital Agency Website Design</Link></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link to="/case"><img src="/assets/images/portfolio-03.png" alt="portfolio-image" /></Link>
+                                            <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">web design for your business</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            <h3><Link to="/case">web design for your business</Link></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link to="/case"><img src="/assets/images/portfolio-04.png" alt="portfolio-image" /></Link>
+                                            <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">build your product with laravel</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            <h3><Link to="/case">build your product with laravel</Link></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <div className="portfolio-single">
                                         <div className="portfolio-image">
-                                            <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                            <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                            <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                         <div className="portfolio-content mt-20">
-                                            <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                            <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                            <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brands presence.</p>
                                         </div>
                                     </div>
                                 </SwiperSlide>

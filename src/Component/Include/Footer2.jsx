@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Footer2() {
     return (
         <>
@@ -20,10 +22,10 @@ export default function Footer2() {
                                         </form>
                                     </div>
                                     <ul className="hero-social-2">
-                                        <li><a href="#">facebook</a></li>
-                                        <li><a href="#">twitter</a></li>
-                                        <li><a href="#">linkedin</a></li>
-                                        <li><a href="#">instagram</a></li>
+                                        <li><Link to="#">facebook</Link></li>
+                                        <li><Link to="#">twitter</Link></li>
+                                        <li><Link to="#">linkedin</Link></li>
+                                        <li><Link to="#">instagram</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -31,9 +33,9 @@ export default function Footer2() {
                                 <div className="footer-widget-box-2 contact-widget">
                                     <h2>Get in Touch</h2>
                                     <ul>
-                                        <li><a href="#">info@procus.com</a></li>
-                                        <li><a href="#">+99(0) 1453 123456</a></li>
-                                        <li><a href="#">1901 Thornridge Cir. Shiloh, Hawaii 81063</a></li>
+                                        <li><Link to="tel:+123456789000">info@procus.com</Link></li>
+                                        <li><Link to="mailto:info@procus.com">+99(0) 1453 123456</Link></li>
+                                        <li><Link to="https://www.google.com/maps/search/?api=1&query=1498w+Fluton+ste,+STE+2D+Chicago,+IL+63867">1901 Thornridge Cir. Shiloh, Hawaii 81063</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,14 +50,14 @@ export default function Footer2() {
                             <div className="row">
                                 <div className="col-lg-6 align-self-center">
                                     <p className="copyright-text">
-                                        Copyright &copy; <span id="date"></span> <a href="index.html"> Procus</a> Designed by Pointer Flow.
+                                        Copyright &copy; <span id="date"></span> <Link to="/"> Procus</Link> Designed by Pointer Flow.
                                     </p>
                                 </div>
                                 <div className="col-lg-6 align-self-center">
                                     <ul className="footer-menu">
-                                        <li><a href="/terms">Terms Of Services</a></li>
-                                        <li><a href="/privacy">Privacy Policy</a></li>
-                                        <li><a href="/contact">Support</a></li>
+                                        <li><Link to="/terms">Terms Of Services</Link></li>
+                                        <li><Link to="/privacy">Privacy Policy</Link></li>
+                                        <li><Link to="/contact">Support</Link></li>
                                     </ul>
                                 </div>
                             </div>

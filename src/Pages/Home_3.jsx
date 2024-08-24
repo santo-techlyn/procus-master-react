@@ -1,10 +1,11 @@
 import Marquee from "react-fast-marquee";
 import Footer3 from "../Component/Include/Footer3";
-import Header3 from "../Component/Include/Header3";
 import ThemColorChange from "../Component/Preloader/ThemColorChange";
 import CountUp from 'react-countup';
+import React from 'react';
 import { useState } from "react";
 import Header from "../Component/Include/Header";
+import { Link } from "react-router-dom";
 
 
 export default function Home_3() {
@@ -22,12 +23,12 @@ export default function Home_3() {
 
             {/* hero area starts  */}
             <section className="hero-home-3">
-                <img src="assets/images/hero-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 dark-version item-zooming" />
-                <img src="assets/images/hero-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 dark-version item-rotate" />
-                <img src="assets/images/hero-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 dark-version item-upDown" />
-                <img src="assets/images/hero-light-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 light-version item-zooming" />
-                <img src="assets/images/hero-light-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 light-version item-rotate" />
-                <img src="assets/images/hero-light-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 light-version item-upDown" />
+                <img src="/assets/images/hero-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 dark-version item-zooming" />
+                <img src="/assets/images/hero-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 dark-version item-rotate" />
+                <img src="/assets/images/hero-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 dark-version item-upDown" />
+                <img src="/assets/images/hero-light-vector-1-home-3.png" alt="vector-image" className="vector-image vector-1 light-version item-zooming" />
+                <img src="/assets/images/hero-light-vector-2-home-3.png" alt="vector-image" className="vector-image vector-2 light-version item-rotate" />
+                <img src="/assets/images/hero-light-vector-3-home-3.png" alt="vector-image" className="vector-image vector-3 light-version item-upDown" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 wow fadeInLeft" data-wow-delay=".2s">
@@ -35,11 +36,11 @@ export default function Home_3() {
                                 <h1><span>Digital Products</span> for your Business</h1>
                                 <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 <div className="button-group">
-                                    <a href="/about" className="secondary-btn mt-20">learn more</a>
-                                    <img src="assets/images/hero-vector-4-home-3.png" alt="vector-image" className="vector-4 dark-version" />
-                                    <img src="assets/images/hero-light-vector-4-home-3.png" alt="vector-image" className="vector-4 light-version" />
+                                    <Link to="/about" className="secondary-btn mt-20">learn more</Link>
+                                    <img src="/assets/images/hero-vector-4-home-3.png" alt="vector-image" className="vector-4 dark-version" />
+                                    <img src="/assets/images/hero-light-vector-4-home-3.png" alt="vector-image" className="vector-4 light-version" />
                                 </div>
-                                <img src="assets/images/hero-image-1-home-3.png" alt="hero-image" className="hero-image-left mt-40" />
+                                <img src="/assets/images/hero-image-1-home-3.png" alt="hero-image" className="hero-image-left mt-40" />
                             </div>
                         </div>
                         <div className="col-xl-6 offset-xl-1 col-lg-7 wow fadeInRight" data-wow-delay=".2s">
@@ -71,74 +72,74 @@ export default function Home_3() {
                                 >
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/zoom-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/zoom-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/zoom-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/zoom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/square-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/square-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/square-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/square-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/upwork-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/upwork-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/upwork-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/upwork-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/loom-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/loom-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/loom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/slack-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/slack-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/tinder-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/tinder-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/spotify-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/spotify-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/spotify-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                     <div className="brand-single">
                                         <div className="brand-logo dark-version">
-                                            <img src="assets/images/loom-logo.png" alt="brand-logo" />
+                                            <img src="/assets/images/loom-logo.png" alt="brand-logo" />
                                         </div>
                                         <div className="brand-logo light-version">
-                                            <img src="assets/images/loom-dark.png" alt="brand-logo" />
+                                            <img src="/assets/images/loom-dark.png" alt="brand-logo" />
                                         </div>
                                     </div>
                                 </Marquee>
@@ -155,12 +156,12 @@ export default function Home_3() {
                     <div className="row wow fadeInUp" data-wow-delay=".2s">
                         <div className="col-lg-2">
                             <div className="title-image">
-                                <img src="assets/images/title-image-home-3.png" alt="title-image" />
+                                <img src="/assets/images/title-image-home-3.png" alt="title-image" />
                             </div>
                         </div>
                         <div className="col-lg-7">
                             <div className="section-top-3">
-                                <h2>Discover Our Story and Commitment to <span>Elevating Your Brand's Online Presence</span></h2>
+                                <h2>Discover Our Story and Commitment to <span>Elevating Your Brand’s Online Presence</span></h2>
                             </div>
                         </div>
                     </div>
@@ -171,7 +172,7 @@ export default function Home_3() {
                                     <h2 className="counter"><CountUp start={0} end={25} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">Years of Experience</h6>
-                                <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
+                                <p className="mt-20">From small businesses to global brands, we’ve completed a wide range of projects.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -181,7 +182,7 @@ export default function Home_3() {
                                     <h2 className="plus-sign">+</h2>
                                 </div>
                                 <h6 className="counter-text">project complete</h6>
-                                <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
+                                <p className="mt-20">From small businesses to global brands, we’ve completed a wide range of projects.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -190,7 +191,7 @@ export default function Home_3() {
                                     <h2 className="counter"><CountUp start={0} end={100} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">happy client</h6>
-                                <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
+                                <p className="mt-20">From small businesses to global brands, we’ve completed a wide range of projects.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -199,7 +200,7 @@ export default function Home_3() {
                                     <h2 className="counter"><CountUp start={0} end={35} delay={.9} duration={5}></CountUp></h2>
                                 </div>
                                 <h6 className="counter-text">Wining Awards</h6>
-                                <p className="mt-20">From small businesses to global brands, we've completed a wide range of projects.</p>
+                                <p className="mt-20">From small businesses to global brands, we’ve completed a wide range of projects.</p>
                             </div>
                         </div>
                     </div>
@@ -213,7 +214,7 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-12">
                                 <div className="video-wrapper">
-                                    <a className="hero-play-btn popup-youtube" href="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span></a>
+                                    <Link className="hero-play-btn popup-youtube" to="https://www.youtube.com/watch?v=ZG6tNrxXh1k"><span className="video-btn item-pulse"><i className="fas fa-play"></i></span></Link>
                                 </div>
                             </div>
                         </div>
@@ -227,11 +228,11 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-lg-7 wow fadeInUp" data-wow-delay=".2s">
                             <div className="section-top-3">
-                                <h2>Enhance Your Brand's Online Presence <span>with Our Customized Solutions</span></h2>
+                                <h2>Enhance Your Brand’s Online Presence <span>with Our Customized Solutions</span></h2>
                             </div>
                         </div>
                         <div className="col-lg-5 align-self-end">
-                            <p>Explore Our Services Tailored to Elevate Your Brand's Digital Presence and Drive Meaningful Engagement</p>
+                            <p>Explore Our Services Tailored to Elevate Your BrandLinks Digital Presence and Drive Meaningful Engagement</p>
                         </div>
                     </div>
                     <div className="tab-container mt-60">
@@ -248,27 +249,27 @@ export default function Home_3() {
                             <div className="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">
                                 <div className="tab-content">
                                     <div className={toggle == 1 ? "tab-content-item active" : "tab-content-item"} id="digital-marketing">
-                                        <img src="assets/images/service-image-home-3.png" alt="service-image" />
+                                        <img src="/assets/images/service-image-home-3.png" alt="service-image" />
                                         <p className="mt-30">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions That Captivate Audiences and Drive Meaningful Engagement, Helping Your Brand Stand Out in the Digital Landscape.</p>
                                         <p className="mt-20">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions.</p>
                                     </div>
                                     <div className={toggle == 2 ? "tab-content-item active" : "tab-content-item"} id="content-creation">
-                                        <img src="assets/images/service-image2-home-3.png" alt="service-image" />
+                                        <img src="/assets/images/service-image2-home-3.png" alt="service-image" />
                                         <p className="mt-30">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions That Captivate Audiences and Drive Meaningful Engagement, Helping Your Brand Stand Out in the Digital Landscape.</p>
                                         <p className="mt-20">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions.</p>
                                     </div>
                                     <div className={toggle == 3 ? "tab-content-item active" : "tab-content-item"} id="promotional-campaign">
-                                        <img src="assets/images/service-image3-home-3.png" alt="service-image" />
+                                        <img src="/assets/images/service-image3-home-3.png" alt="service-image" />
                                         <p className="mt-30">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions That Captivate Audiences and Drive Meaningful Engagement, Helping Your Brand Stand Out in the Digital Landscape.</p>
                                         <p className="mt-20">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions.</p>
                                     </div>
                                     <div className={toggle == 4 ? "tab-content-item active" : "tab-content-item"} id="animated-reels-video">
-                                        <img src="assets/images/service-image4-home-3.png" alt="service-image" />
+                                        <img src="/assets/images/service-image4-home-3.png" alt="service-image" />
                                         <p className="mt-30">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions That Captivate Audiences and Drive Meaningful Engagement, Helping Your Brand Stand Out in the Digital Landscape.</p>
                                         <p className="mt-20">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions.</p>
                                     </div>
                                     <div className={toggle == 5 ? "tab-content-item active" : "tab-content-item"} id="product-branding">
-                                        <img src="assets/images/service-image5-home-3.png" alt="service-image" />
+                                        <img src="/assets/images/service-image5-home-3.png" alt="service-image" />
                                         <p className="mt-30">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions That Captivate Audiences and Drive Meaningful Engagement, Helping Your Brand Stand Out in the Digital Landscape.</p>
                                         <p className="mt-20">Our Content Creation Service Seamlessly Blends Creativity and Strategy to Deliver Tailored Solutions.</p>
                                     </div>
@@ -276,7 +277,7 @@ export default function Home_3() {
                             </div>
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="service-button text-center mt-60">
-                                    <a href="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <Link to="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                             </div>
                         </div>
@@ -301,15 +302,15 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-lg-6 wow fadeIn" data-wow-delay=".3s">
                                 <div className="single-portfolio-3">
-                                    <a href="/case_single"><img src="assets/images/portfolio-1-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="/case_single">Social Media Marketing</a></h3>
+                                    <Link to="/case_single"><img src="/assets/images/portfolio-1-home-3.png" alt="portfolio-image" /></Link>
+                                    <h3 className="mt-30"><Link to="/case_single">Social Media Marketing</Link></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 </div>
                             </div>
                             <div className="col-lg-5 offset-lg-1 align-self-end wow fadeIn" data-wow-delay=".4s">
                                 <div className="single-portfolio-3">
-                                    <a href="/case_single"><img src="assets/images/portfolio-2-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="/case_single">Creative Banner Design</a></h3>
+                                    <Link to="/case_single"><img src="/assets/images/portfolio-2-home-3.png" alt="portfolio-image" /></Link>
+                                    <h3 className="mt-30"><Link to="/case_single">Creative Banner Design</Link></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated.</p>
                                 </div>
                             </div>
@@ -317,15 +318,15 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-lg-5 align-self-end wow fadeIn" data-wow-delay=".5s">
                                 <div className="single-portfolio-3">
-                                    <a href="/case_single"><img src="assets/images/portfolio-3-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="/case_single">Creative Banner Design</a></h3>
+                                    <Link to="/case_single"><img src="/assets/images/portfolio-3-home-3.png" alt="portfolio-image" /></Link>
+                                    <h3 className="mt-30"><Link to="/case_single">Creative Banner Design</Link></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated.</p>
                                 </div>
                             </div>
                             <div className="col-lg-6 offset-lg-1 wow fadeIn" data-wow-delay=".6s">
                                 <div className="single-portfolio-3">
-                                    <a href="/case_single"><img src="assets/images/portfolio-4-home-3.png" alt="portfolio-image" /></a>
-                                    <h3 className="mt-30"><a href="/case_single">Social Media Marketing</a></h3>
+                                    <Link to="/case_single"><img src="/assets/images/portfolio-4-home-3.png" alt="portfolio-image" /></Link>
+                                    <h3 className="mt-30"><Link to="/case_single">Social Media Marketing</Link></h3>
                                     <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable experiences.</p>
                                 </div>
                             </div>
@@ -333,7 +334,7 @@ export default function Home_3() {
                         <div className="row">
                             <div className="col-12 wow fadeIn" data-wow-delay=".4s">
                                 <div className="portfolio-button text-center">
-                                    <a href="/case" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                    <Link to="/case" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                 </div>
                             </div>
                         </div>
@@ -367,7 +368,7 @@ export default function Home_3() {
                                 <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-3.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-3.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Courtney Henry</h4>
@@ -377,10 +378,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded"</span>
+                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Sarah Williams</h4>
@@ -390,10 +391,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision."</span>
+                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision.”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-4.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-4.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Emily Rogersy</h4>
@@ -406,7 +407,7 @@ export default function Home_3() {
                                 <span className="quote-text">“Their expertise in digital marketing helped us reach new heights. We saw growth in few days”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-5.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-5.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Michael Thompson</h4>
@@ -416,10 +417,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!"</span>
+                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-2.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-2.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>John Davis</h4>
@@ -439,10 +440,10 @@ export default function Home_3() {
                         >
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded"</span>
+                                <span className="quote-text">“Their creative approach has transformed our brand image, making us stand out in a crowded”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-01.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-01.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Sarah Williams</h4>
@@ -452,10 +453,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!"</span>
+                                <span className="quote-text">“Thanks to their innovative designs, our customer engagement has skyrocketed. Truly game-changing!”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-2.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-2.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>John Davis</h4>
@@ -465,10 +466,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems“</span>
+                                <span className="quote-text">“It really helps me in marketing the product, so I can focus on development and problems”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-3.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-3.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Courtney Henry</h4>
@@ -478,10 +479,10 @@ export default function Home_3() {
                             </div>
                             <div className="testimonial-slide-home-3">
                                 <span className="testimonial-quote-icon"><i className="fa-solid fa-quote-left"></i></span>
-                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision."</span>
+                                <span className="quote-text">“Their team understood our vision and brought it to life with stunning creativity and precision.”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-4.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-4.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Emily Rogersy</h4>
@@ -494,7 +495,7 @@ export default function Home_3() {
                                 <span className="quote-text">“Their expertise in digital marketing helped us reach new heights. We saw growth in few days”</span>
                                 <div className="testimonial-content">
                                     <div className="author-img">
-                                        <img src="assets/images/testimonial-5.png" alt="author-image" />
+                                        <img src="/assets/images/testimonial-5.png" alt="author-image" />
                                     </div>
                                     <div className="author-text">
                                         <h4>Michael Thompson</h4>
@@ -526,19 +527,19 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-1-home-3.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-1-home-3.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="/team_single">Bessie Cooper</a></h4>
+                                    <h4><Link to="/team_single">Bessie Cooper</Link></h4>
                                     <span>web developer</span>
                                 </div>
                             </div>
@@ -546,19 +547,19 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-2-home-3.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-2-home-3.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="/team_single">Floyd Miles</a></h4>
+                                    <h4><Link to="/team_single">Floyd Miles</Link></h4>
                                     <span>Marketing Coordinator</span>
                                 </div>
                             </div>
@@ -566,19 +567,19 @@ export default function Home_3() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member-3">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-3-home-3.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-3-home-3.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link href="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link href="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="team-content mt-30">
-                                    <h4><a href="/team_single">Floyd Miles</a></h4>
+                                    <h4><Link to="/team_single">Floyd Miles</Link></h4>
                                     <span>web designer</span>
                                 </div>
                             </div>
@@ -587,7 +588,7 @@ export default function Home_3() {
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-button text-center mt-30">
-                                <a href="/team" className="primary-btn">view more <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/team" className="primary-btn">view more <span><i className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -627,7 +628,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -645,7 +646,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -663,7 +664,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -685,7 +686,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -703,7 +704,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6">
@@ -721,7 +722,7 @@ export default function Home_3() {
                                     <li>Paid Campaign</li>
                                     <li>24/7 Support</li>
                                 </ul>
-                                <a href="/contact" className="secondary-btn">Get Started</a>
+                                <Link to="/contact" className="secondary-btn">Get Started</Link>
                             </div>
                         </div>
                     </div>
@@ -744,44 +745,44 @@ export default function Home_3() {
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-1-home-3.png" alt="blog-thumb" /></a>
+                                    <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-1-home-3.png" alt="blog-thumb" /></Link>
                                 </div>
                                 <h4>
-                                    <a href="/blog_single">A Blueprint for Innovation in Product Development</a>
+                                    <Link to="/blog_single">A Blueprint for Innovation in Product Development</Link>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                <Link className="blog-btn mt-20" to="#">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-2-home-3.png" alt="blog-thumb" /></a>
+                                    <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-2-home-3.png" alt="blog-thumb" /></Link>
                                 </div>
                                 <h4>
-                                    <a href="/blog_single">Software Engineering Best Practices that you should know</a>
+                                    <Link to="/blog_single">Software Engineering Best Practices that you should know</Link>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                <Link className="blog-btn mt-20" to="#">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="blog-single-slide-2 mb-30">
                                 <div className="blog-image">
-                                    <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-3-home-3.png" alt="blog-thumb" /></a>
+                                    <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-3-home-3.png" alt="blog-thumb" /></Link>
                                 </div>
                                 <h4>
-                                    <a href="/blog_single">Product Management in the Digital Age: Complexity and Uncertainty</a>
+                                    <Link to="/blog_single">Product Management in the Digital Age: Complexity and Uncertainty</Link>
                                 </h4>
                                 <p className="mt-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                                <a className="blog-btn mt-20" href="#">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                <Link className="blog-btn mt-20" to="#">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-12 wow fadeIn" data-wow-delay=".3s">
                             <div className="blog-button text-center mt-30">
-                                <a href="/blog" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                <Link to="/blog" className="primary-btn">view all <span><i className="ri-arrow-right-up-line"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -803,25 +804,25 @@ export default function Home_3() {
                     </div>
                     <div className="row mt-60">
                         <div className="col-lg-5 wow fadeInLeft" data-wow-delay=".2s">
-                            <img src="assets/images/contact-image.png" alt="contact-image" />
+                            <img src="/assets/images/contact-image.png" alt="contact-image" />
                         </div>
                         <div className="col-lg-6 offset-lg-1 wow fadeInRight" data-wow-delay=".2s">
                             <div className="contact-form-3">
                                 <form action="#" method="POST">
                                     <div className="form-group">
-                                        <label for="name">Hi! My name is</label>
+                                        <label htmlFor="name">Hi! My name is</label>
                                         <input type="text" id="name" name="name" placeholder="What's your name?*" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="company">I work in</label>
+                                        <label htmlFor="company">I work in</label>
                                         <input type="text" id="company" name="company" placeholder="What's your company name?*" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="email">My email is</label>
+                                        <label htmlFor="email">My email is</label>
                                         <input type="email" id="email" name="email" placeholder="What's your email?*" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="project-details">I’d like to share more about my project details:</label>
+                                        <label htmlFor="project-details">I’d like to share more about my project details:</label>
                                         <textarea id="project-details" name="project-details" placeholder="Tell something about your project" rows="4" required></textarea>
                                     </div>
                                     <button type="submit" className="primary-btn">submit  <span><i className="ri-arrow-right-up-line"></i></span></button>
@@ -837,8 +838,8 @@ export default function Home_3() {
                 <div className="marquee-container">
                     <div className="marquee">
                         <div className="marquee-content marquee-row-1">
-                            <span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span>
-                            <span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span><span>let's talk</span>
+                            <span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span>
+                            <span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span><span>let’s talk</span>
                         </div>
                     </div>
                 </div>

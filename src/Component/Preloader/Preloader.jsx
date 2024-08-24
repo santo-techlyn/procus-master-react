@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-
+// import React from 'react';
 
 export default function Preloader() {
     const cursorRef = useRef(null);
@@ -54,16 +54,13 @@ export default function Preloader() {
             });
         };
     }, []);
-    
+
     return (
         <>
             {/* preloader starts */}
             <div id="preloader">
                 <div id="loader"></div>
             </div>
-
-            {/* <div className="procus-cursor"></div>
-            <div className="procus-cursor2"></div> */}
 
             <div className="procus-cursor" ref={cursorRef}></div>
             <div className="procus-cursor2" ref={cursorInnerRef}></div>

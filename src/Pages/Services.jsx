@@ -2,11 +2,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Accordion from "../Component/Common/Accordion";
 import CommonHero from "../Component/Common/CommonHero";
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, FreeMode, EffectCoverflow, EffectCube, Keyboard, Direction } from 'swiper/modules';
-
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, FreeMode, EffectCoverflow, EffectCube} from 'swiper/modules';
+import React from 'react';
 import 'swiper/css';
 import GetInTuch from '../Component/Common/GetInTuch';
 import FidbackSection from '../Component/Common/FidbackSection';
+import { Link } from 'react-router-dom';
 
 export default function Services() {
     return (
@@ -15,7 +16,7 @@ export default function Services() {
 
             {/* service area starts  */}
             <section className="service-area pt-110 pb-90">
-                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d" />
+                <img src="/assets/images/service-3d.png" alt="service-3d" className="service-3d" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
@@ -41,10 +42,10 @@ export default function Services() {
                             <div className="working-process-left pt-110 pb-120">
                                 <div className="section-top">
                                     <h2>Our <span>Process</span></h2>
-                                    <p className="mt-20">Explore the intricate gears of Procus Agency's workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
+                                    <p className="mt-20">Explore the intricate gears of Procus Agency’s workflow, where creativity intertwines with strategy to craft remarkable journeys.</p>
                                 </div>
                                 <div className="working-process-image mt-60">
-                                    <img src="assets/images/working-process-image.png" alt="working-process-image" />
+                                    <img src="/assets/images/working-process-image.png" alt="working-process-image" />
                                 </div>
                             </div>
                         </div>
@@ -108,7 +109,7 @@ export default function Services() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/case" className="secondary-btn">See More</a>
+                                <Link to="/case" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -134,60 +135,60 @@ export default function Services() {
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-01.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Digital Agency Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Digital Agency Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-03.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">web design for your business</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">web design for your business</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-04.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">build your product with laravel</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">build your product with laravel</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>

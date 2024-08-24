@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Footer3() {
     return (
         <>
@@ -11,11 +13,11 @@ export default function Footer3() {
                                 <div className="footer-widget-box-3 about-us">
                                     <h1>Let`s work together</h1>
                                     <ul className="footer-social-3">
-                                        <li><a href="#"><i className="fa-brands fa-facebook"></i> facebook</a></li>
-                                        <li><a href="#"><i className="fa-brands fa-x-twitter"></i> twitter</a></li>
-                                        <li><a href="#"><i className="fa-brands fa-linkedin"></i> linkedin</a></li>
-                                        <li><a href="#"><i className="fa-brands fa-instagram"></i> instagram</a></li>
-                                        <li><a href="#"><i className="fa-brands fa-youtube"></i> youtube</a></li>
+                                        <li><Link to="#"><i className="fa-brands fa-facebook"></i> facebook</Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-x-twitter"></i> twitter</Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-linkedin"></i> linkedin</Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-instagram"></i> instagram</Link></li>
+                                        <li><Link to="#"><i className="fa-brands fa-youtube"></i> youtube</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -23,11 +25,11 @@ export default function Footer3() {
                                 <div className="footer-widget-box list">
                                     <h4 className="footer-widget-title">Quick Links</h4>
                                     <ul className="footer-list">
-                                        <li><a href="/about">About us</a></li>
-                                        <li><a href="/team">meet our team</a></li>
-                                        <li><a href="/case">case studies</a></li>
-                                        <li><a href="/blog">latest blog</a></li>
-                                        <li><a href="/contact">contact</a></li>
+                                        <li><Link to="/about">About us</Link></li>
+                                        <li><Link to="/team">meet our team</Link></li>
+                                        <li><Link to="/case">case studies</Link></li>
+                                        <li><Link to="/blog">latest blog</Link></li>
+                                        <li><Link to="/contact">contact</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -35,11 +37,11 @@ export default function Footer3() {
                                 <div className="footer-widget-box list">
                                     <h4 className="footer-widget-title">our services</h4>
                                     <ul className="footer-list">
-                                        <li><a href="/service-single">branding</a></li>
-                                        <li><a href="/service-single">web design</a></li>
-                                        <li><a href="/service-single">app design</a></li>
-                                        <li><a href="/service-single">saas development</a></li>
-                                        <li><a href="/service-single">digital marketing</a></li>
+                                        <li><Link to="/service-single">digital marketing</Link></li>
+                                        <li><Link to="/service-single">web design</Link></li>
+                                        <li><Link to="/service-single">app design</Link></li>
+                                        <li><Link to="/service-single">saas development</Link></li>
+                                        <li><Link to="/service-single">branding</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -47,9 +49,9 @@ export default function Footer3() {
                                 <div className="footer-widget-box">
                                     <h4 className="footer-widget-title">Contact Us</h4>
                                     <ul className="footer-contact">
-                                        <li><a href="#"><span className="contact-icon"><i className="fa-solid fa-phone"></i></span> (123) 456789000</a></li>
-                                        <li><a href="#"><span className="contact-icon"><i className="fa-regular fa-envelope"></i></span><span> info@procus.com</span></a></li>
-                                        <li><a href="#"><span className="contact-icon"><i className="fa-solid fa-location-dot"></i></span> 1498w Fluton ste, STE 2D Chicgo, IL 63867.</a></li>
+                                        <li><Link to="#"><span className="contact-icon"><i className="fa-solid fa-phone"></i></span> (123) 456789000</Link></li>
+                                        <li><Link to="#"><span className="contact-icon"><i className="fa-regular fa-envelope"></i></span><span> info@procus.com</span></Link></li>
+                                        <li><Link to="#"><span className="contact-icon"><i className="fa-solid fa-location-dot"></i></span> 1498w Fluton ste, STE 2D Chicgo, IL 63867.</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,17 +65,17 @@ export default function Footer3() {
                         <div className="info-content">
                             <div className="row align-items-center">
                                 <div className="col-xl-3">
-                                    <a className="dark-version" href="index.html"><img src="assets/images/logo.png" alt="footer-logo" /></a>
-                                    <a className="light-version" href="index.html"><img src="assets/images/logo-black.png" alt="footer-logo" /></a>
+                                    <Link className="dark-version" to="/"><img src="/assets/images/logo.png" alt="footer-logo" /></Link>
+                                    <Link className="light-version" to="/"><img src="/assets/images/logo-black.png" alt="footer-logo" /></Link>
                                 </div>
                                 <div className="col-xl-3">
-                                    <a href="#" className="phone-number">(123) 456789000</a>
+                                    <Link to="tel:+123456789000" className="phone-number">(123) 456789000</Link>
                                 </div>
                                 <div className="col-xl-3">
-                                    <a href="#" className="email-address">info@procus.com </a>
+                                    <Link to="mailto:info@procus.com" className="email-address">info@procus.com </Link>
                                 </div>
                                 <div className="col-xl-3">
-                                    <a href="#" className="location">1498w Fluton ste, STE 2D Chicgo, IL 63867.</a>
+                                    <Link to="https://www.google.com/maps/search/?api=1&query=1498w+Fluton+ste,+STE+2D+Chicago,+IL+63867" className="location">1498w Fluton ste, STE 2D Chicgo, IL 63867.</Link>
                                 </div>
                             </div>
                         </div>
@@ -87,14 +89,14 @@ export default function Footer3() {
                             <div className="row">
                                 <div className="col-lg-6 align-self-center">
                                     <p className="copyright-text">
-                                        Copyright &copy; <span id="date"></span> <a href="index.html"> Procus</a> Designed by Pointer Flow.
+                                        Copyright &copy; <span id="date"></span> <Link to="/"> Procus</Link> Designed by Pointer Flow.
                                     </p>
                                 </div>
                                 <div className="col-lg-6 align-self-center">
                                     <ul className="footer-menu">
-                                        <li><a href="/terms">Terms Of Services</a></li>
-                                        <li><a href="/privacy">Privacy Policy</a></li>
-                                        <li><a href="/contact">Support</a></li>
+                                        <li><Link to="/terms">Terms Of Services</Link></li>
+                                        <li><Link to="/privacy">Privacy Policy</Link></li>
+                                        <li><Link to="/contact">Support</Link></li>
                                     </ul>
                                 </div>
                             </div>

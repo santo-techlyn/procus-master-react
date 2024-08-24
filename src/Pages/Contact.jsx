@@ -1,5 +1,7 @@
 import { useState } from "react";
 import CommonHero from "../Component/Common/CommonHero";
+import React from 'react';
+import { Link } from "react-router-dom";
 
 const contacts = [
     {
@@ -80,7 +82,7 @@ export default function Contact() {
                         <div className="col-lg-10 offset-lg-1 wow fadeInUp" data-wow-delay=".2s">
                             <div className="cta-box">
                                 <h2>Let`s work on something cool great together</h2>
-                                <a href="/contact" className="secondary-btn mt-40">learn more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <Link to="/contact" className="secondary-btn mt-40">learn more <span><i className="fas fa-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -93,24 +95,24 @@ export default function Contact() {
                     <div className="row">
                         <div className="col-lg-5 wow fadeInLeft" data-wow-delay=".2s">
                             <div className="section-top mb-50">
-                                <h2>Let's <span>collaborate</span> and create something extraordinary together!</h2>
+                                <h2>Lets <span>collaborate</span> and create something extraordinary together!</h2>
                             </div>
-                            <img src="assets/images/contact-form-image.png" alt="contact-image" />
+                            <img src="/assets/images/contact-form-image.png" alt="contact-image" />
                         </div>
 
                         <div className="col-xl-6 offset-xl-1 col-lg-7 wow fadeInRight" data-wow-delay=".2s">
                             <div className="contact-form-3">
                                 <form action="#" method="POST">
                                     <div className="form-group">
-                                        <label for="name">Hi! My name is</label>
+                                        <label htmlFor="name">Hi! My name is</label>
                                         <input type="text" id="name" name="name" placeholder="What's your name?*" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="company">and I work in</label>
+                                        <label htmlFor="company">and I work in</label>
                                         <input type="text" id="company" name="company" placeholder="What's your company name?*" required />
                                     </div>
                                     <div className="form-group">
-                                        <label for="email">My email is</label>
+                                        <label htmlFor="email">My email is</label>
                                         <input type="email" id="email" name="email" placeholder="What's your email?*" required />
                                     </div>
                                     <div className="budget-options form-group">
@@ -133,16 +135,16 @@ export default function Contact() {
                                         </label>
                                     </div>
                                     <div className="form-group">
-                                        <label for="project-details">I’d like to share more about my project details:</label>
+                                        <label htmlFor="project-details">I’d like to share more about my project details:</label>
                                         <textarea id="project-details" name="project-details" placeholder="Tell something about your project" rows="4" required></textarea>
                                     </div>
                                     <div className="form-group">
                                         <input type="checkbox" id="privacy-policy" name="privacy-policy" required />
-                                        <label className="privacy-policy" for="privacy-policy">I agree with the <a href="/privacy">privacy policy</a></label>
+                                        <label className="privacy-policy" htmlFor="privacy-policy">I agree with the <Link href="/privacy">privacy policy</Link></label>
                                     </div>
                                     <div className="form-group">
                                         <input type="file" id="attachment" name="attachment" style={{ display: 'none' }} />
-                                        <label for="attachment" className="attachment-btn"><i className="fas fa-paperclip"></i> Add attachment</label>
+                                        <label htmlFor="attachment" className="attachment-btn"><i className="fas fa-paperclip"></i> Add attachment</label>
                                     </div>
                                     <button type="submit" className="primary-btn">get started <span><i className="ri-arrow-right-up-line"></i></span></button>
                                 </form>

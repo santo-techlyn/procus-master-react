@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+import React from 'react';
+import { Link } from "react-router-dom";
+
 const items = [
     {
         header_number: '01',
@@ -54,14 +57,14 @@ export default function Accordion() {
             <ul className="accordion-list">
                 {
                     items.map((item, index) =>
-                        <li onClick={() => togglerAcordion(index)} className={` wow fadeInUp ${acordion === index ? "active" : ""}`} data-wow-delay=".2s">
+                        <li key={index} onClick={() => togglerAcordion(index)} className={` wow fadeInUp ${acordion === index ? "active" : ""}`} data-wow-delay=".2s">
                             <h3 className={acordion === index ? "active" : ""}><span className="space-right">{item.header_number}</span>{item.header_content}</h3>
                             <div className={`answer ${acordion === index ? "active" : "inactive"}`} >
                                 <div className="row align-items-center">
                                     <div className="col-lg-6">
                                         <p>{item.content}</p>
                                         <p>{item.content2}</p>
-                                        <a href="/service-single" className="primary-btn mt-20">Learn More <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                        <Link to="/service-single" className="primary-btn mt-20">Learn More <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                     </div>
                                     <div className="col-lg-6">
                                         <img src={item.img} alt="service-image" className="service-image" />

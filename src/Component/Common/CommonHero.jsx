@@ -1,3 +1,6 @@
+import PropTypes from 'prop-types';
+import React from 'react';
+import { Link } from 'react-router-dom';
 export default function CommonHero(props) {
     return (
         <>
@@ -8,8 +11,8 @@ export default function CommonHero(props) {
                         <div className="col-12">
                             <h1>{props.title}</h1>
                             <ul className="breadcrumb-meta">
-                                <li><a href="/">{props.link1}</a></li>
-                                <li><span style={{color: "white"}}><i className="fa-solid fa-angle-right"></i></span></li>
+                                <li><Link to="/">{props.link1}</Link></li>
+                                <li><span style={{ color: "white" }}><i className="fa-solid fa-angle-right"></i></span></li>
                                 <li className="active">{props.link2}</li>
                             </ul>
                         </div>
@@ -19,3 +22,9 @@ export default function CommonHero(props) {
         </>
     )
 }
+
+CommonHero.propTypes = {
+    title: PropTypes.string.isRequired,
+    link1: PropTypes.string.isRequired,
+    link2: PropTypes.string.isRequired,
+};

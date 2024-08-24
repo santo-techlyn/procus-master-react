@@ -1,8 +1,8 @@
-import CountUp from 'react-countup';
+
 import Accordion from '../Component/Common/Accordion';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay, Mousewheel, Keyboard, Direction } from 'swiper/modules';
-// import Marquee from "react-fast-marquee";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -11,6 +11,7 @@ import GetInTuch from '../Component/Common/GetInTuch';
 import BrandSection from '../Component/Common/BrandSection';
 import FidbackSection from '../Component/Common/FidbackSection';
 import Counter from '../Component/Common/Counter';
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -25,31 +26,31 @@ export default function Home() {
                                 <h1 className="mb-20">Crafting <span className="gradient-bg">Creativity</span></h1>
                             </div>
                             <div className="col-lg-4">
-                                <img src="assets/images/hero-3d-02.png" className="vector-shape vector-anim-1 item-moveOne" alt="3d-image" />
+                                <img src="/assets/images/hero-3d-02.png" className="vector-shape vector-anim-1 item-moveOne" alt="3d-image" />
                             </div>
                         </div>
                         <div className="row hero-bottom-content">
                             <div className="col-lg-5">
-                                <img src="assets/images/hero-3d-01.png" className="vector-shape vector-anim-2 item-moveTwo" alt="3d-image" />
+                                <img src="/assets/images/hero-3d-01.png" className="vector-shape vector-anim-2 item-moveTwo" alt="3d-image" />
                             </div>
                             <div className="col-lg-7 wow fadeInUp" data-wow-delay=".2s">
                                 <h1>Amplifying Impact!</h1>
                                 <p className="mt-20">We are a passionate collective of creatives, designers, and strategists dedicated to shaping remarkable brand experiences.</p>
                                 <div className="btn-group">
-                                    <img className="dark-version" src="assets/images/vector-arrow.png" alt="vector-arrow" />
-                                    <img className="light-version" src="assets/images/vector-dark-arrow.png" alt="vector-arrow" />
-                                    <a href="/about" className="secondary-btn">Learn More</a>
+                                    <img className="dark-version" src="/assets/images/vector-arrow.png" alt="vector-arrow" />
+                                    <img className="light-version" src="/assets/images/vector-dark-arrow.png" alt="vector-arrow" />
+                                    <Link to="/about" className="secondary-btn">Learn More</Link>
                                 </div>
                             </div>
                         </div>
                         <ul className="hero-social wow fadeIn" data-wow-delay=".9s">
-                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
-                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                            <li><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
+                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
+                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                            <li><Link to="#"><i className="fa-brands fa-youtube"></i></Link></li>
                         </ul>
-                        <a href="#counter-area"><img src="assets/images/vector-scroll-down.png" alt="vector-scroll-down" className="vector-scroll-down scroll-down" /></a>
+                        <a href="#counter-area"><img src="/assets/images/vector-scroll-down.png" alt="vector-scroll-down" className="vector-scroll-down scroll-down" /></a>
                     </div>
                 </div>
             </section>
@@ -80,7 +81,7 @@ export default function Home() {
 
             {/* service area starts  */}
             <section className="service-area pt-110 pb-90">
-                <img src="assets/images/service-3d.png" alt="service-3d" className="service-3d" />
+                <img src="/assets/images/service-3d.png" alt="service-3d" className="service-3d" />
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 offset-lg-3 wow fadeInUp" data-wow-delay=".2s">
@@ -110,7 +111,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/case" className="secondary-btn">See More</a>
+                                <Link to="/case" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -136,60 +137,60 @@ export default function Home() {
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-01.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-01.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Digital Agency Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Digital Agency Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-03.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-03.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">web design for your business</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">web design for your business</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-04.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-04.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">build your product with laravel</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">build your product with laravel</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="portfolio-single">
                                             <div className="portfolio-image">
-                                                <a href="/case"><img src="assets/images/portfolio-02.png" alt="portfolio-image" /></a>
-                                                <a href="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></a>
+                                                <Link to="/case"><img src="/assets/images/portfolio-02.png" alt="portfolio-image" /></Link>
+                                                <Link to="/case_single" className="portfolio-btn">view details <span><i className="fas fa-arrow-right"></i></span></Link>
                                             </div>
                                             <div className="portfolio-content mt-20">
-                                                <h3><a href="/case">Shopify Responsive Website Design</a></h3>
-                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand's presence.</p>
+                                                <h3><Link to="/case">Shopify Responsive Website Design</Link></h3>
+                                                <p className="mt-10">Unveil a world of creativity, strategy, and technology as we offer a spectrum of services tailored to elevate your brand’s presence.</p>
                                             </div>
                                         </div>
                                     </SwiperSlide>
@@ -216,7 +217,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/team" className="secondary-btn">See More</a>
+                                <Link to="/team" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -224,20 +225,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".3s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-01.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-01.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -246,20 +247,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".4s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-02.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-02.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -268,20 +269,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".5s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-03.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-03.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -290,20 +291,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".6s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-04.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-04.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -312,20 +313,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".7s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-05.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-05.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -334,20 +335,20 @@ export default function Home() {
                         <div className="col-lg-4 col-sm-6 wow fadeIn" data-wow-delay=".8s">
                             <div className="team-member">
                                 <div className="team-image">
-                                    <a href="/team_single"><img src="assets/images/team-member-06.png" alt="team-member" /></a>
+                                    <Link to="/team_single"><img src="/assets/images/team-member-06.png" alt="team-member" /></Link>
                                     <div className="hover-state">
                                         <div className="team-content">
                                             <div className="team-bio">
-                                                <h4><a href="/team_single">Savannah Nguyen</a></h4>
+                                                <h4><Link to="/team_single">Savannah Nguyen</Link></h4>
                                                 <span>founder & CEO</span>
                                             </div>
                                         </div>
                                         <ul className="team-social">
-                                            <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                            <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                            <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                            <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -364,7 +365,7 @@ export default function Home() {
                         <div className="col-lg-10 offset-lg-1 wow fadeInUp" data-wow-delay=".2s">
                             <div className="cta-box">
                                 <h2>Let`s work on something cool great together</h2>
-                                <a href="/contact" className="secondary-btn mt-40">learn more <span><i className="fas fa-arrow-right"></i></span></a>
+                                <Link to="/contact" className="secondary-btn mt-40">learn more <span><i className="fas fa-arrow-right"></i></span></Link>
                             </div>
                         </div>
                     </div>
@@ -382,7 +383,7 @@ export default function Home() {
                         </div>
                         <div className="col-xl-7 col-lg-6 wow fadeInRight" data-wow-delay=".2s">
                             <div className="section-top-btn">
-                                <a href="/blog" className="secondary-btn">See More</a>
+                                <Link to="/blog" className="secondary-btn">See More</Link>
                             </div>
                         </div>
                     </div>
@@ -411,11 +412,11 @@ export default function Home() {
                                     <SwiperSlide>
                                         <div className="blog-single-slide">
                                             <div className="blog-image">
-                                                <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-thum-01.png" alt="blog-thumb" /></a>
+                                                <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-thum-01.png" alt="blog-thumb" /></Link>
                                             </div>
                                             <div className="blog-meta">
                                                 <ul className="d-flex align-items-center">
-                                                    <li>By <a href="index.html">procus</a></li>
+                                                    <li>By <Link to="/">procus</Link></li>
                                                     <li className="separator">|</li>
                                                     <li>23 March 2023</li>
                                                 </ul>
@@ -424,27 +425,27 @@ export default function Home() {
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="/blog_single">Transforming Digital Solutions with  Artificial Intelligence</a>
+                                                <Link to="/blog_single">Transforming Digital Solutions with  Artificial Intelligence</Link>
                                             </h4>
                                             <p className="mt-20">We delve into the profound impact that Artificial Intelligence (AI) is having on digital solutions across various industries.</p>
                                             <div className="blog-tags">
                                                 <ul>
-                                                    <li><a href="/blog_single">Artificial Intelligence</a></li>
-                                                    <li><a href="/blog_single">Machine Learning</a></li>
-                                                    <li><a href="/blog_single">Deep Learning</a></li>
+                                                    <li><Link to="/blog_single">Artificial Intelligence</Link></li>
+                                                    <li><Link to="/blog_single">Machine Learning</Link></li>
+                                                    <li><Link to="/blog_single">Deep Learning</Link></li>
                                                 </ul>
                                             </div>
-                                            <a className="blog-btn mt-30" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link className="blog-btn mt-30" to="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="blog-single-slide">
                                             <div className="blog-image">
-                                                <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-thum-02.png" alt="blog-thumb" /></a>
+                                                <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-thum-02.png" alt="blog-thumb" /></Link>
                                             </div>
                                             <div className="blog-meta">
                                                 <ul className="d-flex align-items-center">
-                                                    <li>By <a href="index.html">procus</a></li>
+                                                    <li>By <Link to="/">procus</Link></li>
                                                     <li className="separator">|</li>
                                                     <li>23 March 2023</li>
                                                 </ul>
@@ -453,27 +454,27 @@ export default function Home() {
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="/blog_single">The Art of Collaboration in Creative Agency Studio</a>
+                                                <Link to="/blog_single">The Art of Collaboration in Creative Agency Studio</Link>
                                             </h4>
                                             <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencies.</p>
                                             <div className="blog-tags">
                                                 <ul>
-                                                    <li><a href="/blog_single">creative agency</a></li>
-                                                    <li><a href="/blog_single">product</a></li>
-                                                    <li><a href="/blog_single">digital</a></li>
+                                                    <li><Link to="/blog_single">creative agency</Link></li>
+                                                    <li><Link to="/blog_single">product</Link></li>
+                                                    <li><Link to="/blog_single">digital</Link></li>
                                                 </ul>
                                             </div>
-                                            <a className="blog-btn mt-30" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link className="blog-btn mt-30" to="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="blog-single-slide">
                                             <div className="blog-image">
-                                                <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-thum-03.png" alt="blog-thumb" /></a>
+                                                <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-thum-03.png" alt="blog-thumb" /></Link>
                                             </div>
                                             <div className="blog-meta">
                                                 <ul className="d-flex align-items-center">
-                                                    <li>By <a href="index.html">procus</a></li>
+                                                    <li>By <Link to="/">procus</Link></li>
                                                     <li className="separator">|</li>
                                                     <li>23 March 2023</li>
                                                 </ul>
@@ -482,27 +483,27 @@ export default function Home() {
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="/blog_single">Enhancing Creativity with Machine Learning</a>
+                                                <Link to="/blog_single">Enhancing Creativity with Machine Learning</Link>
                                             </h4>
                                             <p className="mt-20">Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.</p>
                                             <div className="blog-tags">
                                                 <ul>
-                                                    <li><a href="/blog_single">Artificial Intelligence </a></li>
-                                                    <li><a href="/blog_single">Machine Learning</a></li>
-                                                    <li><a href="/blog_single">Deep Learning</a></li>
+                                                    <li><Link to="/blog_single">Artificial Intelligence </Link></li>
+                                                    <li><Link to="/blog_single">Machine Learning</Link></li>
+                                                    <li><Link to="/blog_single">Deep Learning</Link></li>
                                                 </ul>
                                             </div>
-                                            <a className="blog-btn mt-30" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link className="blog-btn mt-30" to="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
                                         <div className="blog-single-slide">
                                             <div className="blog-image">
-                                                <a href="/blog_single" className="blog-thumb"><img src="assets/images/blog-thum-02.png" alt="blog-thumb" /></a>
+                                                <Link to="/blog_single" className="blog-thumb"><img src="/assets/images/blog-thum-02.png" alt="blog-thumb" /></Link>
                                             </div>
                                             <div className="blog-meta">
                                                 <ul className="d-flex align-items-center">
-                                                    <li>By <a href="index.html">procus</a></li>
+                                                    <li>By <Link to="/">procus</Link></li>
                                                     <li className="separator">|</li>
                                                     <li>23 March 2023</li>
                                                 </ul>
@@ -511,17 +512,17 @@ export default function Home() {
                                                 </ul>
                                             </div>
                                             <h4>
-                                                <a href="/blog_single">The Art of Collaboration in Creative Agency Studio</a>
+                                                <Link to="/blog_single">The Art of Collaboration in Creative Agency Studio</Link>
                                             </h4>
                                             <p className="mt-20">In this blog post, we explore the dynamics of collaboration within and between creative agencie.</p>
                                             <div className="blog-tags">
                                                 <ul>
-                                                    <li><a href="/blog_single">creative agency</a></li>
-                                                    <li><a href="/blog_single">product</a></li>
-                                                    <li><a href="/blog_single">digital</a></li>
+                                                    <li><Link to="/blog_single">creative agency</Link></li>
+                                                    <li><Link to="/blog_single">product</Link></li>
+                                                    <li><Link to="/blog_single">digital</Link></li>
                                                 </ul>
                                             </div>
-                                            <a className="blog-btn mt-30" href="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></a>
+                                            <Link className="blog-btn mt-30" to="/blog_single">Read More <span><i className="fas fa-arrow-right"></i></span></Link>
                                         </div>
                                     </SwiperSlide>
                                 </Swiper>

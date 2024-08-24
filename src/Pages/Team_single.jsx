@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
 import CommonHero from "../Component/Common/CommonHero";
 import GetInTuch from "../Component/Common/GetInTuch";
+import React from 'react';
 
 export default function Team_single() {
     return (
@@ -15,7 +17,7 @@ export default function Team_single() {
                                 <div className="row">
                                     <div className="col-lg-4">
                                         <div className="member-image">
-                                            <img src="assets/images/team-details.png" alt="member-image" />
+                                            <img src="/assets/images/team-details.png" alt="member-image" />
                                         </div>
                                     </div>
                                     <div className="col-xl-7 offset-xl-1 col-lg-8">
@@ -73,11 +75,11 @@ export default function Team_single() {
                                             <div className="member-social mt-20">
                                                 <h5>Follow Me for more:</h5>
                                                 <ul className="team-social mt-10">
-                                                    <li><a href="#"><i className="fa-brands fa-x-twitter"></i></a></li>
-                                                    <li><a href="#"><i className="fa-brands fa-linkedin"></i></a></li>
-                                                    <li><a href="#"><i className="fa-solid fa-globe"></i></a></li>
-                                                    <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li>
-                                                    <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li>
+                                                    <li><Link to="#"><i className="fa-brands fa-x-twitter"></i></Link></li>
+                                                    <li><Link to="#"><i className="fa-brands fa-linkedin"></i></Link></li>
+                                                    <li><Link to="#"><i className="fa-solid fa-globe"></i></Link></li>
+                                                    <li><Link to="#"><i className="fa-brands fa-instagram"></i></Link></li>
+                                                    <li><Link to="#"><i className="fa-brands fa-facebook"></i></Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -86,7 +88,7 @@ export default function Team_single() {
                             </div>
                             <h2>Biography of Savannah Nguyen</h2>
                             <p className="mt-20">Savannah Nguyen is the visionary founder and CEO of Procus Creative Agency, a leading-edge firm specializing in UI/UX design and digital innovation. With a passion for creativity and a keen eye for design, Savannah has dedicated her career to transforming ideas into captivating digital experiences that resonate with audiences around the globe.</p>
-                            <p className="mt-20">Born and raised in a diverse cultural environment, Savannah's early exposure to art, technology, and entrepreneurship fueled her curiosity and shaped her multidisciplinary approach to design. From a young age, she demonstrated a natural aptitude for blending creativity with technology, laying the foundation for her future endeavors in the digital realm.</p>
+                            <p className="mt-20">Born and raised in a diverse cultural environment, Savannahs early exposure to art, technology, and entrepreneurship fueled her curiosity and shaped her multidisciplinary approach to design. From a young age, she demonstrated a natural aptitude for blending creativity with technology, laying the foundation for her future endeavors in the digital realm.</p>
                             <p className="mt-20">After earning her degree in Graphic Design from a prestigious design school, Savannah embarked on a journey to explore the intersection of design and technology. She honed her skills working with startups, agencies, and multinational corporations, gaining invaluable experience in UI/UX design, web development, and digital marketing along the way.</p>
                         </div>
                     </div>
@@ -171,37 +173,37 @@ export default function Team_single() {
                                         <div className="row">
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/figma-icon.png" alt="tool" />
+                                                    <img src="/assets/images/figma-icon.png" alt="tool" />
                                                     <h4>figma</h4>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/photoshop-icon.png" alt="tool" />
+                                                    <img src="/assets/images/photoshop-icon.png" alt="tool" />
                                                     <h4>photoshop</h4>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/illustrator-icon.png" alt="tool" />
+                                                    <img src="/assets/images/illustrator-icon.png" alt="tool" />
                                                     <h4>Illustrator</h4>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/framer-icon.png" alt="tool" />
+                                                    <img src="/assets/images/framer-icon.png" alt="tool" />
                                                     <h4>framer</h4>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/after-effect-icon.png" alt="tool" />
+                                                    <img src="/assets/images/after-effect-icon.png" alt="tool" />
                                                     <h4>after effects</h4>
                                                 </div>
                                             </div>
                                             <div className="col-md-4 col-6">
                                                 <div className="single-tool">
-                                                    <img src="assets/images/wordpress-icon.png" alt="tool" />
+                                                    <img src="/assets/images/wordpress-icon.png" alt="tool" />
                                                     <h4>wordpress</h4>
                                                 </div>
                                             </div>

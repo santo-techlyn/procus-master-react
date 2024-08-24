@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 export default function Header2() {
     return (
         <>
@@ -8,8 +10,8 @@ export default function Header2() {
                             <div className="container-fluid">
                                 <div className="col-lg-2">
                                     <div className="logo-area navbar-brand">
-                                        <a className="dark-version" href="/"> <img src="assets/images/logo.png" alt="logo" /></a>
-                                        <a className="light-version" href="/"> <img src="assets/images/logo-black.png" alt="logo" /></a>
+                                        <Link className="dark-version" to="/"> <img src="/assets/images/logo.png" alt="logo" /></Link>
+                                        <Link className="light-version" to="/"> <img src="/assets/images/logo-black.png" alt="logo" /></Link>
                                     </div>
                                 </div>
 
@@ -20,53 +22,53 @@ export default function Header2() {
                                     <div className="col-lg-10 offset-xl-1 col-xl-9">
                                         <ul className="main-menu navbar-nav me-auto mb-2 mb-lg-0">
 
-                                            <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/">home</a>
+                                            <li className="has-submenu nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/">home</Link>
                                                 <ul className="submenu dropdown-menu">
-                                                    <li><a className="dropdown-item" href="/">home 01</a></li>
-                                                    <li><a className="dropdown-item" href='/home_2'>home 02</a></li>
-                                                    <li><a className="dropdown-item" href="/home_3">home 03</a></li>
+                                                    <li><Link className="dropdown-item" to="/">home 01</Link></li>
+                                                    <li><Link className="dropdown-item" to='/home_2'>home 02</Link></li>
+                                                    <li><Link className="dropdown-item" to="/home_3">home 03</Link></li>
                                                 </ul>
                                             </li>
 
-                                            <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/services">services</a>
+                                            <li className="has-submenu nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/services">services</Link>
                                                 <ul className="submenu dropdown-menu">
-                                                    <li><a className="dropdown-item" href="/services">services</a></li>
-                                                    <li><a className="dropdown-item" href='/service-single'>service details</a></li>
+                                                    <li><Link className="dropdown-item" to="/services">services</Link></li>
+                                                    <li><Link className="dropdown-item" to='/service-single'>service details</Link></li>
                                                 </ul>
                                             </li>
 
-                                            <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/services">case</a>
+                                            <li className="has-submenu nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/services">case</Link>
                                                 <ul className="submenu dropdown-menu">
-                                                    <li><a className="dropdown-item" href="/case">case</a></li>
-                                                    <li><a className="dropdown-item" href='/case_single'>case details</a></li>
+                                                    <li><Link className="dropdown-item" to="/case">case</Link></li>
+                                                    <li><Link className="dropdown-item" to='/case_single'>case details</Link></li>
                                                 </ul>
                                             </li>
 
-                                            <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/services">blog</a>
+                                            <li className="has-submenu nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/services">blog</Link>
                                                 <ul className="submenu dropdown-menu">
-                                                    <li><a className="dropdown-item" href="/blog">blog 2 column</a></li>
-                                                    <li><a className="dropdown-item" href='/blog_2'>blog 3 column</a></li>
-                                                    <li><a className="dropdown-item" href='/blog_single'>blog details</a></li>
+                                                    <li><Link className="dropdown-item" to="/blog">blog 2 column</Link></li>
+                                                    <li><Link className="dropdown-item" to='/blog_2'>blog 3 column</Link></li>
+                                                    <li><Link className="dropdown-item" to='/blog_single'>blog details</Link></li>
                                                 </ul>
                                             </li>
 
-                                            <li className="has-submenu nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="/services">pages</a>
+                                            <li className="has-submenu nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false" to="/services">pages</Link>
                                                 <ul className="submenu dropdown-menu">
-                                                    <li><a className="dropdown-item" href="/about">about</a></li>
-                                                    <li><a className="dropdown-item" href='/work_process'>work process</a></li>
-                                                    <li><a className="dropdown-item" href='/team'>team</a></li>
-                                                    <li><a className="dropdown-item" href='/team_single'>team details</a></li>
-                                                    <li><a className="dropdown-item" href='/faq'>FAQ</a></li>
-                                                    <li><a className="dropdown-item" href='/error'>404</a></li>
+                                                    <li><Link className="dropdown-item" to="/about">about</Link></li>
+                                                    <li><Link className="dropdown-item" to='/work_process'>work process</Link></li>
+                                                    <li><Link className="dropdown-item" to='/team'>team</Link></li>
+                                                    <li><Link className="dropdown-item" to='/team_single'>team details</Link></li>
+                                                    <li><Link className="dropdown-item" to='/faq'>FAQ</Link></li>
+                                                    <li><Link className="dropdown-item" to='/error'>404</Link></li>
                                                 </ul>
                                             </li>
 
-                                            <li className=" nav-item dropdown"><a className="nav-link dropdown-toggle" role="button" href="/contact">contact</a></li>
+                                            <li className=" nav-item dropdown"><Link className="nav-link dropdown-toggle" role="button" to="/contact">contact</Link></li>
                                         </ul>
                                     </div>
                                     <div className="col-lg-2">
                                         <div className="nav-right-content">
-                                            <a href="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></a>
+                                            <Link to="/contact" className="primary-btn">Let’s Talk <span><i className="ri-arrow-right-up-line"></i></span></Link>
                                         </div>
                                     </div>
                                 </div>
