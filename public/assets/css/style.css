@@ -208,7 +208,7 @@ body.light-theme nav .main-menu li a {
   background-color: #fff;
 }
 
-body.light-theme nav .main-menu li .submenu li a:hover{
+body.light-theme nav .main-menu li .submenu li a:hover {
   color: #ffff00;
 }
 
@@ -9371,4 +9371,44 @@ body.light-theme .procus-cursor2 {
   border-radius: 20px;
   background-color: #ffff00;
   cursor: grabbing;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 60px;
+    z-index: 9999;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: auto;
+  }
+
+  nav .main-menu li {
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid #4f4f4f;
+  }
+
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #4f4f4f;
+    padding: 20px;
+  }
+
+  .submenu {
+    padding: 0;
+  }
+
+  .dropdown-item {
+    margin-left: 40px;
+  }
+
+  .dropdown-toggle::after {
+    float: right;
+    margin-right: 20px;
+  }
 }
