@@ -9391,12 +9391,16 @@ body.light-theme .procus-cursor2 {
     border-bottom: 1px solid #4f4f4f;
   }
 
+  nav .main-menu li a {
+    padding: 7px 0;
+  }
+
   .navbar-nav .nav-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #4f4f4f;
-    padding: 20px;
+    padding: 15px 20px;
   }
 
   .submenu {
