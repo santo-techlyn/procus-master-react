@@ -9416,3 +9416,8 @@ body.light-theme .procus-cursor2 {
     margin-right: 20px;
   }
 }
+
+.case-study-home-2 .case-filter-tab ul{
+  display: grid;
+  grid-template-columns: auto auto;
+}
